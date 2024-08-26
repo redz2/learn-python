@@ -1,0 +1,414 @@
+[
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "fnmatchcase",
+        "importPath": "fnmatch",
+        "description": "fnmatch",
+        "isExtraImport": true,
+        "detail": "fnmatch",
+        "documentation": {}
+    },
+    {
+        "label": "glob",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
+        "documentation": {}
+    },
+    {
+        "label": "partial",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "description": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "peekOfCode": "a = \"good morning zhouyi\"\nb = \"hello,zhouyi!abc;defg it is!   ok\"\narr1 = a.split(' ')\n# ['good', 'morning', 'zhouyi']\n# 1. 允许你为分隔符指定多个正则模式（不包含分隔符）\narr2 = re.split(r'[,!;\\s]\\s*', b)\n# ['hello', 'zhouyi', 'abc', 'defg', 'it', 'is', 'ok']\n# 2. 捕获分组（包含分割符）\narr3 = re.split(r'(,|!|;|\\s)\\s*', b)\n# ['hello', ',', 'zhouyi', '!', 'abc', ';', 'defg', ' ', 'it', ' ', 'is', '!', 'ok']",
+        "detail": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "description": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "peekOfCode": "b = \"hello,zhouyi!abc;defg it is!   ok\"\narr1 = a.split(' ')\n# ['good', 'morning', 'zhouyi']\n# 1. 允许你为分隔符指定多个正则模式（不包含分隔符）\narr2 = re.split(r'[,!;\\s]\\s*', b)\n# ['hello', 'zhouyi', 'abc', 'defg', 'it', 'is', 'ok']\n# 2. 捕获分组（包含分割符）\narr3 = re.split(r'(,|!|;|\\s)\\s*', b)\n# ['hello', ',', 'zhouyi', '!', 'abc', ';', 'defg', ' ', 'it', ' ', 'is', '!', 'ok']\nvalues = arr3[::2]",
+        "detail": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "documentation": {}
+    },
+    {
+        "label": "arr1",
+        "kind": 5,
+        "importPath": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "description": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "peekOfCode": "arr1 = a.split(' ')\n# ['good', 'morning', 'zhouyi']\n# 1. 允许你为分隔符指定多个正则模式（不包含分隔符）\narr2 = re.split(r'[,!;\\s]\\s*', b)\n# ['hello', 'zhouyi', 'abc', 'defg', 'it', 'is', 'ok']\n# 2. 捕获分组（包含分割符）\narr3 = re.split(r'(,|!|;|\\s)\\s*', b)\n# ['hello', ',', 'zhouyi', '!', 'abc', ';', 'defg', ' ', 'it', ' ', 'is', '!', 'ok']\nvalues = arr3[::2]\n# ['hello', 'zhouyi', 'abc', 'defg', 'it', 'is', 'ok']",
+        "detail": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "documentation": {}
+    },
+    {
+        "label": "arr2",
+        "kind": 5,
+        "importPath": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "description": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "peekOfCode": "arr2 = re.split(r'[,!;\\s]\\s*', b)\n# ['hello', 'zhouyi', 'abc', 'defg', 'it', 'is', 'ok']\n# 2. 捕获分组（包含分割符）\narr3 = re.split(r'(,|!|;|\\s)\\s*', b)\n# ['hello', ',', 'zhouyi', '!', 'abc', ';', 'defg', ' ', 'it', ' ', 'is', '!', 'ok']\nvalues = arr3[::2]\n# ['hello', 'zhouyi', 'abc', 'defg', 'it', 'is', 'ok']\ndelimiters = arr3[1::2] + ['']\n# [',', '!', ';', ' ', ' ', '!']\n# 去掉多余的空格",
+        "detail": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "documentation": {}
+    },
+    {
+        "label": "arr3",
+        "kind": 5,
+        "importPath": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "description": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "peekOfCode": "arr3 = re.split(r'(,|!|;|\\s)\\s*', b)\n# ['hello', ',', 'zhouyi', '!', 'abc', ';', 'defg', ' ', 'it', ' ', 'is', '!', 'ok']\nvalues = arr3[::2]\n# ['hello', 'zhouyi', 'abc', 'defg', 'it', 'is', 'ok']\ndelimiters = arr3[1::2] + ['']\n# [',', '!', ';', ' ', ' ', '!']\n# 去掉多余的空格\nresult = ''.join((m+n for m,n in zip(values, delimiters)))\n# 3. 不保留分割字符串到结果中（不包含分隔符）\narr4 = re.split(r'(?:,|!|;|\\s)\\s*', b)",
+        "detail": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "documentation": {}
+    },
+    {
+        "label": "values",
+        "kind": 5,
+        "importPath": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "description": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "peekOfCode": "values = arr3[::2]\n# ['hello', 'zhouyi', 'abc', 'defg', 'it', 'is', 'ok']\ndelimiters = arr3[1::2] + ['']\n# [',', '!', ';', ' ', ' ', '!']\n# 去掉多余的空格\nresult = ''.join((m+n for m,n in zip(values, delimiters)))\n# 3. 不保留分割字符串到结果中（不包含分隔符）\narr4 = re.split(r'(?:,|!|;|\\s)\\s*', b)",
+        "detail": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "documentation": {}
+    },
+    {
+        "label": "delimiters",
+        "kind": 5,
+        "importPath": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "description": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "peekOfCode": "delimiters = arr3[1::2] + ['']\n# [',', '!', ';', ' ', ' ', '!']\n# 去掉多余的空格\nresult = ''.join((m+n for m,n in zip(values, delimiters)))\n# 3. 不保留分割字符串到结果中（不包含分隔符）\narr4 = re.split(r'(?:,|!|;|\\s)\\s*', b)",
+        "detail": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "description": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "peekOfCode": "result = ''.join((m+n for m,n in zip(values, delimiters)))\n# 3. 不保留分割字符串到结果中（不包含分隔符）\narr4 = re.split(r'(?:,|!|;|\\s)\\s*', b)",
+        "detail": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "documentation": {}
+    },
+    {
+        "label": "arr4",
+        "kind": 5,
+        "importPath": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "description": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "peekOfCode": "arr4 = re.split(r'(?:,|!|;|\\s)\\s*', b)",
+        "detail": "2_字符串.2.1_针对任意多的分隔符拆分字符串",
+        "documentation": {}
+    },
+    {
+        "label": "filenames",
+        "kind": 5,
+        "importPath": "2_字符串.2.2_在字符串的开头或结尾处做文本匹配",
+        "description": "2_字符串.2.2_在字符串的开头或结尾处做文本匹配",
+        "peekOfCode": "filenames = os.listdir()\nfiles = [name for name in filenames if name.startswith('2')]\n# 检查目录中是否有py结尾的文件\npy_exists = any(name.endswith('.py') for name in filenames)\n# any(name.endswith(('.c', '.h')) for name in listdir(dirname))\n# 参数必须是一个元组\nchoices = ['2.1', '2.3']\nmany_choices = [name for name in filenames if name.startswith(tuple(choices))]\nprint(many_choices)",
+        "detail": "2_字符串.2.2_在字符串的开头或结尾处做文本匹配",
+        "documentation": {}
+    },
+    {
+        "label": "files",
+        "kind": 5,
+        "importPath": "2_字符串.2.2_在字符串的开头或结尾处做文本匹配",
+        "description": "2_字符串.2.2_在字符串的开头或结尾处做文本匹配",
+        "peekOfCode": "files = [name for name in filenames if name.startswith('2')]\n# 检查目录中是否有py结尾的文件\npy_exists = any(name.endswith('.py') for name in filenames)\n# any(name.endswith(('.c', '.h')) for name in listdir(dirname))\n# 参数必须是一个元组\nchoices = ['2.1', '2.3']\nmany_choices = [name for name in filenames if name.startswith(tuple(choices))]\nprint(many_choices)",
+        "detail": "2_字符串.2.2_在字符串的开头或结尾处做文本匹配",
+        "documentation": {}
+    },
+    {
+        "label": "py_exists",
+        "kind": 5,
+        "importPath": "2_字符串.2.2_在字符串的开头或结尾处做文本匹配",
+        "description": "2_字符串.2.2_在字符串的开头或结尾处做文本匹配",
+        "peekOfCode": "py_exists = any(name.endswith('.py') for name in filenames)\n# any(name.endswith(('.c', '.h')) for name in listdir(dirname))\n# 参数必须是一个元组\nchoices = ['2.1', '2.3']\nmany_choices = [name for name in filenames if name.startswith(tuple(choices))]\nprint(many_choices)",
+        "detail": "2_字符串.2.2_在字符串的开头或结尾处做文本匹配",
+        "documentation": {}
+    },
+    {
+        "label": "choices",
+        "kind": 5,
+        "importPath": "2_字符串.2.2_在字符串的开头或结尾处做文本匹配",
+        "description": "2_字符串.2.2_在字符串的开头或结尾处做文本匹配",
+        "peekOfCode": "choices = ['2.1', '2.3']\nmany_choices = [name for name in filenames if name.startswith(tuple(choices))]\nprint(many_choices)",
+        "detail": "2_字符串.2.2_在字符串的开头或结尾处做文本匹配",
+        "documentation": {}
+    },
+    {
+        "label": "many_choices",
+        "kind": 5,
+        "importPath": "2_字符串.2.2_在字符串的开头或结尾处做文本匹配",
+        "description": "2_字符串.2.2_在字符串的开头或结尾处做文本匹配",
+        "peekOfCode": "many_choices = [name for name in filenames if name.startswith(tuple(choices))]\nprint(many_choices)",
+        "detail": "2_字符串.2.2_在字符串的开头或结尾处做文本匹配",
+        "documentation": {}
+    },
+    {
+        "label": "filenames",
+        "kind": 5,
+        "importPath": "2_字符串.2.3_shell通配符",
+        "description": "2_字符串.2.3_shell通配符",
+        "peekOfCode": "filenames = os.listdir()\nr = [name for name in filenames if fnmatchcase(name, \"*.py\")]",
+        "detail": "2_字符串.2.3_shell通配符",
+        "documentation": {}
+    },
+    {
+        "label": "r",
+        "kind": 5,
+        "importPath": "2_字符串.2.3_shell通配符",
+        "description": "2_字符串.2.3_shell通配符",
+        "peekOfCode": "r = [name for name in filenames if fnmatchcase(name, \"*.py\")]",
+        "detail": "2_字符串.2.3_shell通配符",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "2_字符串.2.4_文本匹配",
+        "description": "2_字符串.2.4_文本匹配",
+        "peekOfCode": "text = \"1993/02/19 zhouyi 2022/02/10 zhousiyu\"\n# 匹配字符串默认是一个group\n# 示例中匹配字符串中包含2个group\ndata_pattern = re.compile(r'(\\d+)/\\d+/\\d+ (\\w+)')\n# 判断文本是否匹配pattern，如果匹配到返回一个对象，如果没匹配到返回None\nhave_pattern = re.match(data_pattern, text)\n# 文本从头开始匹配，返回最先匹配到的文本\nprint(have_pattern.group())\n# 如果匹配到多个pattern，返回list\n# 如果每个pattern有多个分组，返回一个包含tuple的list",
+        "detail": "2_字符串.2.4_文本匹配",
+        "documentation": {}
+    },
+    {
+        "label": "data_pattern",
+        "kind": 5,
+        "importPath": "2_字符串.2.4_文本匹配",
+        "description": "2_字符串.2.4_文本匹配",
+        "peekOfCode": "data_pattern = re.compile(r'(\\d+)/\\d+/\\d+ (\\w+)')\n# 判断文本是否匹配pattern，如果匹配到返回一个对象，如果没匹配到返回None\nhave_pattern = re.match(data_pattern, text)\n# 文本从头开始匹配，返回最先匹配到的文本\nprint(have_pattern.group())\n# 如果匹配到多个pattern，返回list\n# 如果每个pattern有多个分组，返回一个包含tuple的list\nres = re.findall(data_pattern, text)\n# 返回迭代器\nres = re.finditer(data_pattern, text)",
+        "detail": "2_字符串.2.4_文本匹配",
+        "documentation": {}
+    },
+    {
+        "label": "have_pattern",
+        "kind": 5,
+        "importPath": "2_字符串.2.4_文本匹配",
+        "description": "2_字符串.2.4_文本匹配",
+        "peekOfCode": "have_pattern = re.match(data_pattern, text)\n# 文本从头开始匹配，返回最先匹配到的文本\nprint(have_pattern.group())\n# 如果匹配到多个pattern，返回list\n# 如果每个pattern有多个分组，返回一个包含tuple的list\nres = re.findall(data_pattern, text)\n# 返回迭代器\nres = re.finditer(data_pattern, text)",
+        "detail": "2_字符串.2.4_文本匹配",
+        "documentation": {}
+    },
+    {
+        "label": "res",
+        "kind": 5,
+        "importPath": "2_字符串.2.4_文本匹配",
+        "description": "2_字符串.2.4_文本匹配",
+        "peekOfCode": "res = re.findall(data_pattern, text)\n# 返回迭代器\nres = re.finditer(data_pattern, text)",
+        "detail": "2_字符串.2.4_文本匹配",
+        "documentation": {}
+    },
+    {
+        "label": "res",
+        "kind": 5,
+        "importPath": "2_字符串.2.4_文本匹配",
+        "description": "2_字符串.2.4_文本匹配",
+        "peekOfCode": "res = re.finditer(data_pattern, text)",
+        "detail": "2_字符串.2.4_文本匹配",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "2_字符串.f-string和r-string的区别",
+        "description": "2_字符串.f-string和r-string的区别",
+        "peekOfCode": "name = zhouyi\nage = 25\nf_str = f\"my name is {name}\"\nr_str = r\"c:\\Program Files\\Python\"\n# 模运算符\na_str = \"my name is %s, I am %d\" % (name, age)\nb_str = \"my name is %(name)s, I am %(age)d\" % {\"name\": name, \"age\": age}\n# 使用格式化方法\nc_str = \"my name is {name:s}, I am {age:d}\".format(name=name,age=age)\n# 使用f-string",
+        "detail": "2_字符串.f-string和r-string的区别",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "2_字符串.f-string和r-string的区别",
+        "description": "2_字符串.f-string和r-string的区别",
+        "peekOfCode": "age = 25\nf_str = f\"my name is {name}\"\nr_str = r\"c:\\Program Files\\Python\"\n# 模运算符\na_str = \"my name is %s, I am %d\" % (name, age)\nb_str = \"my name is %(name)s, I am %(age)d\" % {\"name\": name, \"age\": age}\n# 使用格式化方法\nc_str = \"my name is {name:s}, I am {age:d}\".format(name=name,age=age)\n# 使用f-string\nd_str = f\"my name is {name}, I am {age}\"",
+        "detail": "2_字符串.f-string和r-string的区别",
+        "documentation": {}
+    },
+    {
+        "label": "f_str",
+        "kind": 5,
+        "importPath": "2_字符串.f-string和r-string的区别",
+        "description": "2_字符串.f-string和r-string的区别",
+        "peekOfCode": "f_str = f\"my name is {name}\"\nr_str = r\"c:\\Program Files\\Python\"\n# 模运算符\na_str = \"my name is %s, I am %d\" % (name, age)\nb_str = \"my name is %(name)s, I am %(age)d\" % {\"name\": name, \"age\": age}\n# 使用格式化方法\nc_str = \"my name is {name:s}, I am {age:d}\".format(name=name,age=age)\n# 使用f-string\nd_str = f\"my name is {name}, I am {age}\"",
+        "detail": "2_字符串.f-string和r-string的区别",
+        "documentation": {}
+    },
+    {
+        "label": "r_str",
+        "kind": 5,
+        "importPath": "2_字符串.f-string和r-string的区别",
+        "description": "2_字符串.f-string和r-string的区别",
+        "peekOfCode": "r_str = r\"c:\\Program Files\\Python\"\n# 模运算符\na_str = \"my name is %s, I am %d\" % (name, age)\nb_str = \"my name is %(name)s, I am %(age)d\" % {\"name\": name, \"age\": age}\n# 使用格式化方法\nc_str = \"my name is {name:s}, I am {age:d}\".format(name=name,age=age)\n# 使用f-string\nd_str = f\"my name is {name}, I am {age}\"",
+        "detail": "2_字符串.f-string和r-string的区别",
+        "documentation": {}
+    },
+    {
+        "label": "a_str",
+        "kind": 5,
+        "importPath": "2_字符串.f-string和r-string的区别",
+        "description": "2_字符串.f-string和r-string的区别",
+        "peekOfCode": "a_str = \"my name is %s, I am %d\" % (name, age)\nb_str = \"my name is %(name)s, I am %(age)d\" % {\"name\": name, \"age\": age}\n# 使用格式化方法\nc_str = \"my name is {name:s}, I am {age:d}\".format(name=name,age=age)\n# 使用f-string\nd_str = f\"my name is {name}, I am {age}\"",
+        "detail": "2_字符串.f-string和r-string的区别",
+        "documentation": {}
+    },
+    {
+        "label": "b_str",
+        "kind": 5,
+        "importPath": "2_字符串.f-string和r-string的区别",
+        "description": "2_字符串.f-string和r-string的区别",
+        "peekOfCode": "b_str = \"my name is %(name)s, I am %(age)d\" % {\"name\": name, \"age\": age}\n# 使用格式化方法\nc_str = \"my name is {name:s}, I am {age:d}\".format(name=name,age=age)\n# 使用f-string\nd_str = f\"my name is {name}, I am {age}\"",
+        "detail": "2_字符串.f-string和r-string的区别",
+        "documentation": {}
+    },
+    {
+        "label": "c_str",
+        "kind": 5,
+        "importPath": "2_字符串.f-string和r-string的区别",
+        "description": "2_字符串.f-string和r-string的区别",
+        "peekOfCode": "c_str = \"my name is {name:s}, I am {age:d}\".format(name=name,age=age)\n# 使用f-string\nd_str = f\"my name is {name}, I am {age}\"",
+        "detail": "2_字符串.f-string和r-string的区别",
+        "documentation": {}
+    },
+    {
+        "label": "d_str",
+        "kind": 5,
+        "importPath": "2_字符串.f-string和r-string的区别",
+        "description": "2_字符串.f-string和r-string的区别",
+        "peekOfCode": "d_str = f\"my name is {name}, I am {age}\"",
+        "detail": "2_字符串.f-string和r-string的区别",
+        "documentation": {}
+    },
+    {
+        "label": "matched_files",
+        "kind": 5,
+        "importPath": "5.5.13_glob",
+        "description": "5.5.13_glob",
+        "peekOfCode": "matched_files = glob.glob(\"./**/*.py*\", recursive=True)\nsorted_files_by_size = sorted(matched_files, key=os.path.getsize)\nprint(sorted_files_by_size)\n# 拼接文件路径\n# os.path.join(base_dir_path, file_name)\n# 删除csv文件\ncsv_files = glob.glob(\"./*.csv\")\nfor csv_file in csv_files:\n    os.remove(csv_file)",
+        "detail": "5.5.13_glob",
+        "documentation": {}
+    },
+    {
+        "label": "sorted_files_by_size",
+        "kind": 5,
+        "importPath": "5.5.13_glob",
+        "description": "5.5.13_glob",
+        "peekOfCode": "sorted_files_by_size = sorted(matched_files, key=os.path.getsize)\nprint(sorted_files_by_size)\n# 拼接文件路径\n# os.path.join(base_dir_path, file_name)\n# 删除csv文件\ncsv_files = glob.glob(\"./*.csv\")\nfor csv_file in csv_files:\n    os.remove(csv_file)",
+        "detail": "5.5.13_glob",
+        "documentation": {}
+    },
+    {
+        "label": "csv_files",
+        "kind": 5,
+        "importPath": "5.5.13_glob",
+        "description": "5.5.13_glob",
+        "peekOfCode": "csv_files = glob.glob(\"./*.csv\")\nfor csv_file in csv_files:\n    os.remove(csv_file)",
+        "detail": "5.5.13_glob",
+        "documentation": {}
+    },
+    {
+        "label": "spam",
+        "kind": 2,
+        "importPath": "7_函数.7.7_减少函数参数",
+        "description": "7_函数.7.7_减少函数参数",
+        "peekOfCode": "def spam(a, b, c, d):\n    print(a, b, c, d)\ns1 = partial(spam, 1) # a = 1\ns2 = partial(spam, c=2)\n# 使用场景\n# 函数因为一些原因添加了参数，调用函数时可以使用partial",
+        "detail": "7_函数.7.7_减少函数参数",
+        "documentation": {}
+    },
+    {
+        "label": "s1",
+        "kind": 5,
+        "importPath": "7_函数.7.7_减少函数参数",
+        "description": "7_函数.7.7_减少函数参数",
+        "peekOfCode": "s1 = partial(spam, 1) # a = 1\ns2 = partial(spam, c=2)\n# 使用场景\n# 函数因为一些原因添加了参数，调用函数时可以使用partial",
+        "detail": "7_函数.7.7_减少函数参数",
+        "documentation": {}
+    },
+    {
+        "label": "s2",
+        "kind": 5,
+        "importPath": "7_函数.7.7_减少函数参数",
+        "description": "7_函数.7.7_减少函数参数",
+        "peekOfCode": "s2 = partial(spam, c=2)\n# 使用场景\n# 函数因为一些原因添加了参数，调用函数时可以使用partial",
+        "detail": "7_函数.7.7_减少函数参数",
+        "documentation": {}
+    },
+    {
+        "label": "avg",
+        "kind": 2,
+        "importPath": "7_函数.函数基本概念",
+        "description": "7_函数.函数基本概念",
+        "peekOfCode": "def avg(first:int, *rest:tuple(int)) -> int: \n    return (first + sum(rest)) / (1 + len(rest))\n# 同时接收任意数量的位置参数和关键字参数\ndef anyargs(*args, **kwargs):\n    print(args)  # A tuple\n    print(kwargs)  # A dict\n# 注意：*args只能作为最后一个位置参数出现，**kwargs只能作为最后一个参数出现\n# *args和**kwargs中间出现的参数只能是关键字参数 === keyword-only\n# 编写只接受关键字参数的寒素\ndef recv(maxsize, *, block):",
+        "detail": "7_函数.函数基本概念",
+        "documentation": {}
+    },
+    {
+        "label": "anyargs",
+        "kind": 2,
+        "importPath": "7_函数.函数基本概念",
+        "description": "7_函数.函数基本概念",
+        "peekOfCode": "def anyargs(*args, **kwargs):\n    print(args)  # A tuple\n    print(kwargs)  # A dict\n# 注意：*args只能作为最后一个位置参数出现，**kwargs只能作为最后一个参数出现\n# *args和**kwargs中间出现的参数只能是关键字参数 === keyword-only\n# 编写只接受关键字参数的寒素\ndef recv(maxsize, *, block):\n    pass\n# 从函数中返回多个值\n# 实际上返回了一个元组",
+        "detail": "7_函数.函数基本概念",
+        "documentation": {}
+    },
+    {
+        "label": "recv",
+        "kind": 2,
+        "importPath": "7_函数.函数基本概念",
+        "description": "7_函数.函数基本概念",
+        "peekOfCode": "def recv(maxsize, *, block):\n    pass\n# 从函数中返回多个值\n# 实际上返回了一个元组\n# 元组是通过逗号组成的，不是圆括号？？？\n# 定义带有默认参数的函数\ndef spam(a, b=42):\n    pass\ndef spam1(a, b=None):\n    # 注意：对默认参数的赋值只会在函数定义的时候绑定一次",
+        "detail": "7_函数.函数基本概念",
+        "documentation": {}
+    },
+    {
+        "label": "spam",
+        "kind": 2,
+        "importPath": "7_函数.函数基本概念",
+        "description": "7_函数.函数基本概念",
+        "peekOfCode": "def spam(a, b=42):\n    pass\ndef spam1(a, b=None):\n    # 注意：对默认参数的赋值只会在函数定义的时候绑定一次\n    # 默认参数赋值绝对不要用引用类型\n    if b is None:\n        b = []",
+        "detail": "7_函数.函数基本概念",
+        "documentation": {}
+    },
+    {
+        "label": "spam1",
+        "kind": 2,
+        "importPath": "7_函数.函数基本概念",
+        "description": "7_函数.函数基本概念",
+        "peekOfCode": "def spam1(a, b=None):\n    # 注意：对默认参数的赋值只会在函数定义的时候绑定一次\n    # 默认参数赋值绝对不要用引用类型\n    if b is None:\n        b = []",
+        "detail": "7_函数.函数基本概念",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "python_obj",
+        "description": "python_obj",
+        "peekOfCode": "class Person():\n    # 类属性：定义在__init__外的变量\n    cls_attr = \"类属性\"\n    def __init__(self, name):\n        # 实例属性\n        self.name = name\n    # 实例方法\n    def self_func(self):\n        # 如果方法中并未使用类属性，其实使用静态方法更合适\n        print(\"self func\")",
+        "detail": "python_obj",
+        "documentation": {}
+    }
+]

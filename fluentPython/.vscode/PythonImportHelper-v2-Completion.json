@@ -1,0 +1,187 @@
+[
+    {
+        "label": "array",
+        "importPath": "array",
+        "description": "array",
+        "isExtraImport": true,
+        "detail": "array",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "choice",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "collections",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "collections",
+        "description": "collections",
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "hypot",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "数据结构.字典和集合.dict",
+        "description": "数据结构.字典和集合.dict",
+        "peekOfCode": "a = dict(one=1, two=2, three=3)\nb = {'one': 1, 'two': 2, 'three': 3}\nc = dict(zip(['one', 'two', 'three'], [1, 2, 3])) # zip接受多个可迭代对象，输出一系列元组\nd = dict([('two', 2), ('three',3), ('one', 1)])\ne = dict({'three': 3, 'one': 1, 'two': 2})\na == b == c == d == e\n# 字典推导\nDIAL_CODES = [\n    (91, 'India'),\n    (1, 'Uniteed States')",
+        "detail": "数据结构.字典和集合.dict",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "数据结构.字典和集合.dict",
+        "description": "数据结构.字典和集合.dict",
+        "peekOfCode": "b = {'one': 1, 'two': 2, 'three': 3}\nc = dict(zip(['one', 'two', 'three'], [1, 2, 3])) # zip接受多个可迭代对象，输出一系列元组\nd = dict([('two', 2), ('three',3), ('one', 1)])\ne = dict({'three': 3, 'one': 1, 'two': 2})\na == b == c == d == e\n# 字典推导\nDIAL_CODES = [\n    (91, 'India'),\n    (1, 'Uniteed States')\n]",
+        "detail": "数据结构.字典和集合.dict",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "数据结构.字典和集合.dict",
+        "description": "数据结构.字典和集合.dict",
+        "peekOfCode": "c = dict(zip(['one', 'two', 'three'], [1, 2, 3])) # zip接受多个可迭代对象，输出一系列元组\nd = dict([('two', 2), ('three',3), ('one', 1)])\ne = dict({'three': 3, 'one': 1, 'two': 2})\na == b == c == d == e\n# 字典推导\nDIAL_CODES = [\n    (91, 'India'),\n    (1, 'Uniteed States')\n]\ncountry_code = { country: code for code, country in DIAL_CODES}",
+        "detail": "数据结构.字典和集合.dict",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "数据结构.字典和集合.dict",
+        "description": "数据结构.字典和集合.dict",
+        "peekOfCode": "d = dict([('two', 2), ('three',3), ('one', 1)])\ne = dict({'three': 3, 'one': 1, 'two': 2})\na == b == c == d == e\n# 字典推导\nDIAL_CODES = [\n    (91, 'India'),\n    (1, 'Uniteed States')\n]\ncountry_code = { country: code for code, country in DIAL_CODES}\n# d.clear()",
+        "detail": "数据结构.字典和集合.dict",
+        "documentation": {}
+    },
+    {
+        "label": "e",
+        "kind": 5,
+        "importPath": "数据结构.字典和集合.dict",
+        "description": "数据结构.字典和集合.dict",
+        "peekOfCode": "e = dict({'three': 3, 'one': 1, 'two': 2})\na == b == c == d == e\n# 字典推导\nDIAL_CODES = [\n    (91, 'India'),\n    (1, 'Uniteed States')\n]\ncountry_code = { country: code for code, country in DIAL_CODES}\n# d.clear()\n# del d[k]",
+        "detail": "数据结构.字典和集合.dict",
+        "documentation": {}
+    },
+    {
+        "label": "DIAL_CODES",
+        "kind": 5,
+        "importPath": "数据结构.字典和集合.dict",
+        "description": "数据结构.字典和集合.dict",
+        "peekOfCode": "DIAL_CODES = [\n    (91, 'India'),\n    (1, 'Uniteed States')\n]\ncountry_code = { country: code for code, country in DIAL_CODES}\n# d.clear()\n# del d[k]\n### 如何处理查不到的键\n### 标准库中dict类型的变种\n### set和frozenset",
+        "detail": "数据结构.字典和集合.dict",
+        "documentation": {}
+    },
+    {
+        "label": "country_code",
+        "kind": 5,
+        "importPath": "数据结构.字典和集合.dict",
+        "description": "数据结构.字典和集合.dict",
+        "peekOfCode": "country_code = { country: code for code, country in DIAL_CODES}\n# d.clear()\n# del d[k]\n### 如何处理查不到的键\n### 标准库中dict类型的变种\n### set和frozenset\n### 散列表的工作原理\n###",
+        "detail": "数据结构.字典和集合.dict",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "数据结构.序列构成的数组.sequence",
+        "description": "数据结构.序列构成的数组.sequence",
+        "peekOfCode": "t = (1,2,[3,4])\n# 可以修改内容，但不能有赋值操作\nt[2].append(5)\n# 将s[a]的值存入TOS\n# 计算TOS += b，因为TOS指向一个可变对象，因此可以完成\n# s[a] = TOS，因为s是元组，这一操作会报错\nt[2] += [6,7]\n### 排序\n# list.sort: 就地排序，python惯例会返回None\n# sorted: 新建一个列表作为返回值",
+        "detail": "数据结构.序列构成的数组.sequence",
+        "documentation": {}
+    },
+    {
+        "label": "IntArray",
+        "kind": 5,
+        "importPath": "数据结构.序列构成的数组.sequence",
+        "description": "数据结构.序列构成的数组.sequence",
+        "peekOfCode": "IntArray = array('i', (random() for i in range(100)))\n# 二进制数据\n# bytearry\n# 内存视图\n# memoryview\n# 高阶数组和矩阵\n# numpy\n# scipy\n# 双向队列\n# collections.deque",
+        "detail": "数据结构.序列构成的数组.sequence",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "数据结构.文本和字节序列.text",
+        "description": "数据结构.文本和字节序列.text",
+        "peekOfCode": "a = 'abcd'\nb = a.encode('utf-8')\n# 解码\nb.decode('utf-8')\n# bytes\n# 从字符串创建二进制序列类型\ncafe = bytes('cafe', encoding='utf-8')\n# 如何找出字节序列的编码规则？\n# 必须有人来告诉你",
+        "detail": "数据结构.文本和字节序列.text",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "数据结构.文本和字节序列.text",
+        "description": "数据结构.文本和字节序列.text",
+        "peekOfCode": "b = a.encode('utf-8')\n# 解码\nb.decode('utf-8')\n# bytes\n# 从字符串创建二进制序列类型\ncafe = bytes('cafe', encoding='utf-8')\n# 如何找出字节序列的编码规则？\n# 必须有人来告诉你",
+        "detail": "数据结构.文本和字节序列.text",
+        "documentation": {}
+    },
+    {
+        "label": "cafe",
+        "kind": 5,
+        "importPath": "数据结构.文本和字节序列.text",
+        "description": "数据结构.文本和字节序列.text",
+        "peekOfCode": "cafe = bytes('cafe', encoding='utf-8')\n# 如何找出字节序列的编码规则？\n# 必须有人来告诉你",
+        "detail": "数据结构.文本和字节序列.text",
+        "documentation": {}
+    },
+    {
+        "label": "FrenchDeck",
+        "kind": 6,
+        "importPath": "namedtuple",
+        "description": "namedtuple",
+        "peekOfCode": "class FrenchDeck:\n    # 使用list()函数\n    ranks = [ str(n) for n in range(2,11)] + list(\"JQKA\")\n    suits = \"spades diamonds clubs hearts\".split()\n    def __init__(self) -> None:\n        self._cards = [Card(rank, suit) for rank in self.ranks\n                                        for suit in self.suits]\n    def __len__(self) -> int:\n        return len(self._cards)\n    def __getitem__(self, postion: int) -> Card:",
+        "detail": "namedtuple",
+        "documentation": {}
+    },
+    {
+        "label": "Card",
+        "kind": 5,
+        "importPath": "namedtuple",
+        "description": "namedtuple",
+        "peekOfCode": "Card = collections.namedtuple(\"Card\", [\"rank\", \"suit\"])\nclass FrenchDeck:\n    # 使用list()函数\n    ranks = [ str(n) for n in range(2,11)] + list(\"JQKA\")\n    suits = \"spades diamonds clubs hearts\".split()\n    def __init__(self) -> None:\n        self._cards = [Card(rank, suit) for rank in self.ranks\n                                        for suit in self.suits]\n    def __len__(self) -> int:\n        return len(self._cards)",
+        "detail": "namedtuple",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "python_class",
+        "description": "python_class",
+        "peekOfCode": "class Person():\n    # 类属性：定义在__init__外的变量\n    cls_attr = \"类属性\"\n    def __init__(self, name):\n        # 实例属性\n        self.name = name\n    # 实例方法\n    def self_func(self):\n        # 如果方法中并未使用类属性，其实使用静态方法更合适\n        print(\"self func\")",
+        "detail": "python_class",
+        "documentation": {}
+    },
+    {
+        "label": "Vector",
+        "kind": 6,
+        "importPath": "vector",
+        "description": "vector",
+        "peekOfCode": "class Vector:\n    def __init__(self, x=0, y=0) -> None:\n        self.x = x\n        self.y = y\n    def __repr__(self) -> str:\n        return 'Vector(%r %r)' % (self.x, self.y)\n    def __abs__(self):\n        return hypot(self.x, self.y)\n    def __bool__(self):\n        # self.__abs__()",
+        "detail": "vector",
+        "documentation": {}
+    }
+]

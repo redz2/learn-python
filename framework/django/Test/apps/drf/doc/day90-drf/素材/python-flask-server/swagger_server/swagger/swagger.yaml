@@ -1,0 +1,1150 @@
+---
+swagger: "2.0"
+info:
+  description: "项目描述"
+  version: "1.1.1"
+  title: "项目名"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "649641514@qq.com"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "api.fuguang.com"
+basePath: "/api"
+tags:
+- name: "User"
+  description: "用户信息表"
+- name: "Archives"
+  description: "就诊档案表"
+- name: "MedicalRecords"
+  description: "就诊记录表"
+- name: "TestRecord"
+  description: "测试记录表"
+schemes:
+- "http"
+- "https"
+- "ws"
+- "wss"
+paths:
+  /user:
+    get:
+      tags:
+      - "User"
+      summary: "用户列表接口"
+      description: "获取所有用户列表"
+      operationId: "user_get"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "name"
+        in: "header"
+        required: true
+        type: "string"
+      - name: "token"
+        in: "header"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+              count:
+                type: "integer"
+                description: "总数据量"
+              next:
+                type: "string"
+                description: "是否有下一页"
+              pervious:
+                type: "string"
+                description: "是否有上一页"
+              result:
+                type: "array"
+                items:
+                  $ref: "#/definitions/User"
+        "404":
+          description: "请求失败"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+      x-swagger-router-controller: "swagger_server.controllers.user_controller"
+    post:
+      tags:
+      - "User"
+      summary: "新建用户"
+      description: "新建用户"
+      operationId: "user_post"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        required: true
+        schema:
+          required:
+          - "department"
+          - "name"
+          - "password"
+          - "username"
+          properties:
+            username:
+              type: "string"
+              description: "账号"
+            password:
+              type: "string"
+              description: "密码"
+            name:
+              type: "string"
+              description: "姓名"
+            department:
+              type: "string"
+              description: "科室"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+              result:
+                $ref: "#/definitions/User"
+      x-swagger-router-controller: "swagger_server.controllers.user_controller"
+  /user/{id}:
+    get:
+      tags:
+      - "User"
+      summary: "查询用户"
+      description: "通过id查询用户信息"
+      operationId: "user_id_get"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      - name: "Authorization"
+        in: "header"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+              result:
+                $ref: "#/definitions/User"
+      x-swagger-router-controller: "swagger_server.controllers.user_controller"
+    put:
+      tags:
+      - "User"
+      summary: "修改用户"
+      description: "通过id修改用户信息"
+      operationId: "user_id_put"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      - name: "Authorization"
+        in: "header"
+        required: true
+        type: "string"
+      - in: "body"
+        name: "body"
+        required: false
+        schema:
+          properties:
+            name:
+              type: "string"
+            department:
+              type: "string"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+      x-swagger-router-controller: "swagger_server.controllers.user_controller"
+    delete:
+      tags:
+      - "User"
+      summary: "删除用户"
+      description: "通过id删除用户"
+      operationId: "user_id_delete"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      - name: "Authorization"
+        in: "header"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+      x-swagger-router-controller: "swagger_server.controllers.user_controller"
+  /user/login:
+    post:
+      tags:
+      - "User"
+      summary: "用户登录"
+      description: "用户登录"
+      operationId: "user_login_post"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        required: true
+        schema:
+          properties:
+            username:
+              type: "string"
+            password:
+              type: "string"
+      responses:
+        "200":
+          description: "登录成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+              token:
+                type: "string"
+      x-swagger-router-controller: "swagger_server.controllers.user_controller"
+  /user/change_pwd:
+    put:
+      tags:
+      - "User"
+      summary: "修改账号密码"
+      description: "修改账号密码"
+      operationId: "user_change_pwd_put"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "Authorization"
+        in: "header"
+        required: true
+        type: "string"
+      - in: "body"
+        name: "body"
+        required: false
+        schema:
+          required:
+          - "new_password"
+          - "old_password"
+          - "username"
+          properties:
+            username:
+              type: "string"
+            old_password:
+              type: "string"
+            new_password:
+              type: "string"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+              token:
+                type: "string"
+      x-swagger-router-controller: "swagger_server.controllers.user_controller"
+  /user/change_active:
+    put:
+      tags:
+      - "User"
+      summary: "修改账号状态"
+      description: "修改账号状态"
+      operationId: "user_change_active_put"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "Authorization"
+        in: "header"
+        required: true
+        type: "string"
+      - in: "body"
+        name: "body"
+        required: false
+        schema:
+          required:
+          - "is_active"
+          - "username"
+          properties:
+            username:
+              type: "string"
+            is_active:
+              type: "boolean"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+      x-swagger-router-controller: "swagger_server.controllers.user_controller"
+  /archives:
+    get:
+      tags:
+      - "Archives"
+      summary: "档案列表"
+      description: "档案列表"
+      operationId: "archives_get"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "Authorization"
+        in: "header"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+              count:
+                type: "integer"
+                description: "总数据量"
+              next:
+                type: "string"
+                description: "是否有下一页"
+              pervious:
+                type: "string"
+                description: "是否有上一页"
+              result:
+                type: "array"
+                items:
+                  $ref: "#/definitions/Archives"
+      x-swagger-router-controller: "swagger_server.controllers.archives_controller"
+    post:
+      tags:
+      - "Archives"
+      summary: "新建档案"
+      description: "新建档案"
+      operationId: "archives_post"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "Authorization"
+        in: "header"
+        required: true
+        type: "string"
+      - in: "body"
+        name: "body"
+        required: true
+        schema:
+          required:
+          - "birthday"
+          - "creatorID"
+          - "fatherHeight"
+          - "gender"
+          - "menarche"
+          - "motherHeight"
+          - "name"
+          properties:
+            "No":
+              type: "integer"
+              description: "档案编号"
+            name:
+              type: "integer"
+              description: "姓名"
+            gender:
+              type: "integer"
+              description: "0-男 1-女 如果为1 会额外多 menarche和menarcheTime 两个字段"
+            birthday:
+              type: "string"
+              description: "出生日期"
+            fatherHeight:
+              type: "number"
+              description: "父亲身高"
+            motherHeight:
+              type: "number"
+              description: "母亲身高"
+            contacts:
+              type: "string"
+              description: "联系人"
+            phoneNum:
+              type: "string"
+              description: "手机号码"
+            address:
+              type: "string"
+              description: "联系地址"
+            menarche:
+              type: "integer"
+              description: "是否初潮 0-无信息 1-否 2-是"
+            menarcheTime:
+              type: "string"
+              description: "初潮时间"
+            creatorID:
+              type: "object"
+              description: "该档案关联的医生信息"
+              properties:
+                id:
+                  type: "integer"
+                name:
+                  type: "string"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+              result:
+                $ref: "#/definitions/Archives"
+      x-swagger-router-controller: "swagger_server.controllers.archives_controller"
+  /archives/{id}:
+    get:
+      tags:
+      - "Archives"
+      summary: "查询用户档案"
+      description: "查询用户档案"
+      operationId: "archives_id_get"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "Authorization"
+        in: "header"
+        required: true
+        type: "string"
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+              result:
+                $ref: "#/definitions/Archives"
+      x-swagger-router-controller: "swagger_server.controllers.archives_controller"
+    put:
+      tags:
+      - "Archives"
+      summary: "修改档案信息"
+      description: "通过id修改档案信息息"
+      operationId: "archives_id_put"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "Authorization"
+        in: "header"
+        required: true
+        type: "string"
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      - in: "body"
+        name: "body"
+        required: false
+        schema:
+          properties:
+            "No":
+              type: "integer"
+              description: "档案编号"
+            name:
+              type: "integer"
+              description: "姓名"
+            gender:
+              type: "integer"
+              description: "0-男 1-女 如果为1 会额外多 menarche和menarcheTime 两个字段"
+            birthday:
+              type: "string"
+              description: "出生日期"
+            fatherHeight:
+              type: "number"
+              description: "父亲身高"
+            motherHeight:
+              type: "number"
+              description: "母亲身高"
+            contacts:
+              type: "string"
+              description: "联系人"
+            phoneNum:
+              type: "string"
+              description: "手机号码"
+            address:
+              type: "string"
+              description: "联系地址"
+            establishTime:
+              type: "string"
+              description: "建档时间"
+            menarche:
+              type: "integer"
+              description: "是否初潮 0-无信息 1-否 2-是"
+            menarcheTime:
+              type: "string"
+              description: "初潮时间"
+            creatorID:
+              type: "object"
+              description: "该档案关联的医生信息"
+              properties:
+                id:
+                  type: "integer"
+                name:
+                  type: "string"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+      x-swagger-router-controller: "swagger_server.controllers.archives_controller"
+    delete:
+      tags:
+      - "Archives"
+      summary: "删除档案"
+      description: "通过id删除档案"
+      operationId: "archives_id_delete"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "Authorization"
+        in: "header"
+        required: true
+        type: "string"
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+      x-swagger-router-controller: "swagger_server.controllers.archives_controller"
+  /medical_records:
+    get:
+      tags:
+      - "MedicalRecords"
+      summary: "就诊记录列表"
+      description: "就诊记录列表"
+      operationId: "medical_records_get"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "Authorization"
+        in: "header"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+              count:
+                type: "integer"
+                description: "总数据量"
+              next:
+                type: "string"
+                description: "是否有下一页"
+              pervious:
+                type: "string"
+                description: "是否有上一页"
+              result:
+                type: "array"
+                items:
+                  $ref: "#/definitions/MedicalRecords"
+      x-swagger-router-controller: "swagger_server.controllers.medical_records_controller"
+    post:
+      tags:
+      - "MedicalRecords"
+      summary: "新建就诊记录"
+      description: "新建就诊记录"
+      operationId: "medical_records_post"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "Authorization"
+        in: "header"
+        required: true
+        type: "string"
+      - in: "body"
+        name: "body"
+        required: false
+        schema:
+          required:
+          - "height"
+          - "menarche"
+          - "weight"
+          properties:
+            "No":
+              type: "string"
+              description: "档案编号"
+            height:
+              type: "number"
+              description: "就诊身高"
+            weight:
+              type: "number"
+              description: "就诊体重"
+            menarche:
+              type: "integer"
+              description: "是否初潮 0-无信息 1-否 2-是"
+            menarcheTime:
+              type: "string"
+              description: "初潮时间"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+              result:
+                $ref: "#/definitions/MedicalRecords"
+      x-swagger-router-controller: "swagger_server.controllers.medical_records_controller"
+  /medical_records/{id}:
+    get:
+      tags:
+      - "MedicalRecords"
+      summary: "就诊详情"
+      description: "就诊详情"
+      operationId: "medical_records_id_get"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "Authorization"
+        in: "header"
+        required: true
+        type: "string"
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+              result:
+                $ref: "#/definitions/MedicalRecords"
+      x-swagger-router-controller: "swagger_server.controllers.medical_records_controller"
+    delete:
+      tags:
+      - "MedicalRecords"
+      summary: "删除就诊记录"
+      description: "删除就诊记录"
+      operationId: "medical_records_id_delete"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "Authorization"
+        in: "header"
+        required: true
+        type: "string"
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+      x-swagger-router-controller: "swagger_server.controllers.medical_records_controller"
+  /testrecord:
+    get:
+      tags:
+      - "TestRecord"
+      summary: "测试记录列表"
+      description: "测试记录列表"
+      operationId: "testrecord_get"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "Authorization"
+        in: "header"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+              count:
+                type: "integer"
+                description: "总数据量"
+              next:
+                type: "string"
+                description: "是否有下一页"
+              pervious:
+                type: "string"
+                description: "是否有上一页"
+              result:
+                type: "array"
+                items:
+                  $ref: "#/definitions/TestRecord"
+      x-swagger-router-controller: "swagger_server.controllers.test_record_controller"
+  /testrecord/{id}:
+    get:
+      tags:
+      - "TestRecord"
+      summary: "查询测试详情"
+      description: "查询测试详情"
+      operationId: "testrecord_id_get"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      - name: "Authorization"
+        in: "header"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+              result:
+                $ref: "#/definitions/TestRecord"
+      x-swagger-router-controller: "swagger_server.controllers.test_record_controller"
+    delete:
+      tags:
+      - "TestRecord"
+      summary: "删除测试记录"
+      description: "删除测试记录"
+      operationId: "testrecord_id_delete"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      - name: "Authorization"
+        in: "header"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "请求成功"
+          schema:
+            properties:
+              code:
+                type: "integer"
+                description: "响应状态码"
+              message:
+                type: "string"
+                description: "描述信息"
+      x-swagger-router-controller: "swagger_server.controllers.test_record_controller"
+securityDefinitions:
+  petstore_auth:
+    type: "oauth2"
+    authorizationUrl: "http://petstore.swagger.io/oauth/dialog"
+    flow: "implicit"
+    scopes:
+      write:pets: "modify pets in your account"
+      read:pets: "read your pets"
+    x-tokenInfoFunc: "swagger_server.controllers.authorization_controller.check_petstore_auth"
+    x-scopeValidateFunc: "swagger_server.controllers.authorization_controller.validate_scope_petstore_auth"
+  api_key:
+    type: "apiKey"
+    name: "api_key"
+    in: "header"
+    x-apikeyInfoFunc: "swagger_server.controllers.authorization_controller.check_api_key"
+definitions:
+  User:
+    type: "object"
+    required:
+    - "department"
+    - "name"
+    - "password"
+    - "username"
+    properties:
+      id:
+        type: "integer"
+        description: "用户ID"
+      username:
+        type: "string"
+        description: "账号"
+      password:
+        type: "string"
+        description: "密码"
+      name:
+        type: "string"
+        description: "姓名"
+      department:
+        type: "string"
+        description: "科室"
+      is_active:
+        type: "boolean"
+        description: "用户状态 true-为启用 false-为禁用"
+    xml:
+      name: "User"
+    description: "用户表"
+  Archives:
+    type: "object"
+    required:
+    - "birthday"
+    - "creatorID"
+    - "establishTime"
+    - "fatherHeight"
+    - "gender"
+    - "menarche"
+    - "motherHeight"
+    - "name"
+    properties:
+      id:
+        type: "integer"
+        description: "档案ID"
+      "No":
+        type: "integer"
+        description: "档案编号"
+      name:
+        type: "integer"
+        description: "姓名"
+      gender:
+        type: "integer"
+        description: "0-男 1-女 如果为1 会额外多 menarche和menarcheTime 两个字段"
+      birthday:
+        type: "string"
+        description: "出生日期"
+      fatherHeight:
+        type: "number"
+        description: "父亲身高"
+      motherHeight:
+        type: "number"
+        description: "母亲身高"
+      contacts:
+        type: "string"
+        description: "联系人"
+      phoneNum:
+        type: "string"
+        description: "手机号码"
+      address:
+        type: "string"
+        description: "联系地址"
+      establishTime:
+        type: "string"
+        description: "建档时间"
+      menarche:
+        type: "integer"
+        description: "是否初潮 0-无信息 1-否 2-是"
+      menarcheTime:
+        type: "string"
+        description: "初潮时间"
+      creatorID:
+        type: "object"
+        description: "该档案关联的医生信息"
+        properties:
+          id:
+            type: "integer"
+          name:
+            type: "string"
+    xml:
+      name: "Archives"
+    description: "就诊档案表"
+  MedicalRecords:
+    type: "object"
+    required:
+    - "boneage"
+    - "height"
+    - "heightReport"
+    - "visitTime"
+    - "weight"
+    - "weightReport"
+    properties:
+      id:
+        type: "integer"
+        description: "就诊id"
+      visitTime:
+        type: "string"
+        description: "就诊时间"
+      height:
+        type: "number"
+        description: "就诊身高"
+      weight:
+        type: "number"
+        description: "就诊体重"
+      heightReport:
+        type: "string"
+        description: "身高报告 json数据"
+      weightReport:
+        type: "string"
+        description: "BMI报告 json数据"
+      has_boneage_info:
+        type: "boolean"
+        description: "是否有骨龄信息 true-有 false-无"
+      boneage:
+        type: "object"
+        description: "骨龄信息id,管理就诊人的骨龄信息"
+        properties:
+          id:
+            type: "integer"
+            description: "骨龄信息ID"
+          means:
+            type: "string"
+            description: "检测方法"
+          source:
+            type: "string"
+            description: "X光片来源"
+          sourceDepartment:
+            type: "string"
+            description: "来源科室"
+          sourcePerson:
+            type: "string"
+            description: "来源人"
+          X_ray:
+            type: "string"
+            description: "X光片"
+          boneageData:
+            type: "string"
+            description: "骨龄数据"
+          boneageReport:
+            type: "string"
+            description: "骨龄报告"
+      archive:
+        type: "object"
+        description: "档案id,关联就诊人的档案信息"
+        properties:
+          id:
+            type: "integer"
+            description: "档案ID"
+          "No":
+            type: "integer"
+            description: "档案编号"
+          name:
+            type: "integer"
+            description: "姓名"
+          gender:
+            type: "integer"
+            description: "0-男 1-女 如果为1 会额外多 menarche和menarcheTime 两个字段"
+          birthday:
+            type: "string"
+            description: "出生日期"
+          fatherHeight:
+            type: "number"
+            description: "父亲身高"
+          motherHeight:
+            type: "number"
+            description: "母亲身高"
+          contacts:
+            type: "string"
+            description: "联系人"
+          phoneNum:
+            type: "string"
+            description: "手机号码"
+          address:
+            type: "string"
+            description: "联系地址"
+          establishTime:
+            type: "string"
+            description: "建档时间"
+          menarche:
+            type: "integer"
+            description: "是否初潮 0-无信息 1-否 2-是"
+          menarcheTime:
+            type: "string"
+            description: "初潮时间"
+          creatorID:
+            type: "object"
+            description: "该档案关联的医生信息"
+            properties:
+              id:
+                type: "integer"
+              name:
+                type: "string"
+    xml:
+      name: "MedicalRecords"
+    description: "就诊记录表"
+  BoneAge:
+    type: "object"
+    required:
+    - "X_ray"
+    - "boneageData"
+    - "boneageReport"
+    - "means"
+    - "source"
+    properties:
+      id:
+        type: "integer"
+        description: "骨龄信息ID"
+      means:
+        type: "string"
+        description: "检测方法"
+      source:
+        type: "string"
+        description: "X光片来源"
+      sourceDepartment:
+        type: "string"
+        description: "来源科室"
+      sourcePerson:
+        type: "string"
+        description: "来源人"
+      X_ray:
+        type: "string"
+        description: "X光片"
+      boneageData:
+        type: "string"
+        description: "骨龄数据"
+      boneageReport:
+        type: "string"
+        description: "骨龄报告"
+    xml:
+      name: "BoneAge"
+    description: "骨龄信息表"
+  TestRecord:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        description: "测试ID"
+      testTime:
+        type: "string"
+        description: "测试时间"
+      teststatus:
+        type: "boolean"
+        description: "0-未完成 1-已完成"
+      testAmount:
+        type: "integer"
+        description: "读片数量"
+      testMeans:
+        type: "string"
+        description: "读片方法"
+      testEnding:
+        type: "string"
+        description: "单个读片结果"
+      acc:
+        type: "number"
+        description: "正确率"
+      testPersonID:
+        type: "object"
+        description: "测试人id,关联用户表"
+        properties:
+          id:
+            type: "integer"
+          name:
+            type: "string"
+    xml:
+      name: "TestRecord"
+    description: "测试记录表"
+  ApiResponse:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+      type:
+        type: "string"
+      message:
+        type: "string"
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"

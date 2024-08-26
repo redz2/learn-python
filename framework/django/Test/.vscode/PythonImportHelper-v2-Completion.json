@@ -1,0 +1,3135 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "pymysql",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pymysql",
+        "description": "pymysql",
+        "detail": "pymysql",
+        "documentation": {}
+    },
+    {
+        "label": "django.urls",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "re_path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "re_path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "re_path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "apps.api",
+        "description": "apps.api",
+        "isExtraImport": true,
+        "detail": "apps.api",
+        "documentation": {}
+    },
+    {
+        "label": "urls",
+        "importPath": "apps.api",
+        "description": "apps.api",
+        "isExtraImport": true,
+        "detail": "apps.api",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "apps.api",
+        "description": "apps.api",
+        "isExtraImport": true,
+        "detail": "apps.api",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "apps.api",
+        "description": "apps.api",
+        "isExtraImport": true,
+        "detail": "apps.api",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "importPath": "django.views",
+        "description": "django.views",
+        "isExtraImport": true,
+        "detail": "django.views",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "importPath": "django.views",
+        "description": "django.views",
+        "isExtraImport": true,
+        "detail": "django.views",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "importPath": "django.views",
+        "description": "django.views",
+        "isExtraImport": true,
+        "detail": "django.views",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "importPath": "django.views",
+        "description": "django.views",
+        "isExtraImport": true,
+        "detail": "django.views",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "six",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "six",
+        "description": "six",
+        "detail": "six",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "six",
+        "description": "six",
+        "isExtraImport": true,
+        "detail": "six",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "six",
+        "description": "six",
+        "isExtraImport": true,
+        "detail": "six",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "six",
+        "description": "six",
+        "isExtraImport": true,
+        "detail": "six",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "six",
+        "description": "six",
+        "isExtraImport": true,
+        "detail": "six",
+        "documentation": {}
+    },
+    {
+        "label": "ApiClient",
+        "importPath": "swagger_client.api_client",
+        "description": "swagger_client.api_client",
+        "isExtraImport": true,
+        "detail": "swagger_client.api_client",
+        "documentation": {}
+    },
+    {
+        "label": "ApiClient",
+        "importPath": "swagger_client.api_client",
+        "description": "swagger_client.api_client",
+        "isExtraImport": true,
+        "detail": "swagger_client.api_client",
+        "documentation": {}
+    },
+    {
+        "label": "ApiClient",
+        "importPath": "swagger_client.api_client",
+        "description": "swagger_client.api_client",
+        "isExtraImport": true,
+        "detail": "swagger_client.api_client",
+        "documentation": {}
+    },
+    {
+        "label": "ApiClient",
+        "importPath": "swagger_client.api_client",
+        "description": "swagger_client.api_client",
+        "isExtraImport": true,
+        "detail": "swagger_client.api_client",
+        "documentation": {}
+    },
+    {
+        "label": "pprint",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pprint",
+        "description": "pprint",
+        "detail": "pprint",
+        "documentation": {}
+    },
+    {
+        "label": "Configuration",
+        "importPath": "swagger_client.configuration",
+        "description": "swagger_client.configuration",
+        "isExtraImport": true,
+        "detail": "swagger_client.configuration",
+        "documentation": {}
+    },
+    {
+        "label": "Configuration",
+        "importPath": "swagger_client.configuration",
+        "description": "swagger_client.configuration",
+        "isExtraImport": true,
+        "detail": "swagger_client.configuration",
+        "documentation": {}
+    },
+    {
+        "label": "Configuration",
+        "importPath": "swagger_client.configuration",
+        "description": "swagger_client.configuration",
+        "isExtraImport": true,
+        "detail": "swagger_client.configuration",
+        "documentation": {}
+    },
+    {
+        "label": "Configuration",
+        "importPath": "swagger_client.configuration",
+        "description": "swagger_client.configuration",
+        "isExtraImport": true,
+        "detail": "swagger_client.configuration",
+        "documentation": {}
+    },
+    {
+        "label": "Configuration",
+        "importPath": "swagger_client.configuration",
+        "description": "swagger_client.configuration",
+        "isExtraImport": true,
+        "detail": "swagger_client.configuration",
+        "documentation": {}
+    },
+    {
+        "label": "Configuration",
+        "importPath": "swagger_client.configuration",
+        "description": "swagger_client.configuration",
+        "isExtraImport": true,
+        "detail": "swagger_client.configuration",
+        "documentation": {}
+    },
+    {
+        "label": "Configuration",
+        "importPath": "swagger_client.configuration",
+        "description": "swagger_client.configuration",
+        "isExtraImport": true,
+        "detail": "swagger_client.configuration",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "mimetypes",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mimetypes",
+        "description": "mimetypes",
+        "detail": "mimetypes",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPool",
+        "importPath": "multiprocessing.pool",
+        "description": "multiprocessing.pool",
+        "isExtraImport": true,
+        "detail": "multiprocessing.pool",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "quote",
+        "importPath": "six.moves.urllib.parse",
+        "description": "six.moves.urllib.parse",
+        "isExtraImport": true,
+        "detail": "six.moves.urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "urlencode",
+        "importPath": "six.moves.urllib.parse",
+        "description": "six.moves.urllib.parse",
+        "isExtraImport": true,
+        "detail": "six.moves.urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "swagger_client.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "swagger_client.models",
+        "description": "swagger_client.models",
+        "detail": "swagger_client.models",
+        "documentation": {}
+    },
+    {
+        "label": "swagger_client",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "swagger_client",
+        "description": "swagger_client",
+        "detail": "swagger_client",
+        "documentation": {}
+    },
+    {
+        "label": "rest",
+        "importPath": "swagger_client",
+        "description": "swagger_client",
+        "isExtraImport": true,
+        "detail": "swagger_client",
+        "documentation": {}
+    },
+    {
+        "label": "copy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "copy",
+        "description": "copy",
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "multiprocessing",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "urllib3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urllib3",
+        "description": "urllib3",
+        "detail": "urllib3",
+        "documentation": {}
+    },
+    {
+        "label": "http_client",
+        "importPath": "six.moves",
+        "description": "six.moves",
+        "isExtraImport": true,
+        "detail": "six.moves",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "ssl",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "ssl",
+        "description": "ssl",
+        "detail": "ssl",
+        "documentation": {}
+    },
+    {
+        "label": "certifi",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "certifi",
+        "description": "certifi",
+        "detail": "certifi",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "ApiResponse",
+        "importPath": "swagger_client.models.api_response",
+        "description": "swagger_client.models.api_response",
+        "isExtraImport": true,
+        "detail": "swagger_client.models.api_response",
+        "documentation": {}
+    },
+    {
+        "label": "ApiException",
+        "importPath": "swagger_client.rest",
+        "description": "swagger_client.rest",
+        "isExtraImport": true,
+        "detail": "swagger_client.rest",
+        "documentation": {}
+    },
+    {
+        "label": "ApiException",
+        "importPath": "swagger_client.rest",
+        "description": "swagger_client.rest",
+        "isExtraImport": true,
+        "detail": "swagger_client.rest",
+        "documentation": {}
+    },
+    {
+        "label": "ApiException",
+        "importPath": "swagger_client.rest",
+        "description": "swagger_client.rest",
+        "isExtraImport": true,
+        "detail": "swagger_client.rest",
+        "documentation": {}
+    },
+    {
+        "label": "ApiException",
+        "importPath": "swagger_client.rest",
+        "description": "swagger_client.rest",
+        "isExtraImport": true,
+        "detail": "swagger_client.rest",
+        "documentation": {}
+    },
+    {
+        "label": "ApiException",
+        "importPath": "swagger_client.rest",
+        "description": "swagger_client.rest",
+        "isExtraImport": true,
+        "detail": "swagger_client.rest",
+        "documentation": {}
+    },
+    {
+        "label": "ApiException",
+        "importPath": "swagger_client.rest",
+        "description": "swagger_client.rest",
+        "isExtraImport": true,
+        "detail": "swagger_client.rest",
+        "documentation": {}
+    },
+    {
+        "label": "ApiException",
+        "importPath": "swagger_client.rest",
+        "description": "swagger_client.rest",
+        "isExtraImport": true,
+        "detail": "swagger_client.rest",
+        "documentation": {}
+    },
+    {
+        "label": "ApiException",
+        "importPath": "swagger_client.rest",
+        "description": "swagger_client.rest",
+        "isExtraImport": true,
+        "detail": "swagger_client.rest",
+        "documentation": {}
+    },
+    {
+        "label": "ApiException",
+        "importPath": "swagger_client.rest",
+        "description": "swagger_client.rest",
+        "isExtraImport": true,
+        "detail": "swagger_client.rest",
+        "documentation": {}
+    },
+    {
+        "label": "ApiException",
+        "importPath": "swagger_client.rest",
+        "description": "swagger_client.rest",
+        "isExtraImport": true,
+        "detail": "swagger_client.rest",
+        "documentation": {}
+    },
+    {
+        "label": "Archives",
+        "importPath": "swagger_client.models.archives",
+        "description": "swagger_client.models.archives",
+        "isExtraImport": true,
+        "detail": "swagger_client.models.archives",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivesApi",
+        "importPath": "swagger_client.api.archives_api",
+        "description": "swagger_client.api.archives_api",
+        "isExtraImport": true,
+        "detail": "swagger_client.api.archives_api",
+        "documentation": {}
+    },
+    {
+        "label": "BoneAge",
+        "importPath": "swagger_client.models.bone_age",
+        "description": "swagger_client.models.bone_age",
+        "isExtraImport": true,
+        "detail": "swagger_client.models.bone_age",
+        "documentation": {}
+    },
+    {
+        "label": "MedicalRecords",
+        "importPath": "swagger_client.models.medical_records",
+        "description": "swagger_client.models.medical_records",
+        "isExtraImport": true,
+        "detail": "swagger_client.models.medical_records",
+        "documentation": {}
+    },
+    {
+        "label": "MedicalRecordsApi",
+        "importPath": "swagger_client.api.medical_records_api",
+        "description": "swagger_client.api.medical_records_api",
+        "isExtraImport": true,
+        "detail": "swagger_client.api.medical_records_api",
+        "documentation": {}
+    },
+    {
+        "label": "TestRecord",
+        "importPath": "swagger_client.models.test_record",
+        "description": "swagger_client.models.test_record",
+        "isExtraImport": true,
+        "detail": "swagger_client.models.test_record",
+        "documentation": {}
+    },
+    {
+        "label": "TestRecordApi",
+        "importPath": "swagger_client.api.test_record_api",
+        "description": "swagger_client.api.test_record_api",
+        "isExtraImport": true,
+        "detail": "swagger_client.api.test_record_api",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "swagger_client.models.user",
+        "description": "swagger_client.models.user",
+        "isExtraImport": true,
+        "detail": "swagger_client.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserApi",
+        "importPath": "swagger_client.api.user_api",
+        "description": "swagger_client.api.user_api",
+        "isExtraImport": true,
+        "detail": "swagger_client.api.user_api",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "find_packages",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "find_packages",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "connexion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "connexion",
+        "description": "connexion",
+        "detail": "connexion",
+        "documentation": {}
+    },
+    {
+        "label": "Body",
+        "importPath": "swagger_server.models.body",
+        "description": "swagger_server.models.body",
+        "isExtraImport": true,
+        "detail": "swagger_server.models.body",
+        "documentation": {}
+    },
+    {
+        "label": "Body",
+        "importPath": "swagger_server.models.body",
+        "description": "swagger_server.models.body",
+        "isExtraImport": true,
+        "detail": "swagger_server.models.body",
+        "documentation": {}
+    },
+    {
+        "label": "Body",
+        "importPath": "swagger_server.models.body",
+        "description": "swagger_server.models.body",
+        "isExtraImport": true,
+        "detail": "swagger_server.models.body",
+        "documentation": {}
+    },
+    {
+        "label": "Body",
+        "importPath": "swagger_server.models.body",
+        "description": "swagger_server.models.body",
+        "isExtraImport": true,
+        "detail": "swagger_server.models.body",
+        "documentation": {}
+    },
+    {
+        "label": "Body",
+        "importPath": "swagger_server.models.body",
+        "description": "swagger_server.models.body",
+        "isExtraImport": true,
+        "detail": "swagger_server.models.body",
+        "documentation": {}
+    },
+    {
+        "label": "Body",
+        "importPath": "swagger_server.models.body",
+        "description": "swagger_server.models.body",
+        "isExtraImport": true,
+        "detail": "swagger_server.models.body",
+        "documentation": {}
+    },
+    {
+        "label": "util",
+        "importPath": "swagger_server",
+        "description": "swagger_server",
+        "isExtraImport": true,
+        "detail": "swagger_server",
+        "documentation": {}
+    },
+    {
+        "label": "util",
+        "importPath": "swagger_server",
+        "description": "swagger_server",
+        "isExtraImport": true,
+        "detail": "swagger_server",
+        "documentation": {}
+    },
+    {
+        "label": "util",
+        "importPath": "swagger_server",
+        "description": "swagger_server",
+        "isExtraImport": true,
+        "detail": "swagger_server",
+        "documentation": {}
+    },
+    {
+        "label": "util",
+        "importPath": "swagger_server",
+        "description": "swagger_server",
+        "isExtraImport": true,
+        "detail": "swagger_server",
+        "documentation": {}
+    },
+    {
+        "label": "util",
+        "importPath": "swagger_server",
+        "description": "swagger_server",
+        "isExtraImport": true,
+        "detail": "swagger_server",
+        "documentation": {}
+    },
+    {
+        "label": "util",
+        "importPath": "swagger_server",
+        "description": "swagger_server",
+        "isExtraImport": true,
+        "detail": "swagger_server",
+        "documentation": {}
+    },
+    {
+        "label": "util",
+        "importPath": "swagger_server",
+        "description": "swagger_server",
+        "isExtraImport": true,
+        "detail": "swagger_server",
+        "documentation": {}
+    },
+    {
+        "label": "util",
+        "importPath": "swagger_server",
+        "description": "swagger_server",
+        "isExtraImport": true,
+        "detail": "swagger_server",
+        "documentation": {}
+    },
+    {
+        "label": "util",
+        "importPath": "swagger_server",
+        "description": "swagger_server",
+        "isExtraImport": true,
+        "detail": "swagger_server",
+        "documentation": {}
+    },
+    {
+        "label": "util",
+        "importPath": "swagger_server",
+        "description": "swagger_server",
+        "isExtraImport": true,
+        "detail": "swagger_server",
+        "documentation": {}
+    },
+    {
+        "label": "util",
+        "importPath": "swagger_server",
+        "description": "swagger_server",
+        "isExtraImport": true,
+        "detail": "swagger_server",
+        "documentation": {}
+    },
+    {
+        "label": "type_util",
+        "importPath": "swagger_server",
+        "description": "swagger_server",
+        "isExtraImport": true,
+        "detail": "swagger_server",
+        "documentation": {}
+    },
+    {
+        "label": "typing",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "typing",
+        "description": "typing",
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Model",
+        "importPath": "swagger_server.models.base_model_",
+        "description": "swagger_server.models.base_model_",
+        "isExtraImport": true,
+        "detail": "swagger_server.models.base_model_",
+        "documentation": {}
+    },
+    {
+        "label": "Model",
+        "importPath": "swagger_server.models.base_model_",
+        "description": "swagger_server.models.base_model_",
+        "isExtraImport": true,
+        "detail": "swagger_server.models.base_model_",
+        "documentation": {}
+    },
+    {
+        "label": "Model",
+        "importPath": "swagger_server.models.base_model_",
+        "description": "swagger_server.models.base_model_",
+        "isExtraImport": true,
+        "detail": "swagger_server.models.base_model_",
+        "documentation": {}
+    },
+    {
+        "label": "Model",
+        "importPath": "swagger_server.models.base_model_",
+        "description": "swagger_server.models.base_model_",
+        "isExtraImport": true,
+        "detail": "swagger_server.models.base_model_",
+        "documentation": {}
+    },
+    {
+        "label": "Model",
+        "importPath": "swagger_server.models.base_model_",
+        "description": "swagger_server.models.base_model_",
+        "isExtraImport": true,
+        "detail": "swagger_server.models.base_model_",
+        "documentation": {}
+    },
+    {
+        "label": "Model",
+        "importPath": "swagger_server.models.base_model_",
+        "description": "swagger_server.models.base_model_",
+        "isExtraImport": true,
+        "detail": "swagger_server.models.base_model_",
+        "documentation": {}
+    },
+    {
+        "label": "Model",
+        "importPath": "swagger_server.models.base_model_",
+        "description": "swagger_server.models.base_model_",
+        "isExtraImport": true,
+        "detail": "swagger_server.models.base_model_",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "BaseTestCase",
+        "importPath": "swagger_server.test",
+        "description": "swagger_server.test",
+        "isExtraImport": true,
+        "detail": "swagger_server.test",
+        "documentation": {}
+    },
+    {
+        "label": "BaseTestCase",
+        "importPath": "swagger_server.test",
+        "description": "swagger_server.test",
+        "isExtraImport": true,
+        "detail": "swagger_server.test",
+        "documentation": {}
+    },
+    {
+        "label": "BaseTestCase",
+        "importPath": "swagger_server.test",
+        "description": "swagger_server.test",
+        "isExtraImport": true,
+        "detail": "swagger_server.test",
+        "documentation": {}
+    },
+    {
+        "label": "BaseTestCase",
+        "importPath": "swagger_server.test",
+        "description": "swagger_server.test",
+        "isExtraImport": true,
+        "detail": "swagger_server.test",
+        "documentation": {}
+    },
+    {
+        "label": "FlaskJSONEncoder",
+        "importPath": "connexion.apps.flask_app",
+        "description": "connexion.apps.flask_app",
+        "isExtraImport": true,
+        "detail": "connexion.apps.flask_app",
+        "documentation": {}
+    },
+    {
+        "label": "rest_framework",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "importPath": "apps.drf.models",
+        "description": "apps.drf.models",
+        "isExtraImport": true,
+        "detail": "apps.drf.models",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "importPath": "apps.drf.models",
+        "description": "apps.drf.models",
+        "isExtraImport": true,
+        "detail": "apps.drf.models",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "importPath": "apps.drf.models",
+        "description": "apps.drf.models",
+        "isExtraImport": true,
+        "detail": "apps.drf.models",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "apps.drf",
+        "description": "apps.drf",
+        "isExtraImport": true,
+        "detail": "apps.drf",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http.response",
+        "description": "django.http.response",
+        "isExtraImport": true,
+        "detail": "django.http.response",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http.response",
+        "description": "django.http.response",
+        "isExtraImport": true,
+        "detail": "django.http.response",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http.response",
+        "description": "django.http.response",
+        "isExtraImport": true,
+        "detail": "django.http.response",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http.response",
+        "description": "django.http.response",
+        "isExtraImport": true,
+        "detail": "django.http.response",
+        "documentation": {}
+    },
+    {
+        "label": "StudentSerializer",
+        "importPath": "apps.drf.serializers",
+        "description": "apps.drf.serializers",
+        "isExtraImport": true,
+        "detail": "apps.drf.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "StudentSerializer",
+        "importPath": "apps.drf.serializers",
+        "description": "apps.drf.serializers",
+        "isExtraImport": true,
+        "detail": "apps.drf.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "MiddlewareMixin",
+        "importPath": "django.utils.deprecation",
+        "description": "django.utils.deprecation",
+        "isExtraImport": true,
+        "detail": "django.utils.deprecation",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "apps.nodrf",
+        "description": "apps.nodrf",
+        "isExtraImport": true,
+        "detail": "apps.nodrf",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "importPath": "apps.nodrf.models",
+        "description": "apps.nodrf.models",
+        "isExtraImport": true,
+        "detail": "apps.nodrf.models",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "apps.req",
+        "description": "apps.req",
+        "isExtraImport": true,
+        "detail": "apps.req",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "GenericAPIView",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "Test.asgi",
+        "description": "Test.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "Test.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-_167eu^o7+cj+^sp%ff+k-ucpfdpv#ja)ec5x2@m8(ph0ziiti'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\n# 查找models",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-_167eu^o7+cj+^sp%ff+k-ucpfdpv#ja)ec5x2@m8(ph0ziiti'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\n# 查找models\n# 查找static\nINSTALLED_APPS = [\n    # 'django.contrib.admin',\n    # 'django.contrib.auth',",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\n# 查找models\n# 查找static\nINSTALLED_APPS = [\n    # 'django.contrib.admin',\n    # 'django.contrib.auth',\n    # 'django.contrib.contenttypes',\n    # 'django.contrib.sessions',",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\n# 查找models\n# 查找static\nINSTALLED_APPS = [\n    # 'django.contrib.admin',\n    # 'django.contrib.auth',\n    # 'django.contrib.contenttypes',\n    # 'django.contrib.sessions',\n    # 'django.contrib.messages',",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    # 'django.contrib.admin',\n    # 'django.contrib.auth',\n    # 'django.contrib.contenttypes',\n    # 'django.contrib.sessions',\n    # 'django.contrib.messages',\n    'rest_framework',\n    'django.contrib.staticfiles',\n    'apps.api.apps.ApiConfig',\n    'apps.nodrf.apps.NodrfConfig', # 不使用drf",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    # 前处理的顺序从上到下\n    # 后处理的顺序从下到上\n    # 'django.middleware.security.SecurityMiddleware',\n    # 'django.contrib.sessions.middleware.SessionMiddleware',\n    # 'django.middleware.common.CommonMiddleware',\n    # 'django.middleware.csrf.CsrfViewMiddleware',\n    # 'django.contrib.auth.middleware.AuthenticationMiddleware',\n    # 'django.contrib.messages.middleware.MessageMiddleware',\n    # 'django.middleware.clickjacking.XFrameOptionsMiddleware',",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "ROOT_URLCONF = 'Test.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                # 'django.contrib.auth.context_processors.auth',",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'Test.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.0/ref/settings/#databases\n# django 支持项目连接多个数据库，读写分离\nDATABASE_ROUTERS = [\"apps.utils.dbrouter.demo_db_router.DemoRouter\"]\n# python manage.py migrate --database=default\nimport pymysql\npymysql.install_as_MySQLdb()\nDATABASES = {\n    'default': {",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_ROUTERS",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "DATABASE_ROUTERS = [\"apps.utils.dbrouter.demo_db_router.DemoRouter\"]\n# python manage.py migrate --database=default\nimport pymysql\npymysql.install_as_MySQLdb()\nDATABASES = {\n    'default': {\n        # 默认：文件类数据库\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        # 默认：文件类数据库\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# 为什么需要连接池？\n# 避免重复创建连接，关闭连接，减少性能损耗\n# django默认没有数据库连接池的功能",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAPPEND_SLASH = True",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAPPEND_SLASH = True\n# REST_FRAMEWORK 表示字典内部的内容是属于drf独有的配置项， 与django的配置项进行区分。\nREST_FRAMEWORK = {\n    # drf框架中的APIView内部会走认证源码\n    \"UNAUTHENTICATED_USER\": None,\n    \"UNAUTHENTICATED_TOKEN\": None,",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAPPEND_SLASH = True\n# REST_FRAMEWORK 表示字典内部的内容是属于drf独有的配置项， 与django的配置项进行区分。\nREST_FRAMEWORK = {\n    # drf框架中的APIView内部会走认证源码\n    \"UNAUTHENTICATED_USER\": None,\n    \"UNAUTHENTICATED_TOKEN\": None,\n    # 默认http响应渲染类\n    'DEFAULT_RENDERER_CLASSES': (  \n        'rest_framework.renderers.JSONRenderer',  # json渲染器，返回json数据",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "APPEND_SLASH",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "APPEND_SLASH = True\n# REST_FRAMEWORK 表示字典内部的内容是属于drf独有的配置项， 与django的配置项进行区分。\nREST_FRAMEWORK = {\n    # drf框架中的APIView内部会走认证源码\n    \"UNAUTHENTICATED_USER\": None,\n    \"UNAUTHENTICATED_TOKEN\": None,\n    # 默认http响应渲染类\n    'DEFAULT_RENDERER_CLASSES': (  \n        'rest_framework.renderers.JSONRenderer',  # json渲染器，返回json数据\n        'rest_framework.renderers.BrowsableAPIRenderer',  # 浏览器API渲染器，返回api调试界面",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "Test.settings",
+        "description": "Test.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    # drf框架中的APIView内部会走认证源码\n    \"UNAUTHENTICATED_USER\": None,\n    \"UNAUTHENTICATED_TOKEN\": None,\n    # 默认http响应渲染类\n    'DEFAULT_RENDERER_CLASSES': (  \n        'rest_framework.renderers.JSONRenderer',  # json渲染器，返回json数据\n        'rest_framework.renderers.BrowsableAPIRenderer',  # 浏览器API渲染器，返回api调试界面\n    ),\n}",
+        "detail": "Test.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "Test.urls",
+        "description": "Test.urls",
+        "peekOfCode": "urlpatterns = [\n    # path('admin/', admin.site.urls),\n    # 传统路由 **\n    path('home/', views.home),\n    path('news/<str:nid>/edit/', views.news),\n    # int\n    # str\n    # slug: 字母+数字+下划线\n    # uuid\n    # path: 路径，可以包含/",
+        "detail": "Test.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "Test.wsgi",
+        "description": "Test.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "Test.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "apps.api.migrations.0001_initial",
+        "description": "apps.api.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='UserInfo',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=16)),",
+        "detail": "apps.api.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "apps.api.migrations.0002_goods_userinfo_amount_userinfo_email_and_more",
+        "description": "apps.api.migrations.0002_goods_userinfo_amount_userinfo_email_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('api', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Goods',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=32, verbose_name='标题')),",
+        "detail": "apps.api.migrations.0002_goods_userinfo_amount_userinfo_email_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "apps.api.migrations.0003_department",
+        "description": "apps.api.migrations.0003_department",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('api', '0002_goods_userinfo_amount_userinfo_email_and_more'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Department',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=32, verbose_name='部门名称')),",
+        "detail": "apps.api.migrations.0003_department",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "apps.api.migrations.0004_userinfo_depart",
+        "description": "apps.api.migrations.0004_userinfo_depart",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('api', '0003_department'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='userinfo',\n            name='depart',\n            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='api.department', verbose_name='部门'),\n        ),",
+        "detail": "apps.api.migrations.0004_userinfo_depart",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "apps.api.migrations.0005_alter_userinfo_depart",
+        "description": "apps.api.migrations.0005_alter_userinfo_depart",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('api', '0004_userinfo_depart'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='userinfo',\n            name='depart',\n            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='d1', to='api.department', verbose_name='部门'),\n        ),",
+        "detail": "apps.api.migrations.0005_alter_userinfo_depart",
+        "documentation": {}
+    },
+    {
+        "label": "ApiConfig",
+        "kind": 6,
+        "importPath": "apps.api.apps",
+        "description": "apps.api.apps",
+        "peekOfCode": "class ApiConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    # 因为在项目根目录创建子应用后，移动到了apps文件夹，需要把name从api修改为apps.api\n    name = 'apps.api'",
+        "detail": "apps.api.apps",
+        "documentation": {}
+    },
+    {
+        "label": "UserInfo",
+        "kind": 6,
+        "importPath": "apps.api.models",
+        "description": "apps.api.models",
+        "peekOfCode": "class UserInfo(models.Model):\n    # 类属性\n    # id = models.BigAutoField()\n    # 变量名：小写 or 下划线\n    name = models.CharField(verbose_name=\"姓名\",max_length=16)\n    age = models.IntegerField(verbose_name=\"年龄\")\n    email = models.CharField(verbose_name=\"邮箱\", max_length=128, unique=True, null=True)\n    amount = models.DecimalField(verbose_name=\"余额\", max_digits=5, decimal_places=2, null=True)\n    depart = models.ForeignKey(to=\"Department\", verbose_name=\"部门\", on_delete=models.CASCADE, null=True, related_name=\"d1\")\n    # class Meta:",
+        "detail": "apps.api.models",
+        "documentation": {}
+    },
+    {
+        "label": "Goods",
+        "kind": 6,
+        "importPath": "apps.api.models",
+        "description": "apps.api.models",
+        "peekOfCode": "class Goods(models.Model):\n    title = models.CharField(verbose_name=\"标题\", max_length=32)\n    detail = models.CharField(verbose_name=\"详细信息\", max_length=128)\nclass Department(models.Model):\n    title = models.CharField(verbose_name=\"部门名称\", max_length=32)\n# 数据操作\n# 详见view.py\n# 多数据库场景（目前我用不上）\n# 注意：一定不要跨库做外键，django不支持，尽可能把有关联的表放在一个库\n# 场景一：读写分离",
+        "detail": "apps.api.models",
+        "documentation": {}
+    },
+    {
+        "label": "Department",
+        "kind": 6,
+        "importPath": "apps.api.models",
+        "description": "apps.api.models",
+        "peekOfCode": "class Department(models.Model):\n    title = models.CharField(verbose_name=\"部门名称\", max_length=32)\n# 数据操作\n# 详见view.py\n# 多数据库场景（目前我用不上）\n# 注意：一定不要跨库做外键，django不支持，尽可能把有关联的表放在一个库\n# 场景一：读写分离\n# 初始化时只需要连接一个数据库\n# 根据读写连接不同的数据库\n# 场景二：分库（多app）",
+        "detail": "apps.api.models",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "apps.api.urls",
+        "description": "apps.api.urls",
+        "peekOfCode": "app_name = \"api\" # 生成命名空间\nurlpatterns = [\n    # FBV\n    path('home/', views.home, name=\"home\"),\n    path('news/<str:nid>/edit/', views.news, name=\"news\"),\n    path('article/', views.article, name=\"article\"),\n    # CBV\n    path('users/', views.UsersView.as_view()) \n]\n# name 给路由起个名字 **",
+        "detail": "apps.api.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "apps.api.urls",
+        "description": "apps.api.urls",
+        "peekOfCode": "urlpatterns = [\n    # FBV\n    path('home/', views.home, name=\"home\"),\n    path('news/<str:nid>/edit/', views.news, name=\"news\"),\n    path('article/', views.article, name=\"article\"),\n    # CBV\n    path('users/', views.UsersView.as_view()) \n]\n# name 给路由起个名字 **\n# 如何反向生成url？前后端不分离时才会用到",
+        "detail": "apps.api.urls",
+        "documentation": {}
+    },
+    {
+        "label": "UsersView",
+        "kind": 6,
+        "importPath": "apps.api.views",
+        "description": "apps.api.views",
+        "peekOfCode": "class UsersView(View):\n    # url ---> function\n    # url ---> as_view() ---> view() ---> dispatch() ---> 根据请求方法执行不同的函数\n    # 使用反射实现功能分发\n    # handler = getattr(obj, \"get\")\n    # handler(request, *args, **kwargs)\n    def get(self, request):\n        # 数据操作\n        # 1. 增删改查（单表操作）\n        # 增",
+        "detail": "apps.api.views",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "apps.api.views",
+        "description": "apps.api.views",
+        "peekOfCode": "def home(request):\n    # 视图函数返回内容\n    # 1. HttpResponse\n    res = HttpResponse('<div style=\"color: red\">Home</div>')\n    return res\n    # 2. JsonReponse\n    # JsonReponse(data_dict)    自动序列化: dict -> json\n    # HttpResponse(json.dumps(data_dict))  手动序列化\n    # 3. 重定向\n    # return redirect(\"http://www.baidu.com\") 浏览器再次发起到百度的请求",
+        "detail": "apps.api.views",
+        "documentation": {}
+    },
+    {
+        "label": "news",
+        "kind": 2,
+        "importPath": "apps.api.views",
+        "description": "apps.api.views",
+        "peekOfCode": "def news(request, nid):\n    return HttpResponse(\"News {}\".format(nid))\n# 127.0.0.1:8000/news/?nid=xyz\ndef article(request):\n    nid = request.GET.get(\"nid\")\n    return HttpResponse(\"News {}\".format(nid))\ndef users(request, uid, uname):\n    return HttpResponse(\"Users {} {}\".format(uid, uname))",
+        "detail": "apps.api.views",
+        "documentation": {}
+    },
+    {
+        "label": "article",
+        "kind": 2,
+        "importPath": "apps.api.views",
+        "description": "apps.api.views",
+        "peekOfCode": "def article(request):\n    nid = request.GET.get(\"nid\")\n    return HttpResponse(\"News {}\".format(nid))\ndef users(request, uid, uname):\n    return HttpResponse(\"Users {} {}\".format(uid, uname))",
+        "detail": "apps.api.views",
+        "documentation": {}
+    },
+    {
+        "label": "users",
+        "kind": 2,
+        "importPath": "apps.api.views",
+        "description": "apps.api.views",
+        "peekOfCode": "def users(request, uid, uname):\n    return HttpResponse(\"Users {} {}\".format(uid, uname))",
+        "detail": "apps.api.views",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivesApi",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.api.archives_api",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.api.archives_api",
+        "peekOfCode": "class ArchivesApi(object):\n    \"\"\"NOTE: This class is auto generated by the swagger code generator program.\n    Do not edit the class manually.\n    Ref: https://github.com/swagger-api/swagger-codegen\n    \"\"\"\n    def __init__(self, api_client=None):\n        if api_client is None:\n            api_client = ApiClient()\n        self.api_client = api_client\n    def archives_get(self, authorization, **kwargs):  # noqa: E501",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.api.archives_api",
+        "documentation": {}
+    },
+    {
+        "label": "MedicalRecordsApi",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.api.medical_records_api",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.api.medical_records_api",
+        "peekOfCode": "class MedicalRecordsApi(object):\n    \"\"\"NOTE: This class is auto generated by the swagger code generator program.\n    Do not edit the class manually.\n    Ref: https://github.com/swagger-api/swagger-codegen\n    \"\"\"\n    def __init__(self, api_client=None):\n        if api_client is None:\n            api_client = ApiClient()\n        self.api_client = api_client\n    def medical_records_get(self, authorization, **kwargs):  # noqa: E501",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.api.medical_records_api",
+        "documentation": {}
+    },
+    {
+        "label": "TestRecordApi",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.api.test_record_api",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.api.test_record_api",
+        "peekOfCode": "class TestRecordApi(object):\n    \"\"\"NOTE: This class is auto generated by the swagger code generator program.\n    Do not edit the class manually.\n    Ref: https://github.com/swagger-api/swagger-codegen\n    \"\"\"\n    def __init__(self, api_client=None):\n        if api_client is None:\n            api_client = ApiClient()\n        self.api_client = api_client\n    def testrecord_get(self, authorization, **kwargs):  # noqa: E501",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.api.test_record_api",
+        "documentation": {}
+    },
+    {
+        "label": "UserApi",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.api.user_api",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.api.user_api",
+        "peekOfCode": "class UserApi(object):\n    \"\"\"NOTE: This class is auto generated by the swagger code generator program.\n    Do not edit the class manually.\n    Ref: https://github.com/swagger-api/swagger-codegen\n    \"\"\"\n    def __init__(self, api_client=None):\n        if api_client is None:\n            api_client = ApiClient()\n        self.api_client = api_client\n    def user_change_active_put(self, authorization, **kwargs):  # noqa: E501",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.api.user_api",
+        "documentation": {}
+    },
+    {
+        "label": "ApiResponse",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.models.api_response",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.models.api_response",
+        "peekOfCode": "class ApiResponse(object):\n    \"\"\"NOTE: This class is auto generated by the swagger code generator program.\n    Do not edit the class manually.\n    \"\"\"\n    \"\"\"\n    Attributes:\n      swagger_types (dict): The key is attribute name\n                            and the value is attribute type.\n      attribute_map (dict): The key is attribute name\n                            and the value is json key in definition.",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.models.api_response",
+        "documentation": {}
+    },
+    {
+        "label": "Archives",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.models.archives",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.models.archives",
+        "peekOfCode": "class Archives(object):\n    \"\"\"NOTE: This class is auto generated by the swagger code generator program.\n    Do not edit the class manually.\n    \"\"\"\n    \"\"\"\n    Attributes:\n      swagger_types (dict): The key is attribute name\n                            and the value is attribute type.\n      attribute_map (dict): The key is attribute name\n                            and the value is json key in definition.",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.models.archives",
+        "documentation": {}
+    },
+    {
+        "label": "BoneAge",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.models.bone_age",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.models.bone_age",
+        "peekOfCode": "class BoneAge(object):\n    \"\"\"NOTE: This class is auto generated by the swagger code generator program.\n    Do not edit the class manually.\n    \"\"\"\n    \"\"\"\n    Attributes:\n      swagger_types (dict): The key is attribute name\n                            and the value is attribute type.\n      attribute_map (dict): The key is attribute name\n                            and the value is json key in definition.",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.models.bone_age",
+        "documentation": {}
+    },
+    {
+        "label": "MedicalRecords",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.models.medical_records",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.models.medical_records",
+        "peekOfCode": "class MedicalRecords(object):\n    \"\"\"NOTE: This class is auto generated by the swagger code generator program.\n    Do not edit the class manually.\n    \"\"\"\n    \"\"\"\n    Attributes:\n      swagger_types (dict): The key is attribute name\n                            and the value is attribute type.\n      attribute_map (dict): The key is attribute name\n                            and the value is json key in definition.",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.models.medical_records",
+        "documentation": {}
+    },
+    {
+        "label": "TestRecord",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.models.test_record",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.models.test_record",
+        "peekOfCode": "class TestRecord(object):\n    \"\"\"NOTE: This class is auto generated by the swagger code generator program.\n    Do not edit the class manually.\n    \"\"\"\n    \"\"\"\n    Attributes:\n      swagger_types (dict): The key is attribute name\n                            and the value is attribute type.\n      attribute_map (dict): The key is attribute name\n                            and the value is json key in definition.",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.models.test_record",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.models.user",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.models.user",
+        "peekOfCode": "class User(object):\n    \"\"\"NOTE: This class is auto generated by the swagger code generator program.\n    Do not edit the class manually.\n    \"\"\"\n    \"\"\"\n    Attributes:\n      swagger_types (dict): The key is attribute name\n                            and the value is attribute type.\n      attribute_map (dict): The key is attribute name\n                            and the value is json key in definition.",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "ApiClient",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.api_client",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.api_client",
+        "peekOfCode": "class ApiClient(object):\n    \"\"\"Generic API client for Swagger client library builds.\n    Swagger generic API client. This client handles the client-\n    server communication, and is invariant across implementations. Specifics of\n    the methods and models for each application are generated from the Swagger\n    templates.\n    NOTE: This class is auto generated by the swagger code generator program.\n    Ref: https://github.com/swagger-api/swagger-codegen\n    Do not edit the class manually.\n    :param configuration: .Configuration object for this client",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.api_client",
+        "documentation": {}
+    },
+    {
+        "label": "Configuration",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.configuration",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.configuration",
+        "peekOfCode": "class Configuration(object):\n    \"\"\"NOTE: This class is auto generated by the swagger code generator program.\n    Ref: https://github.com/swagger-api/swagger-codegen\n    Do not edit the class manually.\n    \"\"\"\n    _default = None\n    def __init__(self):\n        \"\"\"Constructor\"\"\"\n        if self._default:\n            for key in self._default.__dict__.keys():",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.configuration",
+        "documentation": {}
+    },
+    {
+        "label": "RESTResponse",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.rest",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.rest",
+        "peekOfCode": "class RESTResponse(io.IOBase):\n    def __init__(self, resp):\n        self.urllib3_response = resp\n        self.status = resp.status\n        self.reason = resp.reason\n        self.data = resp.data\n    def getheaders(self):\n        \"\"\"Returns a dictionary of the response headers.\"\"\"\n        return self.urllib3_response.getheaders()\n    def getheader(self, name, default=None):",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.rest",
+        "documentation": {}
+    },
+    {
+        "label": "RESTClientObject",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.rest",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.rest",
+        "peekOfCode": "class RESTClientObject(object):\n    def __init__(self, configuration, pools_size=4, maxsize=None):\n        # urllib3.PoolManager will pass all kw parameters to connectionpool\n        # https://github.com/shazow/urllib3/blob/f9409436f83aeb79fbaf090181cd81b784f1b8ce/urllib3/poolmanager.py#L75  # noqa: E501\n        # https://github.com/shazow/urllib3/blob/f9409436f83aeb79fbaf090181cd81b784f1b8ce/urllib3/connectionpool.py#L680  # noqa: E501\n        # maxsize is the number of requests to host that are allowed in parallel  # noqa: E501\n        # Custom SSL certificates and client certificates: http://urllib3.readthedocs.io/en/latest/advanced-usage.html  # noqa: E501\n        # cert_reqs\n        if configuration.verify_ssl:\n            cert_reqs = ssl.CERT_REQUIRED",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.rest",
+        "documentation": {}
+    },
+    {
+        "label": "ApiException",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.rest",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.rest",
+        "peekOfCode": "class ApiException(Exception):\n    def __init__(self, status=None, reason=None, http_resp=None):\n        if http_resp:\n            self.status = http_resp.status\n            self.reason = http_resp.reason\n            self.body = http_resp.data\n            self.headers = http_resp.getheaders()\n        else:\n            self.status = status\n            self.reason = reason",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.rest",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.rest",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.rest",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass RESTResponse(io.IOBase):\n    def __init__(self, resp):\n        self.urllib3_response = resp\n        self.status = resp.status\n        self.reason = resp.reason\n        self.data = resp.data\n    def getheaders(self):\n        \"\"\"Returns a dictionary of the response headers.\"\"\"\n        return self.urllib3_response.getheaders()",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.swagger_client.rest",
+        "documentation": {}
+    },
+    {
+        "label": "TestApiResponse",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.test.test_api_response",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.test.test_api_response",
+        "peekOfCode": "class TestApiResponse(unittest.TestCase):\n    \"\"\"ApiResponse unit test stubs\"\"\"\n    def setUp(self):\n        pass\n    def tearDown(self):\n        pass\n    def testApiResponse(self):\n        \"\"\"Test ApiResponse\"\"\"\n        # FIXME: construct object with mandatory attributes with example values\n        # model = swagger_client.models.api_response.ApiResponse()  # noqa: E501",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.test.test_api_response",
+        "documentation": {}
+    },
+    {
+        "label": "TestArchives",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.test.test_archives",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.test.test_archives",
+        "peekOfCode": "class TestArchives(unittest.TestCase):\n    \"\"\"Archives unit test stubs\"\"\"\n    def setUp(self):\n        pass\n    def tearDown(self):\n        pass\n    def testArchives(self):\n        \"\"\"Test Archives\"\"\"\n        # FIXME: construct object with mandatory attributes with example values\n        # model = swagger_client.models.archives.Archives()  # noqa: E501",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.test.test_archives",
+        "documentation": {}
+    },
+    {
+        "label": "TestArchivesApi",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.test.test_archives_api",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.test.test_archives_api",
+        "peekOfCode": "class TestArchivesApi(unittest.TestCase):\n    \"\"\"ArchivesApi unit test stubs\"\"\"\n    def setUp(self):\n        self.api = swagger_client.api.archives_api.ArchivesApi()  # noqa: E501\n    def tearDown(self):\n        pass\n    def test_archives_get(self):\n        \"\"\"Test case for archives_get\n        档案列表  # noqa: E501\n        \"\"\"",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.test.test_archives_api",
+        "documentation": {}
+    },
+    {
+        "label": "TestBoneAge",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.test.test_bone_age",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.test.test_bone_age",
+        "peekOfCode": "class TestBoneAge(unittest.TestCase):\n    \"\"\"BoneAge unit test stubs\"\"\"\n    def setUp(self):\n        pass\n    def tearDown(self):\n        pass\n    def testBoneAge(self):\n        \"\"\"Test BoneAge\"\"\"\n        # FIXME: construct object with mandatory attributes with example values\n        # model = swagger_client.models.bone_age.BoneAge()  # noqa: E501",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.test.test_bone_age",
+        "documentation": {}
+    },
+    {
+        "label": "TestMedicalRecords",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.test.test_medical_records",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.test.test_medical_records",
+        "peekOfCode": "class TestMedicalRecords(unittest.TestCase):\n    \"\"\"MedicalRecords unit test stubs\"\"\"\n    def setUp(self):\n        pass\n    def tearDown(self):\n        pass\n    def testMedicalRecords(self):\n        \"\"\"Test MedicalRecords\"\"\"\n        # FIXME: construct object with mandatory attributes with example values\n        # model = swagger_client.models.medical_records.MedicalRecords()  # noqa: E501",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.test.test_medical_records",
+        "documentation": {}
+    },
+    {
+        "label": "TestMedicalRecordsApi",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.test.test_medical_records_api",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.test.test_medical_records_api",
+        "peekOfCode": "class TestMedicalRecordsApi(unittest.TestCase):\n    \"\"\"MedicalRecordsApi unit test stubs\"\"\"\n    def setUp(self):\n        self.api = swagger_client.api.medical_records_api.MedicalRecordsApi()  # noqa: E501\n    def tearDown(self):\n        pass\n    def test_medical_records_get(self):\n        \"\"\"Test case for medical_records_get\n        就诊记录列表  # noqa: E501\n        \"\"\"",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.test.test_medical_records_api",
+        "documentation": {}
+    },
+    {
+        "label": "TestTestRecord",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.test.test_test_record",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.test.test_test_record",
+        "peekOfCode": "class TestTestRecord(unittest.TestCase):\n    \"\"\"TestRecord unit test stubs\"\"\"\n    def setUp(self):\n        pass\n    def tearDown(self):\n        pass\n    def testTestRecord(self):\n        \"\"\"Test TestRecord\"\"\"\n        # FIXME: construct object with mandatory attributes with example values\n        # model = swagger_client.models.test_record.TestRecord()  # noqa: E501",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.test.test_test_record",
+        "documentation": {}
+    },
+    {
+        "label": "TestTestRecordApi",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.test.test_test_record_api",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.test.test_test_record_api",
+        "peekOfCode": "class TestTestRecordApi(unittest.TestCase):\n    \"\"\"TestRecordApi unit test stubs\"\"\"\n    def setUp(self):\n        self.api = swagger_client.api.test_record_api.TestRecordApi()  # noqa: E501\n    def tearDown(self):\n        pass\n    def test_testrecord_get(self):\n        \"\"\"Test case for testrecord_get\n        测试记录列表  # noqa: E501\n        \"\"\"",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.test.test_test_record_api",
+        "documentation": {}
+    },
+    {
+        "label": "TestUser",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.test.test_user",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.test.test_user",
+        "peekOfCode": "class TestUser(unittest.TestCase):\n    \"\"\"User unit test stubs\"\"\"\n    def setUp(self):\n        pass\n    def tearDown(self):\n        pass\n    def testUser(self):\n        \"\"\"Test User\"\"\"\n        # FIXME: construct object with mandatory attributes with example values\n        # model = swagger_client.models.user.User()  # noqa: E501",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.test.test_user",
+        "documentation": {}
+    },
+    {
+        "label": "TestUserApi",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.test.test_user_api",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.test.test_user_api",
+        "peekOfCode": "class TestUserApi(unittest.TestCase):\n    \"\"\"UserApi unit test stubs\"\"\"\n    def setUp(self):\n        self.api = swagger_client.api.user_api.UserApi()  # noqa: E501\n    def tearDown(self):\n        pass\n    def test_user_change_active_put(self):\n        \"\"\"Test case for user_change_active_put\n        修改账号状态  # noqa: E501\n        \"\"\"",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.test.test_user_api",
+        "documentation": {}
+    },
+    {
+        "label": "NAME",
+        "kind": 5,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.setup",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.setup",
+        "peekOfCode": "NAME = \"swagger-client\"\nVERSION = \"1.0.0\"\n# To install the library, run the following\n#\n# python setup.py install\n#\n# prerequisite: setuptools\n# http://pypi.python.org/pypi/setuptools\nREQUIRES = [\n    \"certifi>=2017.4.17\",",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.setup",
+        "documentation": {}
+    },
+    {
+        "label": "VERSION",
+        "kind": 5,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.setup",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.setup",
+        "peekOfCode": "VERSION = \"1.0.0\"\n# To install the library, run the following\n#\n# python setup.py install\n#\n# prerequisite: setuptools\n# http://pypi.python.org/pypi/setuptools\nREQUIRES = [\n    \"certifi>=2017.4.17\",\n    \"python-dateutil>=2.1\",",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.setup",
+        "documentation": {}
+    },
+    {
+        "label": "REQUIRES",
+        "kind": 5,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-client.setup",
+        "description": "apps.drf.doc.day90-drf.素材.python-client.setup",
+        "peekOfCode": "REQUIRES = [\n    \"certifi>=2017.4.17\",\n    \"python-dateutil>=2.1\",\n    \"six>=1.10\",\n    \"urllib3>=1.23\"\n]\nsetup(\n    name=NAME,\n    version=VERSION,\n    description=\"项目名\",",
+        "detail": "apps.drf.doc.day90-drf.素材.python-client.setup",
+        "documentation": {}
+    },
+    {
+        "label": "archives_get",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.archives_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.archives_controller",
+        "peekOfCode": "def archives_get(Authorization):  # noqa: E501\n    \"\"\"档案列表\n    档案列表 # noqa: E501\n    :param Authorization: \n    :type Authorization: str\n    :rtype: object\n    \"\"\"\n    return 'do some magic!'\ndef archives_id_delete(Authorization, id):  # noqa: E501\n    \"\"\"删除档案",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.archives_controller",
+        "documentation": {}
+    },
+    {
+        "label": "archives_id_delete",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.archives_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.archives_controller",
+        "peekOfCode": "def archives_id_delete(Authorization, id):  # noqa: E501\n    \"\"\"删除档案\n    通过id删除档案 # noqa: E501\n    :param Authorization: \n    :type Authorization: str\n    :param id: \n    :type id: int\n    :rtype: object\n    \"\"\"\n    return 'do some magic!'",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.archives_controller",
+        "documentation": {}
+    },
+    {
+        "label": "archives_id_get",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.archives_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.archives_controller",
+        "peekOfCode": "def archives_id_get(Authorization, id):  # noqa: E501\n    \"\"\"查询用户档案\n    查询用户档案 # noqa: E501\n    :param Authorization: \n    :type Authorization: str\n    :param id: \n    :type id: int\n    :rtype: object\n    \"\"\"\n    return 'do some magic!'",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.archives_controller",
+        "documentation": {}
+    },
+    {
+        "label": "archives_id_put",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.archives_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.archives_controller",
+        "peekOfCode": "def archives_id_put(Authorization, id, body=None):  # noqa: E501\n    \"\"\"修改档案信息\n    通过id修改档案信息息 # noqa: E501\n    :param Authorization: \n    :type Authorization: str\n    :param id: \n    :type id: int\n    :param body: \n    :type body: dict | bytes\n    :rtype: object",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.archives_controller",
+        "documentation": {}
+    },
+    {
+        "label": "archives_post",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.archives_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.archives_controller",
+        "peekOfCode": "def archives_post(Authorization, body):  # noqa: E501\n    \"\"\"新建档案\n    新建档案 # noqa: E501\n    :param Authorization: \n    :type Authorization: str\n    :param body: \n    :type body: dict | bytes\n    :rtype: object\n    \"\"\"\n    if connexion.request.is_json:",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.archives_controller",
+        "documentation": {}
+    },
+    {
+        "label": "check_api_key",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.authorization_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.authorization_controller",
+        "peekOfCode": "def check_api_key(api_key, required_scopes):\n    return {'test_key': 'test_value'}\ndef check_petstore_auth(token):\n    return {'scopes': ['read:pets', 'write:pets'], 'uid': 'test_value'}\ndef validate_scope_petstore_auth(required_scopes, token_scopes):\n    return set(required_scopes).issubset(set(token_scopes))",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.authorization_controller",
+        "documentation": {}
+    },
+    {
+        "label": "check_petstore_auth",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.authorization_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.authorization_controller",
+        "peekOfCode": "def check_petstore_auth(token):\n    return {'scopes': ['read:pets', 'write:pets'], 'uid': 'test_value'}\ndef validate_scope_petstore_auth(required_scopes, token_scopes):\n    return set(required_scopes).issubset(set(token_scopes))",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.authorization_controller",
+        "documentation": {}
+    },
+    {
+        "label": "validate_scope_petstore_auth",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.authorization_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.authorization_controller",
+        "peekOfCode": "def validate_scope_petstore_auth(required_scopes, token_scopes):\n    return set(required_scopes).issubset(set(token_scopes))",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.authorization_controller",
+        "documentation": {}
+    },
+    {
+        "label": "medical_records_get",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.medical_records_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.medical_records_controller",
+        "peekOfCode": "def medical_records_get(Authorization):  # noqa: E501\n    \"\"\"就诊记录列表\n    就诊记录列表 # noqa: E501\n    :param Authorization: \n    :type Authorization: str\n    :rtype: object\n    \"\"\"\n    return 'do some magic!'\ndef medical_records_id_delete(Authorization, id):  # noqa: E501\n    \"\"\"删除就诊记录",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.medical_records_controller",
+        "documentation": {}
+    },
+    {
+        "label": "medical_records_id_delete",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.medical_records_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.medical_records_controller",
+        "peekOfCode": "def medical_records_id_delete(Authorization, id):  # noqa: E501\n    \"\"\"删除就诊记录\n    删除就诊记录 # noqa: E501\n    :param Authorization: \n    :type Authorization: str\n    :param id: \n    :type id: int\n    :rtype: object\n    \"\"\"\n    return 'do some magic!'",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.medical_records_controller",
+        "documentation": {}
+    },
+    {
+        "label": "medical_records_id_get",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.medical_records_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.medical_records_controller",
+        "peekOfCode": "def medical_records_id_get(Authorization, id):  # noqa: E501\n    \"\"\"就诊详情\n    就诊详情 # noqa: E501\n    :param Authorization: \n    :type Authorization: str\n    :param id: \n    :type id: int\n    :rtype: object\n    \"\"\"\n    return 'do some magic!'",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.medical_records_controller",
+        "documentation": {}
+    },
+    {
+        "label": "medical_records_post",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.medical_records_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.medical_records_controller",
+        "peekOfCode": "def medical_records_post(Authorization, body=None):  # noqa: E501\n    \"\"\"新建就诊记录\n    新建就诊记录 # noqa: E501\n    :param Authorization: \n    :type Authorization: str\n    :param body: \n    :type body: dict | bytes\n    :rtype: object\n    \"\"\"\n    if connexion.request.is_json:",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.medical_records_controller",
+        "documentation": {}
+    },
+    {
+        "label": "testrecord_get",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.test_record_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.test_record_controller",
+        "peekOfCode": "def testrecord_get(Authorization):  # noqa: E501\n    \"\"\"测试记录列表\n    测试记录列表 # noqa: E501\n    :param Authorization: \n    :type Authorization: str\n    :rtype: object\n    \"\"\"\n    return 'do some magic!'\ndef testrecord_id_delete(id, Authorization):  # noqa: E501\n    \"\"\"删除测试记录",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.test_record_controller",
+        "documentation": {}
+    },
+    {
+        "label": "testrecord_id_delete",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.test_record_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.test_record_controller",
+        "peekOfCode": "def testrecord_id_delete(id, Authorization):  # noqa: E501\n    \"\"\"删除测试记录\n    删除测试记录 # noqa: E501\n    :param id: \n    :type id: int\n    :param Authorization: \n    :type Authorization: str\n    :rtype: object\n    \"\"\"\n    return 'do some magic!'",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.test_record_controller",
+        "documentation": {}
+    },
+    {
+        "label": "testrecord_id_get",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.test_record_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.test_record_controller",
+        "peekOfCode": "def testrecord_id_get(id, Authorization):  # noqa: E501\n    \"\"\"查询测试详情\n    查询测试详情 # noqa: E501\n    :param id: \n    :type id: int\n    :param Authorization: \n    :type Authorization: str\n    :rtype: object\n    \"\"\"\n    return 'do some magic!'",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.test_record_controller",
+        "documentation": {}
+    },
+    {
+        "label": "user_change_active_put",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "peekOfCode": "def user_change_active_put(Authorization, body=None):  # noqa: E501\n    \"\"\"修改账号状态\n    修改账号状态 # noqa: E501\n    :param Authorization: \n    :type Authorization: str\n    :param body: \n    :type body: dict | bytes\n    :rtype: object\n    \"\"\"\n    if connexion.request.is_json:",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "documentation": {}
+    },
+    {
+        "label": "user_change_pwd_put",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "peekOfCode": "def user_change_pwd_put(Authorization, body=None):  # noqa: E501\n    \"\"\"修改账号密码\n    修改账号密码 # noqa: E501\n    :param Authorization: \n    :type Authorization: str\n    :param body: \n    :type body: dict | bytes\n    :rtype: object\n    \"\"\"\n    if connexion.request.is_json:",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "documentation": {}
+    },
+    {
+        "label": "user_get",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "peekOfCode": "def user_get(name, token):  # noqa: E501\n    \"\"\"用户列表接口\n    获取所有用户列表 # noqa: E501\n    :param name: \n    :type name: str\n    :param token: \n    :type token: str\n    :rtype: object\n    \"\"\"\n    return 'do some magic!'",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "documentation": {}
+    },
+    {
+        "label": "user_id_delete",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "peekOfCode": "def user_id_delete(id, Authorization):  # noqa: E501\n    \"\"\"删除用户\n    通过id删除用户 # noqa: E501\n    :param id: \n    :type id: int\n    :param Authorization: \n    :type Authorization: str\n    :rtype: object\n    \"\"\"\n    return 'do some magic!'",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "documentation": {}
+    },
+    {
+        "label": "user_id_get",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "peekOfCode": "def user_id_get(id, Authorization):  # noqa: E501\n    \"\"\"查询用户\n    通过id查询用户信息 # noqa: E501\n    :param id: \n    :type id: int\n    :param Authorization: \n    :type Authorization: str\n    :rtype: object\n    \"\"\"\n    return 'do some magic!'",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "documentation": {}
+    },
+    {
+        "label": "user_id_put",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "peekOfCode": "def user_id_put(id, Authorization, body=None):  # noqa: E501\n    \"\"\"修改用户\n    通过id修改用户信息 # noqa: E501\n    :param id: \n    :type id: int\n    :param Authorization: \n    :type Authorization: str\n    :param body: \n    :type body: dict | bytes\n    :rtype: object",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "documentation": {}
+    },
+    {
+        "label": "user_login_post",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "peekOfCode": "def user_login_post(body):  # noqa: E501\n    \"\"\"用户登录\n    用户登录 # noqa: E501\n    :param body: \n    :type body: dict | bytes\n    :rtype: object\n    \"\"\"\n    if connexion.request.is_json:\n        body = .from_dict(connexion.request.get_json())  # noqa: E501\n    return 'do some magic!'",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "documentation": {}
+    },
+    {
+        "label": "user_post",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "peekOfCode": "def user_post(body):  # noqa: E501\n    \"\"\"新建用户\n    新建用户 # noqa: E501\n    :param body: \n    :type body: dict | bytes\n    :rtype: object\n    \"\"\"\n    if connexion.request.is_json:\n        body = .from_dict(connexion.request.get_json())  # noqa: E501\n    return 'do some magic!'",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.controllers.user_controller",
+        "documentation": {}
+    },
+    {
+        "label": "ApiResponse",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.api_response",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.api_response",
+        "peekOfCode": "class ApiResponse(Model):\n    \"\"\"NOTE: This class is auto generated by the swagger code generator program.\n    Do not edit the class manually.\n    \"\"\"\n    def __init__(self, code: int=None, type: str=None, message: str=None):  # noqa: E501\n        \"\"\"ApiResponse - a model defined in Swagger\n        :param code: The code of this ApiResponse.  # noqa: E501\n        :type code: int\n        :param type: The type of this ApiResponse.  # noqa: E501\n        :type type: str",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.api_response",
+        "documentation": {}
+    },
+    {
+        "label": "Archives",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.archives",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.archives",
+        "peekOfCode": "class Archives(Model):\n    \"\"\"NOTE: This class is auto generated by the swagger code generator program.\n    Do not edit the class manually.\n    \"\"\"\n    def __init__(self, id: int=None, no: int=None, name: int=None, gender: int=None, birthday: str=None, father_height: float=None, mother_height: float=None, contacts: str=None, phone_num: str=None, address: str=None, establish_time: str=None, menarche: int=None, menarche_time: str=None, creator_id: object=None):  # noqa: E501\n        \"\"\"Archives - a model defined in Swagger\n        :param id: The id of this Archives.  # noqa: E501\n        :type id: int\n        :param no: The no of this Archives.  # noqa: E501\n        :type no: int",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.archives",
+        "documentation": {}
+    },
+    {
+        "label": "Model",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.base_model_",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.base_model_",
+        "peekOfCode": "class Model(object):\n    # swaggerTypes: The key is attribute name and the\n    # value is attribute type.\n    swagger_types = {}\n    # attributeMap: The key is attribute name and the\n    # value is json key in definition.\n    attribute_map = {}\n    @classmethod\n    def from_dict(cls: typing.Type[T], dikt) -> T:\n        \"\"\"Returns the dict as a model\"\"\"",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.base_model_",
+        "documentation": {}
+    },
+    {
+        "label": "T",
+        "kind": 5,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.base_model_",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.base_model_",
+        "peekOfCode": "T = typing.TypeVar('T')\nclass Model(object):\n    # swaggerTypes: The key is attribute name and the\n    # value is attribute type.\n    swagger_types = {}\n    # attributeMap: The key is attribute name and the\n    # value is json key in definition.\n    attribute_map = {}\n    @classmethod\n    def from_dict(cls: typing.Type[T], dikt) -> T:",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.base_model_",
+        "documentation": {}
+    },
+    {
+        "label": "BoneAge",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.bone_age",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.bone_age",
+        "peekOfCode": "class BoneAge(Model):\n    \"\"\"NOTE: This class is auto generated by the swagger code generator program.\n    Do not edit the class manually.\n    \"\"\"\n    def __init__(self, id: int=None, means: str=None, source: str=None, source_department: str=None, source_person: str=None, x_ray: str=None, boneage_data: str=None, boneage_report: str=None):  # noqa: E501\n        \"\"\"BoneAge - a model defined in Swagger\n        :param id: The id of this BoneAge.  # noqa: E501\n        :type id: int\n        :param means: The means of this BoneAge.  # noqa: E501\n        :type means: str",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.bone_age",
+        "documentation": {}
+    },
+    {
+        "label": "MedicalRecords",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.medical_records",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.medical_records",
+        "peekOfCode": "class MedicalRecords(Model):\n    \"\"\"NOTE: This class is auto generated by the swagger code generator program.\n    Do not edit the class manually.\n    \"\"\"\n    def __init__(self, id: int=None, visit_time: str=None, height: float=None, weight: float=None, height_report: str=None, weight_report: str=None, has_boneage_info: bool=None, boneage: object=None, archive: object=None):  # noqa: E501\n        \"\"\"MedicalRecords - a model defined in Swagger\n        :param id: The id of this MedicalRecords.  # noqa: E501\n        :type id: int\n        :param visit_time: The visit_time of this MedicalRecords.  # noqa: E501\n        :type visit_time: str",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.medical_records",
+        "documentation": {}
+    },
+    {
+        "label": "TestRecord",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.test_record",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.test_record",
+        "peekOfCode": "class TestRecord(Model):\n    \"\"\"NOTE: This class is auto generated by the swagger code generator program.\n    Do not edit the class manually.\n    \"\"\"\n    def __init__(self, id: int=None, test_time: str=None, teststatus: bool=None, test_amount: int=None, test_means: str=None, test_ending: str=None, acc: float=None, test_person_id: object=None):  # noqa: E501\n        \"\"\"TestRecord - a model defined in Swagger\n        :param id: The id of this TestRecord.  # noqa: E501\n        :type id: int\n        :param test_time: The test_time of this TestRecord.  # noqa: E501\n        :type test_time: str",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.test_record",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.user",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.user",
+        "peekOfCode": "class User(Model):\n    \"\"\"NOTE: This class is auto generated by the swagger code generator program.\n    Do not edit the class manually.\n    \"\"\"\n    def __init__(self, id: int=None, username: str=None, password: str=None, name: str=None, department: str=None, is_active: bool=None):  # noqa: E501\n        \"\"\"User - a model defined in Swagger\n        :param id: The id of this User.  # noqa: E501\n        :type id: int\n        :param username: The username of this User.  # noqa: E501\n        :type username: str",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "TestArchivesController",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.test.test_archives_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.test.test_archives_controller",
+        "peekOfCode": "class TestArchivesController(BaseTestCase):\n    \"\"\"ArchivesController integration test stubs\"\"\"\n    def test_archives_get(self):\n        \"\"\"Test case for archives_get\n        档案列表\n        \"\"\"\n        headers = [('Authorization', 'Authorization_example')]\n        response = self.client.open(\n            '/api/archives',\n            method='GET',",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.test.test_archives_controller",
+        "documentation": {}
+    },
+    {
+        "label": "TestMedicalRecordsController",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.test.test_medical_records_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.test.test_medical_records_controller",
+        "peekOfCode": "class TestMedicalRecordsController(BaseTestCase):\n    \"\"\"MedicalRecordsController integration test stubs\"\"\"\n    def test_medical_records_get(self):\n        \"\"\"Test case for medical_records_get\n        就诊记录列表\n        \"\"\"\n        headers = [('Authorization', 'Authorization_example')]\n        response = self.client.open(\n            '/api/medical_records',\n            method='GET',",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.test.test_medical_records_controller",
+        "documentation": {}
+    },
+    {
+        "label": "TestTestRecordController",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.test.test_test_record_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.test.test_test_record_controller",
+        "peekOfCode": "class TestTestRecordController(BaseTestCase):\n    \"\"\"TestRecordController integration test stubs\"\"\"\n    def test_testrecord_get(self):\n        \"\"\"Test case for testrecord_get\n        测试记录列表\n        \"\"\"\n        headers = [('Authorization', 'Authorization_example')]\n        response = self.client.open(\n            '/api/testrecord',\n            method='GET',",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.test.test_test_record_controller",
+        "documentation": {}
+    },
+    {
+        "label": "TestUserController",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.test.test_user_controller",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.test.test_user_controller",
+        "peekOfCode": "class TestUserController(BaseTestCase):\n    \"\"\"UserController integration test stubs\"\"\"\n    def test_user_change_active_put(self):\n        \"\"\"Test case for user_change_active_put\n        修改账号状态\n        \"\"\"\n        body = Body()\n        headers = [('Authorization', 'Authorization_example')]\n        response = self.client.open(\n            '/api/user/change_active',",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.test.test_user_controller",
+        "documentation": {}
+    },
+    {
+        "label": "JSONEncoder",
+        "kind": 6,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.encoder",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.encoder",
+        "peekOfCode": "class JSONEncoder(FlaskJSONEncoder):\n    include_nulls = False\n    def default(self, o):\n        if isinstance(o, Model):\n            dikt = {}\n            for attr, _ in six.iteritems(o.swagger_types):\n                value = getattr(o, attr)\n                if value is None and not self.include_nulls:\n                    continue\n                attr = o.attribute_map[attr]",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.encoder",
+        "documentation": {}
+    },
+    {
+        "label": "deserialize_date",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.util",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.util",
+        "peekOfCode": "def deserialize_date(string):\n    \"\"\"Deserializes string to date.\n    :param string: str.\n    :type string: str\n    :return: date.\n    :rtype: date\n    \"\"\"\n    try:\n        from dateutil.parser import parse\n        return parse(string).date()",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.util",
+        "documentation": {}
+    },
+    {
+        "label": "deserialize_datetime",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.util",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.util",
+        "peekOfCode": "def deserialize_datetime(string):\n    \"\"\"Deserializes string to datetime.\n    The string should be in iso8601 datetime format.\n    :param string: str.\n    :type string: str\n    :return: datetime.\n    :rtype: datetime\n    \"\"\"\n    try:\n        from dateutil.parser import parse",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.util",
+        "documentation": {}
+    },
+    {
+        "label": "deserialize_model",
+        "kind": 2,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.util",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.util",
+        "peekOfCode": "def deserialize_model(data, klass):\n    \"\"\"Deserializes list or dict to model.\n    :param data: dict, list.\n    :type data: dict | list\n    :param klass: class literal.\n    :return: model object.\n    \"\"\"\n    instance = klass()\n    if not instance.swagger_types:\n        return data",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.swagger_server.util",
+        "documentation": {}
+    },
+    {
+        "label": "NAME",
+        "kind": 5,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.setup",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.setup",
+        "peekOfCode": "NAME = \"swagger_server\"\nVERSION = \"1.0.0\"\n# To install the library, run the following\n#\n# python setup.py install\n#\n# prerequisite: setuptools\n# http://pypi.python.org/pypi/setuptools\nREQUIRES = [\n    \"connexion\",",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.setup",
+        "documentation": {}
+    },
+    {
+        "label": "VERSION",
+        "kind": 5,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.setup",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.setup",
+        "peekOfCode": "VERSION = \"1.0.0\"\n# To install the library, run the following\n#\n# python setup.py install\n#\n# prerequisite: setuptools\n# http://pypi.python.org/pypi/setuptools\nREQUIRES = [\n    \"connexion\",\n    \"swagger-ui-bundle>=0.0.2\"",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.setup",
+        "documentation": {}
+    },
+    {
+        "label": "REQUIRES",
+        "kind": 5,
+        "importPath": "apps.drf.doc.day90-drf.素材.python-flask-server.setup",
+        "description": "apps.drf.doc.day90-drf.素材.python-flask-server.setup",
+        "peekOfCode": "REQUIRES = [\n    \"connexion\",\n    \"swagger-ui-bundle>=0.0.2\"\n]\nsetup(\n    name=NAME,\n    version=VERSION,\n    description=\"项目名\",\n    author_email=\"649641514@qq.com\",\n    url=\"\",",
+        "detail": "apps.drf.doc.day90-drf.素材.python-flask-server.setup",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "apps.drf.migrations.0001_initial",
+        "description": "apps.drf.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Student',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=255, verbose_name='姓名')),",
+        "detail": "apps.drf.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "DrfConfig",
+        "kind": 6,
+        "importPath": "apps.drf.apps",
+        "description": "apps.drf.apps",
+        "peekOfCode": "class DrfConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'apps.drf'",
+        "detail": "apps.drf.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "apps.drf.models",
+        "description": "apps.drf.models",
+        "peekOfCode": "class Student(models.Model):\n    \"\"\"学生信息\"\"\"\n    name = models.CharField(max_length=255, verbose_name=\"姓名\")\n    sex = models.BooleanField(default=True, verbose_name=\"性别\")\n    age = models.IntegerField(verbose_name=\"年龄\")\n    classmate = models.CharField(db_column=\"class\", max_length=5, verbose_name=\"班级编号\")\n    description = models.TextField(max_length=1000, null=True, blank=True, verbose_name=\"个性签名\")\n    class Meta:\n        db_table = \"drf_student\"\n        verbose_name = \"学生\"",
+        "detail": "apps.drf.models",
+        "documentation": {}
+    },
+    {
+        "label": "StudentSerializer",
+        "kind": 6,
+        "importPath": "apps.drf.serializers",
+        "description": "apps.drf.serializers",
+        "peekOfCode": "class StudentSerializer(serializers.ModelSerializer):\n    \"\"\"学生信息模型类序列化器\"\"\"\n    # 1. 字段声明（哪些字段需要转换？）\n    # serializers.Serializer 不能简写\n    # id = serializers.IntegerField(read_only=True)\n    # name = serializers.CharField(max_length=16, min_length=4, error_messages={\n    #     \"max_length\": \"错误说明\",\n    #     \"min_length\": \"错误说明\",\n    # })\n    # sex = serializers.BooleanField()",
+        "detail": "apps.drf.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "TestSerializer",
+        "kind": 6,
+        "importPath": "apps.drf.serializers",
+        "description": "apps.drf.serializers",
+        "peekOfCode": "class TestSerializer(serializers.Serializer):\n    x = serializers.IntegerField()\n    y = serializers.IntegerField()\n    z = serializers.IntegerField()\nclass Person():\n    z = 2\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\nif __name__ == \"__main__\":",
+        "detail": "apps.drf.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "apps.drf.serializers",
+        "description": "apps.drf.serializers",
+        "peekOfCode": "class Person():\n    z = 2\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\nif __name__ == \"__main__\":\n    # 如何理解序列化？obj -> {}\n    person = Person(1,2)\n    ser = TestSerializer(instance=person, context={\"message\": \"ok\"})\n    print(ser.data)",
+        "detail": "apps.drf.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "apps.drf.urls",
+        "description": "apps.drf.urls",
+        "peekOfCode": "app_name = \"drf\" # 生成命名空间\nurlpatterns = [\n    path('students/', views.StudentsView.as_view()),\n]",
+        "detail": "apps.drf.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "apps.drf.urls",
+        "description": "apps.drf.urls",
+        "peekOfCode": "urlpatterns = [\n    path('students/', views.StudentsView.as_view()),\n]",
+        "detail": "apps.drf.urls",
+        "documentation": {}
+    },
+    {
+        "label": "StudentsView",
+        "kind": 6,
+        "importPath": "apps.drf.views",
+        "description": "apps.drf.views",
+        "peekOfCode": "class StudentsView(View):\n    def get(self, request):\n        \"\"\"序列化器的基本使用\"\"\"\n        # 没有序列化器时，数据写入是在视图函数中实现的，现在是在序列化器中实现的\n        # 读取数据（流程比较简单）\n        # 序列化单个模型对象: obj -> {} -> json\n        # student_obj = Student.objects.first()\n        # student_serializer = StudentSerializer(instance=student_obj)\n        # return JsonResponse(student_serializer.data)\n        # 序列化多个模型对象: QuerySet[obj, obj] -> [{},{}] -> unsafe json",
+        "detail": "apps.drf.views",
+        "documentation": {}
+    },
+    {
+        "label": "TestMiddleware",
+        "kind": 6,
+        "importPath": "apps.middleware.md",
+        "description": "apps.middleware.md",
+        "peekOfCode": "class TestMiddleware():\n    def __init__(self, get_response):\n        self.get_response = get_response\n    # django内部默认会执行call方法\n    def __call__(self, request):\n        # 通过反射的机制，执行前处理和后处理函数，把代码分开了（研究一下反射: getattr和hasattr）\n        # 前处理\n        if hasattr(self, 'process_request'):\n            response = self.process_request(request)\n        response = response or self.get_response(request)",
+        "detail": "apps.middleware.md",
+        "documentation": {}
+    },
+    {
+        "label": "BasicMiddleware",
+        "kind": 6,
+        "importPath": "apps.middleware.md",
+        "description": "apps.middleware.md",
+        "peekOfCode": "class BasicMiddleware(MiddlewareMixin):\n    # Mixin做了很多事情，通过混入复用代码\n    def process_request(self, request):\n        # 权限控制\n        # print(\"BasicMiddleware 前处理\")\n        pass\n    def process_response(self, request, response):\n        # print(\"BasicMiddleware 后处理\")\n        # 必须有返回\n        # 浏览器限制: 同源策略，在响应头中添加字段",
+        "detail": "apps.middleware.md",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "apps.nodrf.migrations.0001_initial",
+        "description": "apps.nodrf.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Student',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=255, verbose_name='姓名')),",
+        "detail": "apps.nodrf.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "NodrfConfig",
+        "kind": 6,
+        "importPath": "apps.nodrf.apps",
+        "description": "apps.nodrf.apps",
+        "peekOfCode": "class NodrfConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'apps.nodrf'",
+        "detail": "apps.nodrf.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "apps.nodrf.models",
+        "description": "apps.nodrf.models",
+        "peekOfCode": "class Student(models.Model):\n    \"\"\"学生信息\"\"\"\n    name = models.CharField(max_length=255, verbose_name=\"姓名\")\n    sex = models.BooleanField(default=True, verbose_name=\"性别\")\n    age = models.IntegerField(verbose_name=\"年龄\")\n    classmate = models.CharField(db_column=\"class\", max_length=5, verbose_name=\"班级编号\")\n    description = models.TextField(max_length=1000, null=True, blank=True, verbose_name=\"个性签名\")\n    class Meta:\n        db_table = \"nodrf_student\"\n        verbose_name = \"学生\"",
+        "detail": "apps.nodrf.models",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "apps.nodrf.urls",
+        "description": "apps.nodrf.urls",
+        "peekOfCode": "app_name = \"nodrf\" # 生成命名空间\n# 路由\nurlpatterns = [\n    path('students/', views.Students.as_view()),\n    # path('students/<str:pk>/', views.StudentsInfoView.as_view()),\n    re_path('^students/(?P<pk>\\d+)', views.StudentsInfoView.as_view())\n]",
+        "detail": "apps.nodrf.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "apps.nodrf.urls",
+        "description": "apps.nodrf.urls",
+        "peekOfCode": "urlpatterns = [\n    path('students/', views.Students.as_view()),\n    # path('students/<str:pk>/', views.StudentsInfoView.as_view()),\n    re_path('^students/(?P<pk>\\d+)', views.StudentsInfoView.as_view())\n]",
+        "detail": "apps.nodrf.urls",
+        "documentation": {}
+    },
+    {
+        "label": "Students",
+        "kind": 6,
+        "importPath": "apps.nodrf.views",
+        "description": "apps.nodrf.views",
+        "peekOfCode": "class Students(View):\n    def get(self, request):\n        \"\"\"获取所有学生信息\"\"\"\n        try:\n            # 为什么要用values()\n            students_list = Student.objects.values() # -> QuerySet[{},{}]\n            # 如果是列表需要添加safe=False，如果是字典就不需要添加\n            return JsonResponse({\n                \"data\": list(students_list)\n            }, status=200)",
+        "detail": "apps.nodrf.views",
+        "documentation": {}
+    },
+    {
+        "label": "StudentsInfoView",
+        "kind": 6,
+        "importPath": "apps.nodrf.views",
+        "description": "apps.nodrf.views",
+        "peekOfCode": "class StudentsInfoView(View):\n    def get(self, request, pk):\n        # obj\n        try:\n            student = Student.objects.get(pk=pk) # -> obj\n            return JsonResponse(student.to_dict())\n        except Student.DoesNotExist:\n            return JsonResponse({\"error\": \"当前学生ID不存在\"}, status=400)\n    def put(self, request, pk):\n        \"\"\"",
+        "detail": "apps.nodrf.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "apps.req.migrations.0001_initial",
+        "description": "apps.req.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Student',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=255, verbose_name='姓名')),",
+        "detail": "apps.req.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "ReqConfig",
+        "kind": 6,
+        "importPath": "apps.req.apps",
+        "description": "apps.req.apps",
+        "peekOfCode": "class ReqConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'apps.req'",
+        "detail": "apps.req.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "apps.req.models",
+        "description": "apps.req.models",
+        "peekOfCode": "class Student(models.Model):\n    \"\"\"学生信息\"\"\"\n    name = models.CharField(max_length=255, verbose_name=\"姓名\")\n    sex = models.BooleanField(default=True, verbose_name=\"性别\")\n    age = models.IntegerField(verbose_name=\"年龄\")\n    classmate = models.CharField(db_column=\"class\", max_length=5, verbose_name=\"班级编号\")\n    description = models.TextField(max_length=1000, null=True, blank=True, verbose_name=\"个性签名\")\n    class Meta:\n        db_table = \"req_student\"\n        verbose_name = \"学生\"",
+        "detail": "apps.req.models",
+        "documentation": {}
+    },
+    {
+        "label": "StudentSerializer",
+        "kind": 6,
+        "importPath": "apps.req.models",
+        "description": "apps.req.models",
+        "peekOfCode": "class StudentSerializer(serializers.ModelSerializer):\n    \"\"\"学生信息模型类序列化器\"\"\"\n    class Meta:\n        # 导入时会把id设置为read_only\n        model = Student\n        fields = \"__all__\"\n        # 和字段声明里的写法做下对比\n        extra_kwargs = {\n            \"name\": {\n                \"max_length\": 10,",
+        "detail": "apps.req.models",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "apps.req.urls",
+        "description": "apps.req.urls",
+        "peekOfCode": "app_name = \"req\"\nurlpatterns = [\n    path('students/', views.StudentsView.as_view()), # django\n    path('stuapi/', views.StudentsAPIView.as_view()),  # APIView\n    re_path('^stuapi/(?P<pk>\\d+)/', views.StudentsInfoAPIView.as_view()),  # APIView\n    path('generic/', views.StudentsGenericAPIView.as_view()),  # GenericAPIView\n]",
+        "detail": "apps.req.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "apps.req.urls",
+        "description": "apps.req.urls",
+        "peekOfCode": "urlpatterns = [\n    path('students/', views.StudentsView.as_view()), # django\n    path('stuapi/', views.StudentsAPIView.as_view()),  # APIView\n    re_path('^stuapi/(?P<pk>\\d+)/', views.StudentsInfoAPIView.as_view()),  # APIView\n    path('generic/', views.StudentsGenericAPIView.as_view()),  # GenericAPIView\n]",
+        "detail": "apps.req.urls",
+        "documentation": {}
+    },
+    {
+        "label": "StudentsView",
+        "kind": 6,
+        "importPath": "apps.req.views",
+        "description": "apps.req.views",
+        "peekOfCode": "class StudentsView(View):\n    # WSGIRequest\n    def get(self, request):\n        # request中有什么？\n        # 1. 浏览器中的数据\n        # 2. django添加的数据\n        return JsonResponse({\"message\": \"ok\"})\nimport rest_framework\nfrom rest_framework.views import APIView\nfrom rest_framework.response import Response",
+        "detail": "apps.req.views",
+        "documentation": {}
+    },
+    {
+        "label": "StudentsAPIView",
+        "kind": 6,
+        "importPath": "apps.req.views",
+        "description": "apps.req.views",
+        "peekOfCode": "class StudentsAPIView(APIView):\n    \"\"\"APIView\"\"\"\n    # APIView类中的request对象是drf单独声明的，包含了django中的request对象\n    # request._request -> WSGIRequest\n    def get(self, request):\n        # GET http://127.0.0.1:8000/req/stuapi/?name=zhouyi\n        # request.GET -> <QueryDict: {'name': ['zhouyi']}>\n        # request.query_params # 查询字符串，本质上就是request.GET（不区分请求方法，View中有歧义，现在名称更加准确）\n        # request.path_info -> /req/stuapi/\n        # request.method -> GET",
+        "detail": "apps.req.views",
+        "documentation": {}
+    },
+    {
+        "label": "StudentsInfoAPIView",
+        "kind": 6,
+        "importPath": "apps.req.views",
+        "description": "apps.req.views",
+        "peekOfCode": "class StudentsInfoAPIView(APIView):\n    def get(self, request, pk):\n        \"\"\"获取一个学生信息\"\"\"\n        instance = Student.objects.get(pk=pk)\n        serializers = StudentSerializer(instance=instance)\n        return Response(serializers.data)\n    def put(self, request, pk):\n        \"\"\"更新一个学生信息\"\"\"\n        instance = Student.objects.get(pk=pk)\n        serializers = StudentSerializer(instance=instance, data=request.data)",
+        "detail": "apps.req.views",
+        "documentation": {}
+    },
+    {
+        "label": "StudentsGenericAPIView",
+        "kind": 6,
+        "importPath": "apps.req.views",
+        "description": "apps.req.views",
+        "peekOfCode": "class StudentsGenericAPIView(GenericAPIView):\n    \"\"\"GenericAPIView: APIView中增删改查的代码可以复用\"\"\"\n    # 这两个属性默认设置为None\n    queryset = Student.objects.all()\n    serializer_class = StudentSerializer\n    def get(self, request):\n        # 不建议直接使用query_set\n        instance_list = self.get_queryset()\n        serializers = self.serializer_class(instance_list, many=True)\n        return Response(serializers.data, status=status.HTTP_200_OK)",
+        "detail": "apps.req.views",
+        "documentation": {}
+    },
+    {
+        "label": "DemoRouter",
+        "kind": 6,
+        "importPath": "apps.utils.dbrouter.demo_db_router",
+        "description": "apps.utils.dbrouter.demo_db_router",
+        "peekOfCode": "class DemoRouter(object):\n    def db_for_read(self, model, **hints):\n        # print(\"read\")\n        # print(model._meta.app_label)\n        # print(model._meta.model_name)\n        # if model._meta.app_label == \"app01\":\n        #     return 'app01'\n        # if model._meta.app_label == \"app01\":\n        #     return 'app02'\n        return 'default'",
+        "detail": "apps.utils.dbrouter.demo_db_router",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Test.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]
