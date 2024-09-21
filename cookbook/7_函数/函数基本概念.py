@@ -1,6 +1,8 @@
 # 可接受任意数量的位置参数的函数
+
+from typing import Tuple
 # 函数的参数注解
-def avg(first:int, *rest:tuple(int)) -> int: 
+def avg(first:int, *rest:Tuple[int]) -> int: 
     return (first + sum(rest)) / (1 + len(rest))
 
 # 同时接收任意数量的位置参数和关键字参数
@@ -10,6 +12,8 @@ def anyargs(*args, **kwargs):
 
 # 注意：*args只能作为最后一个位置参数出现，**kwargs只能作为最后一个参数出现
 # *args和**kwargs中间出现的参数只能是关键字参数 === keyword-only
+
+# python的参数传递都是对象的引用传递
 
 # 编写只接受关键字参数的寒素
 def recv(maxsize, *, block):

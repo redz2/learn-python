@@ -20,7 +20,7 @@ class StudentAdmin(admin.ModelAdmin):
     # 配置搜索条件
     search_fields = ("name")
     
-    # 
+    # 可以编辑
     list_editable = ("name")
     
     

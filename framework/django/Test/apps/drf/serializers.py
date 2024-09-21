@@ -1,3 +1,5 @@
+# 字节序列 ---> 字符串 ---> 字典 ---> 对象
+
 from rest_framework import serializers
 from apps.drf.models import Student
 
@@ -5,13 +7,12 @@ from apps.drf.models import Student
 # 1. 数据格式转换 ---> 需要定义数据格式
 # 2. 数据校验 ---> 需要定义如何校验数据
 # 3. 数据写入 ---> 需要定义如何写入
+# 4. 序列化:  obj -> {} -> JSON
+# 5. 反序列化: JSON -> {} -> obj (数据校验)
 
 # serializer不是只能为数据库模型类转换数据格式,也可以为非数据库模型类的数据定义
 # serializer是独立于数据库的
 
-# 1. 序列化:  obj -> {} -> JSON
-# 2. 反序列化: JSON -> {} -> obj
-# 3. 反序列化: 数据校验
 
 # 模型类序列化器类
 # 1. 基于模型类自动生成序列化器字段
@@ -155,7 +156,6 @@ class StudentSerializer(serializers.ModelSerializer):
 # 后端做验证，写入数据库前做验证
 
 
-
 # test serializer
 class TestSerializer(serializers.Serializer):
     x = serializers.IntegerField()
@@ -171,7 +171,8 @@ class Person():
         self.y = y
 
 if __name__ == "__main__":
-    # 如何理解序列化？obj -> {}
+    # 如何理解序列化？obj <---> {}
+    # instance <---> data
     person = Person(1,2)
     ser = TestSerializer(instance=person, context={"message": "ok"})
     print(ser.data)

@@ -16,6 +16,7 @@ if __name__ == "__main__":
     #       -- var
     # -- package2
     # -- package3
+    # main.py
     sys.path.append(BASE_DIR)
     from cookbook.XXX.YYY import test2
     test2.say_hello()

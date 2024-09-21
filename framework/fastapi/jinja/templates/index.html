@@ -1,0 +1,22 @@
+{% comment %} 模板语法之变量渲染 {% endcomment %}
+{{ name }}
+{{ books.0}}
+
+{% comment %} 模板语法之过滤器: jinja2内置字符串处理函数 {% endcomment %}
+{{ name | upper }}
+{{ name | trim }}
+{{ name | lower }}
+
+
+{% comment %} 模板语法之控制结构 {% endcomment %}
+{% if age > 18 %}
+    <div>yes</div>
+{% else %}
+    <div>no</div>
+{% endif %}
+
+<ul>
+    {% for book in books %}
+        <li>book</li>
+    {% endfor %} 
+</ul>

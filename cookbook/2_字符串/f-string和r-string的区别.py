@@ -4,7 +4,7 @@ r: Raw String
 b: Byte String
 u: Unicode String Python3中默认
 """
-name = zhouyi
+name = "zhouyi"
 age = 25
 
 f_str = f"my name is {name}"
@@ -18,5 +18,12 @@ b_str = "my name is %(name)s, I am %(age)d" % {"name": name, "age": age}
 c_str = "my name is {name:s}, I am {age:d}".format(name=name,age=age)
 e_str = "my name is {!s}"
 
+
 # 使用f-string
 d_str = f"my name is {name}, I am {age}"
+
+
+
+    
+
+        

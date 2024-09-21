@@ -95,11 +95,11 @@ class UsersView(View):
         # 联表查询：depart是ForeignKey
         # 正向操作
         # models.UserInfo.objects.filter(depart__title="销售部").delete() 
-        # models.UserInfo.objects.filter(id__gt=1) -> 只差自己数据库的字段
+        # models.UserInfo.objects.filter(id__gt=1) -> 只查自己数据库的字段
         # models.UserInfo.objects.filter(id__gt=1).values("id", "name", "depart__title") -> 执行一次SQL，联表查询 ￥￥￥
         # models.UserInfo.objects.filter(id__gt=1).values_list("id", "name", "depart__title") -> 执行一次SQL ￥￥￥
 
-        # models.UserInfo.objects.filter(id=1).update(depart_id=2) -> 只能更新自己表中的字段
+        # models.UserInfo.objects.filter(id=1).update(depart__id=2) -> 只能更新自己表中的字段
         # models.UserInfo.objects.filter(id=1).update(depart__title="xxx") -> 不能这么写
 
         # 反向操作（一般用正向操作）
@@ -107,7 +107,7 @@ class UsersView(View):
         # models.Department.objects.filter(title="销售部").values("id", "title", "d1__name") -> 如果有多个外键呢？就不知道是和表中哪个外键进行关联的
  
         # 3. 多对多数据操作
-        # models.B2G.objects.create(boy_id=1,gril_id=2)
+        # models.B2G.objects.create(boy__id=1,gril_id=2)
         # models.B2G.objects.create(boy=boy_object,girl=gril_object)
         
         # models.B2G.objects.filter(boy__name="zy").selected_related("girl")
