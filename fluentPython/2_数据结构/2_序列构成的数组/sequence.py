@@ -23,8 +23,8 @@ tuple、str、bytes
 """
 list: 列表是一个可变的容器序列
 """
-# 列表推导：用来创建列表
 symbols = 'abcdefg'
+# 列表推导：用来创建列表
 codes_1 = [ord(s) for s in symbols if ord(s) > 127] # python会忽略[],{},()中的换行！！！
 # map和filter不好理解
 codes_2 = list(filter(lambda c: c > 127, map(ord, symbols)))
@@ -34,6 +34,9 @@ codes_2 = list(filter(lambda c: c > 127, map(ord, symbols)))
 # 和列表推导的区别，使用小括号替代中括号
 codes_3 = (ord(s) for s in symbols if ord(s) > 127) 
 codes_4 = tuple(ord(s) for s in symbols if ord(s) > 127) # 如果生成器表达式是函数唯一参数，不需要再写括号了
+
+# 常用方法
+# append, insert, 
 
 """
 tuple: 元组

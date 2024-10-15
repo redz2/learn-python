@@ -1,0 +1,25 @@
+FROM python:3.12.1-bookworm
+
+ENV LANG en_US.UTF-8
+ENV LC_ALL C
+ENV LANGUAGE en_US.UTF-8
+ENV PATH="${PATH}:/shaw/.local/bin"
+
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+RUN set -ex \
+    && addgroup --system --gid 88 shaw \
+    && adduser --system --home /shaw --uid 88 --gid 88 shaw
+
+RUN mkdir /code
+RUN chown -R shaw:shaw /code
+
+USER shaw
+WORKDIR /code
+COPY . /code
+RUN pip install --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple/
+RUN pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
+
+EXPOSE 8000
+
+ENTRYPOINT  gunicorn -w 1 -b 0.0.0.0:8000 lijobs.wsgi:application

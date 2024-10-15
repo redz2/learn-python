@@ -1,48 +1,7 @@
 from typing import Union, Optional, List, Tuple, Dict
 from fastapi import FastAPI, Request
-import inspect
-
-
-# # 网上找的解决文档接口无法下载css和js的问题，感觉没用
-# def get_function_default_args(func):
-#     '''获取函数默认参数'''
-#     sign = inspect.signature(func)
-#     return {
-#         k: v.default
-#         for k, v in sign.parameters.items()
-#         if v.default is not inspect.Parameter.empty
-#     }
-
-# def swagger_monkey_patch(*args, **kwargs):
-#     """
-#     Wrap the function which is generating the HTML for the /docs endpoint and
-#     overwrite the default values for the swagger js and css.
-#     """
-#     param_dict = get_function_default_args(get_swagger_ui_html)
-#     print([param_dict])
-#     swagger_js_url = param_dict['swagger_js_url'].replace('https://cdn.jsdelivr.net/npm/', 'https://unpkg.com/')
-#     swagger_css_url = param_dict['swagger_css_url'].replace('https://cdn.jsdelivr.net/npm/', 'https://unpkg.com/')
-#     return get_swagger_ui_html(
-#         *args, **kwargs,
-#         # swagger_js_url=swagger_js_url,
-#         # swagger_css_url=swagger_css_url
-#     )
-    
-# # 通过partial改写函数
-# from functools import partial
-# from fastapi.openapi.docs import get_swagger_ui_html
-
-# def new_get_swagger_ui_html(old_func):    
-#     param_dict = get_function_default_args(old_func)
-#     swagger_js_url = param_dict['swagger_js_url'].replace('https://cdn.jsdelivr.net/npm/', 'https://unpkg.com/')
-#     swagger_css_url = param_dict['swagger_css_url'].replace('https://cdn.jsdelivr.net/npm/', 'https://unpkg.com/')
-#     return partial(get_swagger_ui_html, swagger_js_url=swagger_js_url, swagger_css_url=swagger_css_url)
-
-
-
 
 app = FastAPI()
-# app.get_swagger_ui_html = new_get_swagger_ui_html(get_swagger_ui_html)
 
 # 自定义中间件
 @app.middleware("http")
@@ -119,6 +78,7 @@ def read_root(request: Request):
         )
 def home():
     return {"user_id": 1}
+
 
 # http://127.0.0.1:8000/items/1?q=test
 # 路径参数?查询参数

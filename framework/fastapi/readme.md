@@ -25,6 +25,7 @@ fastapi dev do_fastapi.py 测试环境
 * Gunicorn（易于配置和使用）
     * 是一个Python WSGI HTTP服务器，通过使用多个进程来提供高性能的处理
     * 传统同步Web应用（django，flask）
+    * pre-fork worker model
 ```
 gunicorn -w 1 -b 127.0.0.1:8000 app:app
 ```

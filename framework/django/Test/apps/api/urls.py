@@ -22,5 +22,3 @@ urlpatterns = [
 # url2 = reverse("news", kwargs={"nid": "xxx"})
 # url3 = reverse("api:home") # 如果有namespace呢？
 
-# slash url中最后的斜杠问题
-# 如果访问时不加slash，django会重定向到带slash的地址

@@ -1,6 +1,7 @@
-1. pip设置国内源
+1. pip设置国内源、使用国内源
 ```
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+pip install XXX -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 2. 配置venv
