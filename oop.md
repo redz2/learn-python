@@ -1,8 +1,6 @@
 # Python编程思想
 1. 基本的程序设计模式(IPO)
-* input
-* process（模块化设计，拆分成更小的IPO）
-* output
+* input -> process（模块化设计，拆分成更小的IPO）-> output
 ```
 输入（自己主动去获取数据，提供API添加配置信息）
 系统（处理逻辑）

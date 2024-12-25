@@ -1,6 +1,6 @@
 # Web框架
 * 浏览器 ---> socket ---> Web框架 ---> 业务逻辑
-* 框架对比
+* 主流框架对比
     * 功能集成
         * django: 相对大
         * 其他（flask,fastapi）: 相对小
@@ -8,7 +8,7 @@
         * 异步非阻塞: tornado、sanic、fastapi、django
         * 同步: django、flask、bottle、web.py
     * fastapi如何处理多个请求？
-        * 单线程忙碌（基于事件循环，处理IO耗时任务）
+        * 单线程处理（基于事件循环，处理IO耗时任务）
         * IO多路复用（请求列表，任务列表...）
     * django如何处理多个请求？
         * 通过多线程处理
@@ -55,7 +55,7 @@ cd apps
 python3 ../manage.py startapp myapp
 ```
 
-5. request生命周期
+5. Http请求的生命周期
     * 路由
         1. 传统写法
         2. 正则写法

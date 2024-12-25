@@ -36,7 +36,7 @@ my_dict.items() # 返回所有键值对
 my_dict.keys() # 获取所有的键
 my_dict.values() # 获取所有的值
 my_dict.__len__() # len(my_dict)
-my_dict.setdefault("k", "default") # 如果有该键，设置为"default"，并返回这个值；如果没有该键d["k"] = "default"，并返回"default"
+my_dict.setdefault("k", "default") # 如果存在key，返回key的值；如果不存在key，d["k"] = "default"，并返回默认值
 my_dict.__setitem__("k", "v") # my_dict["k"] = "v"
 
 # 案例：统计每个单词出现的位置

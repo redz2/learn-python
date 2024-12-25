@@ -6,11 +6,11 @@
 ## Redis（Remote Dictionary Service，远程字典服务）
 * Redis支持数据持久化（基于RDB和AOF），用来替代Memcache
 * 数据类型
-    1. string
-    2. hash
-    3. list
-    4. set（无序，去重）
-    5. zset（有序，去重）
+    1. String
+    2. Hash
+    3. List
+    4. Set（无序集合）
+    5. Zset（有序集合，sorted set）
     6. custom
 
 ```
@@ -48,32 +48,30 @@ rename name myname
 
 
 ### 字符串
+* set key value [EX seconds] [PX milliseconds] [NX|XX]
+    * EX: 设置键的过期时间为seconds
+    * PX: 设置键的过期时间为milliseconds
+    * NX: 只在键不存在时，才对键进行设置操作
+        * setnx name zy
+    * XX: 只在键已经存在时，才对键进行设置操作
+        * setex name 10 zz
+            * 等价于: set name zz 并且 expire name 10
+        * psetex
+* 批量设置: mset key value [key value]
+* 批量查询: mget key [key]
+* 追加内容: append key value
+* 如果是数字字符串: set count 10
+    * decr count
+    * incr count
+    * decrby count number
+    * incrby count number
+* 获取字符串的子串: getrange key start end
 ```
-set name zhou
-set age 23
+set name zy
+set age 30
 
-# 不能重复赋值（分布式锁）
-setnx name yi
-del name
-
-# 设置有效期（10s后过期，优惠券，验证码）
-setex name 10 yi
-set name yi
-expire name 10
-
-# 批量设置和批量查询
-mset name zhou age 18
-mget name age
-
-# 追加内容
-append name "yi"
-
-# 数字字符串自增自减（必须是一个数字字符串）
-set count 90
-incr count 
-decr count
-incrby count 10
-decrby count 10
+setnx job devops
+setex name 10 zy  // 设置有效期（10s后过期，优惠券，验证码）
 
 # 计算字符串长度（如果是中文呢？）
 strlen name
@@ -89,8 +87,6 @@ set name "a" # 01100001 -> 01100010
 setbit name 6 1
 setbit name 7 0
 get name -> "b"
-
-签到系统
 ```
 
 ### list（列表：成员必须是string）
@@ -113,22 +109,24 @@ get name -> "b"
     * lrange names -2 1
     * llen names
 
-### hash（info是一个hash）
+### hash
 1. 增
-    * hset info field value # 设置hash的键值对(按照键值键值的方式来呈现)
-    * hset info age 13 hobby sing  class 4 # 同时设置多个键的值
+    * hset key field value # 设置hash的键值对(按照键值键值的方式来呈现)
+        * 如果哈希表key不存在，创建新的hash表
+        * 如果field已经存在，就覆盖，返回0；否则创建新的field，返回1
+    * hmset key field value [filed value]
 2. 删
-    * hdel info field # 删除hash中的某个键
+    * hdel key field  # 删除hash中的某个键
 3. 改
     * hincrby info field 10 # 怎么没有减的操作命令？
     * hset info field new_value # 重新设置新的value
 4. 查
-    * hget info field # 获取一个键的值
-    * hmget info field1 field2 # 获取多个键的值
-    * hgetall info # 获取所有键的值
-    * hkeys info # 获取所有的键
-    * hvals info # 获取所有的值
-    * hexists info field # 判断hash中是否存在某个键
+    * hget key field # 获取hash中的某个键的值
+    * hmget key field [field ...] # 获取多个键的值
+    * hgetall key # 获取hash中所有的键值
+    * hkeys key # 获取hash中所有的键
+    * hvals key # 获取hash中所有的值
+    * hexists key field # 判断hash中是否存在某个键
 
 ### set（无序集合：去重）
 1. 增: sadd authors zsy zy xk

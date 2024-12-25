@@ -1,9 +1,11 @@
 """
 基于socket手撸一个web框架
 
-uwsgi + web框架
-wsgiref + django
-werkzeug + flask
+WSGI: 接口规范，用于连接Web服务器和Web应用
+Web框架: 基于WSGI构建，提供了一个WSGI应用程序对象（django、fastapi）
+框架自带WSGI实现（生产一般用uwsgi）: 
+1. wsgiref + django
+2. werkzeug + flask
 """
 
 import socket
@@ -39,7 +41,7 @@ while 1:
     conn.send(b"HTTP/1.1 200 OK\r\n\r\n")
     conn.send(b"Hello World!")
     
-    # 断开连接
+    # 6. 断开连接
     conn.close()
     
 # 停止服务端程序
