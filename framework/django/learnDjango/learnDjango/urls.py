@@ -20,12 +20,16 @@ from django.urls import path, include
 from django.shortcuts import HttpResponse
 from apps.firststep import urls
 
+# 
 def info(request):
     return HttpResponse("simple")
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    path('simpe/', info),
+    
+    # 一个最简单的请求
+    # path -> 将url和handler函数对应起来
+    path('simple/', info),
     
     # 在firststep的urls.py中需要配置命名空间的名称: app_name="first_step"
     path('firststep/', include("apps.firststep.urls", namespace="firststep")),

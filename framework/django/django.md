@@ -1,20 +1,3 @@
-# Web框架
-* 浏览器 ---> socket ---> Web框架 ---> 业务逻辑
-* 主流框架对比
-    * 功能集成
-        * django: 相对大
-        * 其他（flask,fastapi）: 相对小
-    * 同步框架 vs 异步框架
-        * 异步非阻塞: tornado、sanic、fastapi、django
-        * 同步: django、flask、bottle、web.py
-    * fastapi如何处理多个请求？
-        * 单线程处理（基于事件循环，处理IO耗时任务）
-        * IO多路复用（请求列表，任务列表...）
-    * django如何处理多个请求？
-        * 通过多线程处理
-        * celery（IO或非IO耗时）
-            * 默认多进程
-
 # Django
 1. 安装django
 ```
@@ -56,12 +39,52 @@ python3 ../manage.py startapp myapp
 ```
 
 5. Http请求的生命周期
-    * 路由
-        1. 传统写法
-        2. 正则写法
-        3. 分组
+    * 路由 
     * 视图
-    * 模板
     * 静态文件和媒体文件
+        1. 静态文件: 根目录下static，注册app的static
+        ```html
+        {% load static %}
+        <img src="{% static 'api/1.png'%}">
+        ```
+        2. 媒体文件: 用户上传的数据
+        ```
+        from django.conf.urls.static import static
+        from django.conf import settings
+        from apps.api import views
+        urlpatterns = [
+            path('api/', include('apps.api.urls')),
+        ] + static(settings.MEDIA_URL, document_rootsettings.MEDIA_ROOT)
+
+        ```
+    * 模板
     * 中间件
     * ORM
+
+6. 框架
+    * 我们在django或fastapi框架中编写函数，只是去给关键对象添加属性而已
+    * 为啥reverse能根据字符串反向生成url？
+    * gin内部也维护了一个map来记录url和handler的对应关系
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. 我妈为什么这么拼命
+其实我们家条件虽然说不上大富大贵，但也算是吃喝不愁，我妈是典型的农村妇女，这一辈子目前大部分时间都是在乡下，极少数情况会去城里
+    以前，我认为我是个地地道道的农村人，家里住着自建房，种着地。现在，已经拆迁了，不过不像网上传的那样，拆完

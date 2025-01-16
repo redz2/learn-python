@@ -119,33 +119,6 @@ DATABASES = {
     }
 }
 
-# 为什么需要连接池？
-# 避免重复创建连接，关闭连接，减少性能损耗
-
-
-# django默认没有数据库连接池的功能
-# pymsql  ---> 操作数据库
-# DBUtils ---> 连接池 django-db-connection-pool，底层使用支持SQLAchemy数据库连接池
-
-# DATABASES = {
-#     "bak":{
-#         'ENGINE': 'dj_db_conn_pool.backends.mysql',
-#         'NAME':'xxx',
-#         'USER': 'root',
-#         'PASSWORD': 'root123',
-#         'HOST':'127.0.0.1', 
-#         'PORT' : 3306,
-#         'POOL OPTIONS':{
-#             'POOL_SIZE':10, # 最小
-#             'MAX_OVERFLOW': 10, # 在最小的基础上,还可以增加10个,即:最大20个。
-#             'RECYCLE': 24 * 60, # 连接可以被重复用多久,超过会重新创建,-1表示永久。
-#             'TIMEOUT': 30, # 池中没有连接最多等待的时间。  
-#         }
-#     }
-# }
-
-
-
 # django setting中的代码被执行了两次
 # 1，加载和执行初始化代码
 # 2，启动服务器的阶段
@@ -155,9 +128,6 @@ DATABASES = {
 # else:
 #     print("第二次执行")
 
-# django只提供了引擎，如果要连接数据库还需要安装第三方库
-# pymsql
-# mysqlclient
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',

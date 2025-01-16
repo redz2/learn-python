@@ -1,47 +1,20 @@
 from django.shortcuts import render,HttpResponse,reverse
 
-# Create your views here.
-# FBV和CBV本质上是一样的，只是写法不同: FBV使用函数，而CBV使用类
-
 from django.contrib.auth.decorators import login_required
 
 # 该视图需要用户登录才能访问
 @login_required(login_url="/admin/login")
 def home(request):
 
-    # 视图函数返回内容
     # 1. HttpResponse
     res = HttpResponse('<div style="color: red">Home</div>')
     return res
-
-    # 2. JsonReponse
-    # JsonReponse(data_dict)    自动序列化: dict -> json
-    # HttpResponse(json.dumps(data_dict))  手动序列化
-
-    # 3. 重定向
-    # return redirect("http://www.baidu.com") 浏览器再次发起到百度的请求
-    # url = reverse("api:home")
-    # return redirect(url)
-
-    # 4. 渲染
-    # return render(request, "login.html")
-
-    # 视图函数返回响应头
-    # 1. 设置响应头: res["xxx"] = "yyy"
-    # 2. 设置cookie: res.set_cookie('xxx', "yyy") 
 
 from django.views import View
 from apps.api import models
 
 class UsersView(View):
 
-    # url ---> function
-    # url ---> as_view() ---> view() ---> dispatch() ---> 根据请求方法执行不同的函数
-    
-    # 使用反射实现功能分发
-    # handler = getattr(obj, "get")
-    # handler(request, *args, **kwargs)
-    
     def get(self, request):
 
         # 数据操作
@@ -125,10 +98,6 @@ class UsersView(View):
 
     def post(self, request):
         return HttpResponse("users post")
-
-
-
-
 
 # 127.0.0.1:8000/news/xyz/
 def news(request, nid):

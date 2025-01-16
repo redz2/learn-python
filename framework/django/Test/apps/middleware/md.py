@@ -43,31 +43,13 @@ class TestMiddleware():
         # 这里一定要有返回值
         return response
 
-    def process_exception(self, request, exception):
-        # 统一处理异常
-        # DRF框架中如何统一处理异常？
-        pass
-
-    def process_template_response(self, request, response):
-        # 在视图函数中，如果返回TemplateResponse对象
-        # render(request, "login.html") 步骤拆分
-        # response.render()
-        return response
 
 
-# 使用django提供的MiddlewareMixin混入
-# 1. 实现了__init__方法
-# 2. 实现了__call__()方法
 class BasicMiddleware(MiddlewareMixin):
-    # Mixin做了很多事情，通过混入复用代码
     def process_request(self, request):
         # 权限控制
-        # print("BasicMiddleware 前处理")
         pass
 
     def process_response(self, request, response):
-        # print("BasicMiddleware 后处理")
-        # 必须有返回
-
         # 浏览器限制: 同源策略，在响应头中添加字段
         return response

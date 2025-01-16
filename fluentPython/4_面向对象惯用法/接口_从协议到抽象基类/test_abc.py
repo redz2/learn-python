@@ -1,10 +1,12 @@
-"""ABC
-Abstract Base Class(抽象基类) -> 使接口更明确、能验证实现是否符合规定 -> 抽象类表示接口
+"""
+Abstract Base Class(抽象基类): 使接口更明确、能验证实现是否符合规定
 
+开发过程中，先抽象出相同的部分，然后定义好基类，抽象方法，最后实现具体类
 """
 
 import abc
 
+# 继承abc.ABC
 class Tombola(abc.ABC):
     """这是一个抽象基类，有两个抽象方法，有两个具体方法
     
@@ -122,10 +124,6 @@ class TomboList(list):
     
     def inspect(self):
         return tuple(sorted(self))
-        
-        
-
-        print("sda")
 
 if __name__ == "__main__":
     tl = TomboList(range(10))
