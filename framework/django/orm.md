@@ -1,4 +1,8 @@
 # ORM
+***
+* 主要描述如何连接数据库创建表？表结构有哪些常见字段？表与表之间有几种关系？如何创建多数据库？
+***
+
 * 本质: 将对象操作 __翻译__ 为 SQL语句
     * 类 -> 表结构
     * 对象 -> 记录
@@ -14,9 +18,13 @@ class UserInfo(models.Model):
     class Meta:
         # 默认表名: appname_userinfo
         db_table = "自定义表名"
-        index_togerther = [ # 联合唯一索引
-            ("name", "age") 
-        ]
+        # 联合索引
+        index_togerther = [("name", "age"),]
+        # 联合唯一索引
+        unique_together = (("name", "age"),)
+        # admin中显示的表名称
+        verbose_name = "单数名称"
+        verbose_name_plural = "复数名称"
 ```
 
 * 表结构常见字段和参数
@@ -57,6 +65,15 @@ DecimalField(verbose_name="余额", max_digits=10, decimal_places=2)  # 精确�
     ```
     * 一对一
         * 字段太多，将单表拆分成多个表（100列的一张表拆分成2张50列的表）
+        * 本质: 
+        ```py
+        class Blog(models.Model):
+            user = models.OneToOneField(to="UserInfo")
+            # user = models.ForeignKey(to="UserInfo", unique=True)
+        ```
+
+***
+***
 
 * 编写ORM的步骤
 1. settings.py连接数据库
@@ -69,6 +86,7 @@ python3 manage.py makemigrations # 会找到所有已注册app中的models.py生
 python3 manage.py migrate        # 连接到数据库运行sql语句
 python3 manage.py migrate --fake <app name> zero # 如何清理migrations表？
 ```
+
 ```python
 DATABASES = {
     'default': {
@@ -114,7 +132,7 @@ DATABASES = {
 }
 ```
 
-* 多数据库场景（注意：一定不要跨库做外键，django不支持，尽可能把有关联的表放在一个库）
+* 多数据库场景
 1. 读写分离（单app）
 ```bash
 # 192.168.1.1 master 数据库做主从同步
@@ -123,17 +141,22 @@ DATABASES = {
 python manage.py migrate app01 --database=default
 python manage.py migrate app01 --database=bak # 在两个数据库中创建相同的表结构
 ```
+
 ```py
-# settings配置中: DATABASE_ROUTES = ["path/to/DemoRouter"]
+# 在 utils/dbrouter.py 中编写router类
+# 在 settings 中配置router类
+DATABASE_ROUTERS = ["apps.utils.dbrouter.DemoRouter"]
+
 """
-# 编写router类，
+编写router类，
 1. 单app读写分离
-2. 多app分库（按照app来区分）
+2. 多app分库（按照app区分: model._meta.app_label）
 3. 单app分库（按照表名区分: model._meta.mode_name）
+    * 注意: 一定不要跨库做关联，数据库支持，但是django不支持
 """
 class DemoRouter(object):
+    # 读操作
     def db_for_read(self, model, **hints): 
-        # 读操作
         # 多app如何使用不同的数据库？
         # if model._meta.app_label == "app01":
         #     return 'bak01'
@@ -141,40 +164,39 @@ class DemoRouter(object):
         #     return 'bak02'
         return "bak"
     
+    # 写操作
     def db_for_write(self, model, **hints): # 返回数据库连接，默认使用default
-        # 写操作
         return "default" 
 
-    # 执行 python manage.py migrate 时会执行
+    # 执行 python manage.py migrate 会执行，默认返回true
     def allow_migrate(self, db, app_label, model_name=None, **hints):
-        # 连接数据库创建表，可以根据需求创建特定的表
+        # 如果一个app有100张表，如何控制其中50张表放在default中，另外50张表放在bak中？
         if db == 'default':
-            if model_name in ['role']:
+            if model_name in ['role']: # 哪些表放default
                 return True
             else:
                 return False
         
         if db == 'bak':
-            if model_name in ['users']:
+            if model_name in ['users']: # 哪些表放bak
                 return True
             else:
                 return False
 ```
 
 2. 分库（多app）
+    * 多个app，连接不同的数据库
 ```bash
-# 不同的app，连接到不同的数据库，执行初始化sql语句（创建表）
+# 如何在不同的数据库中创建不同app的表？
 python manage.py migrate app01 --database=default
 python manage.py migrate app02 --database=bak
-
-# 视图函数中，连接数据库，默认都是default，如何知道连接哪个数据库进行操作呢？根据model._meta.app_label判断数据库属于哪个app
-def index(request):
-    # 默认使用default数据库连接，可以手动指定使用哪个数据库连接
-    models.UserInfo.objects.using("bak").create(name="zz")
-
-# 每个操作都要写也挺麻烦的，可以在DemoRouter中，针对app返回不同的数据库连接
 ```
 
+```py
+# 在视图函数中，连接数据库默认都是default，可以手动指定数据库连接
+def index(request):
+    models.UserInfo.objects.using("bak").create(name="zz")
 
-
-
+# 可以在DemoRouter中，针对app返回不同的数据库连接
+# 根据model._meta.app_label判断数据库属于哪个app
+```

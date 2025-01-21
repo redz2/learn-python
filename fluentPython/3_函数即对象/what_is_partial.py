@@ -3,7 +3,6 @@
 2. 使用场景：某些参数固定，不需要反复传入
 """
 
-# 
 from functools import partial
 def spam(a, b, c, d):
     print(a, b, c, d)

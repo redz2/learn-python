@@ -1,3 +1,6 @@
+# threading
+1. 启动线程
+```python
 import time
 
 def countdown(n):
@@ -9,3 +12,4 @@ def countdown(n):
 from threading import Thread
 t = Thread(target=countdown, args=(10,))
 t.start()    
+```
