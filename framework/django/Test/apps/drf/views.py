@@ -1,10 +1,5 @@
 # Create your views here.
 
-# DRF 不显式调用视图函数，所以更难理解
-# 如果不是标准的RESTful API接口，怎么使用DRF呢？
-
-# 如何手动使用QuerySet？
-# 如何手动使用序列化器？
 
 # 创建Serializer对象
 # 序列化器(instance=None, data=empty, many=False, context=None, **kwargs)
@@ -59,8 +54,6 @@ class StudentsView(View):
         
         # 2. 实例化serializer对象
         ser = StudentSerializer(instance=stu_object, data=data)
-        # 只更新部分数据，对不存在的数据不进行验证
-        # ser = StudentSerializer(instance=stu_object, data=data, partial=True)
         
         # 3. 数据格式校验
         # is_valid = ser.is_valid() # 验证失败不会抛出异常 True or False
@@ -71,14 +64,8 @@ class StudentsView(View):
         #     print(ser.errors)
         #     print(ser.error_messages)
         ser.is_valid(raise_exception=True) # 会抛出异常，工作中常用
-        
         # 4. 写入数据
-        # 如果序列化器有instance参数，执行update
-        # 如果序列化器没有instance参数，执行create
         ser.save()
-        # 可以额外传递参数，给model补充数据
-        # ser.save(age=31)
-        
         return JsonResponse(ser.data)
 
 

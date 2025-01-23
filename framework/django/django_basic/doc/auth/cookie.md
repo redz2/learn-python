@@ -1,38 +1,35 @@
 ## cookie
-
+***
 ![cookie原理](png/cookie.png)
-
-### 是不是可以给Cookie也写个中间件，把用户信息 -> request.user
-
-1. 登录以后如何设置cookie？客户端会存储cookie信息
-```
+***
+1. 如何生成cookie？cookie保存在客户端
+```python
 def login(request):
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
-
-        # 模拟验证用户
+        # 模拟验证用户: 类似于自带的authenticate函数
         user = User.objects.filter(username=username, password=password).first()
-
         if user:
-
             # 设置认证 Cookie
             response = HttpResponseRedirect('/home/')
             # 浏览器下次请求时会设置 Cookie
             # cookie 为什么容易伪造？因为都是写用户信息
             # cookie 在服务器端无法控制，只能等待过期
-            response.set_cookie('user_id', user.id, max_age=3600)  # 1 小时有效期
+            response.set_cookie('user_id', user.id, max_age=3600)  # 1小时有效期
             return response
         else:
             return HttpResponse('登录失败')
     return render(request, 'login.html')  # 假设您有一个登录页面模板
 ```
 
-2. django中如何进行认证？在视图函数中获取Cookie，从而获取用户信息；或者写一个认证的中间件，设置request.user的值为登录用户
-```
+2. 如何进行用户认证？获取用户
+    * django默认用的是session，cookie已经不怎么用了
+    * 所以并没有中间件处理cookie
+    * 而session有中间件去解析，得到用户
+```python
 def home(request):
-
-    # 检查认证 Cookie
+    # 1. 在视图函数中检查是否有cookie，获取登录用户信息
     user_id = request.COOKIES.get('user_id')
     if user_id:
         user = User.objects.get(id=user_id)
@@ -42,7 +39,7 @@ def home(request):
 ```
 
 3. drf中如何进行认证？每个视图类方法都会通过认证类，认证后会设置request.user的值
-```
+```python
 class CookieAuthentication(BaseAuthentication):
     def authenticate(self, request):
         user_id = request.COOKIES.get('user_id')

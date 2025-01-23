@@ -2,15 +2,13 @@
 [token](png/token.png)
 
 ## 和cookie、session的相同处
-
-都是把东西给浏览器，不过是给不同的东西
-1. 如何生成token？login -> token
-2. 如何验证token？middleware -> authentication -> """request.user""" -> 是否可以访问视图函数
-
+* 都是把东西给浏览器，不过是给不同的东西
+1. 如何生成token？login -> token（当然也可以使用第三方平台生成token）
+2. 如何验证token？middleware -> 获取token -> 解析用户（这篇文章并没有涉及）
 
 ## JWT Token: 如何生成token？如何更新token？
 官网地址: https://django-rest-framework-simplejwt.readthedocs.io/en/latest/getting_started.html
-```
+```python
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
@@ -35,6 +33,4 @@ urlpatterns = [
     path('api/token/', MyTokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
-
-
 ```

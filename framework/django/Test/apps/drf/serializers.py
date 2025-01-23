@@ -1,30 +1,11 @@
-# 字节序列 ---> 字符串 ---> 字典 ---> 对象
-
 from rest_framework import serializers
 from apps.drf.models import Student
-
-# {} <---> 序列化器 <---> obj
-# 1. 数据格式转换 ---> 需要定义数据格式
-# 2. 数据校验 ---> 需要定义如何校验数据
-# 3. 数据写入 ---> 需要定义如何写入
-# 4. 序列化:  obj -> {} -> JSON
-# 5. 反序列化: JSON -> {} -> obj (数据校验)
-
-# serializer不是只能为数据库模型类转换数据格式,也可以为非数据库模型类的数据定义
-# serializer是独立于数据库的
-
-
-# 模型类序列化器类
-# 1. 基于模型类自动生成序列化器字段
-# 2. 默认实现update和create
 
 class StudentSerializer(serializers.ModelSerializer):
 
     """学生信息模型类序列化器"""
 
     # 1. 字段声明（哪些字段需要转换？）
-    # serializers.Serializer 需要自己声明，不能从模型中导入字段
-    # Serializer默认没有实现update()和create()
     
     # id = serializers.IntegerField(read_only=True)
     # name = serializers.CharField(max_length=16, min_length=4, error_messages={
@@ -74,19 +55,14 @@ class StudentSerializer(serializers.ModelSerializer):
         if attrs["name"] == "root" or attrs["age"] > 100:
             # ValidationError继承自APIException
             raise serializers.ValidationError("something wrong")
-
         # 有些字段需要校验，但是不需要存入数据库
         # del attrs["password"]
-        
-        # !!!必须返回数据!!!，不然序列化器对象会丢失数据
         return attrs
     
     # 校验单个字段的方法
     def validate_name(self, attr):
-        
         if attr == "root":
             raise serializers.ValidationError(f"name的值不能是{attr}")
-        
         # 必须返回数据
         return attr
         
@@ -163,16 +139,12 @@ class TestSerializer(serializers.Serializer):
     z = serializers.IntegerField()
 
 class Person():
-
     z = 2
-
     def __init__(self, x, y):
         self.x = x
         self.y = y
 
 if __name__ == "__main__":
-    # 如何理解序列化？obj <---> {}
-    # instance <---> data
     person = Person(1,2)
     ser = TestSerializer(instance=person, context={"message": "ok"})
     print(ser.data)

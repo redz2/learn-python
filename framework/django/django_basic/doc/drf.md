@@ -1,10 +1,8 @@
-## djangorestframework
-
-思想：大量缩减编写api接口的代码
-中文文档：q1mi.github.io/Django-REST-framework-documentation/#django-rest-framework
+# djangorestframework
+* 思想：大量缩减编写api接口的代码
+* 中文文档：q1mi.github.io/Django-REST-framework-documentation/#django-rest-framework
 
 # drf框架
-
 1. 序列化器: Serializer、ModelSerializer --> drf
 2. 视图类: request、response --> req
     * View（django）
