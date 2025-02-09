@@ -5,12 +5,6 @@
 # 认证的作用是识别客户端身份，但是不能拦截客户端的访问
 # 权限是基于认证来实现的，针对不同身份的用户，拦截用户对视图、模型的访问
 
-# 1. 是否可以访问视图
-# has_permission(self, request, view)
-
-# 2. 是否可以访问模型对象
-# has_object_permission(self, request, view, obj)
-
 from rest_framework.permissions import BasePermission
 
 class VVIPPermission(BasePermission):

@@ -18,7 +18,6 @@ Any unhandled exceptions may return `None`, which will cause a 500 error
 to be raised.
 """
 
-
 # setttings中添加配置
 # 'EXCEPTION_HANDLER': 'apps.components.errhandle.custom_exception_handler',
 def custom_exception_handler(exc, context):
@@ -47,20 +46,3 @@ def custom_exception_handler(exc, context):
         # 一般我们要处理哪些异常呢？
         # http请求，数据库操作(get_object() -> 获取当个模型对象时如何处理错误？)
     return response
-
-
-# drf 框架内置异常类
-# 1. APIException 所有异常的父类
-# 2. ParseError 解析错误
-# 3. AuthenticationFailed 认证失败
-# 4. NotAuthenticated 尚未认证
-# 5. PermissionDenied 权限拒绝
-# 6. NotFound 404未找到
-# 7. MethodNotAllowed 请求方式不支持
-# 8. NotAcceptable 要获取的数据格式不支持
-# 9. Throttled 超过限流次数
-# 10. ValidationError 校验失败
-# 11. UnsupportedMediaType 不支持的媒体格式
-
-# 如果不是上面的异常，我们需要自定义异常处理
-        

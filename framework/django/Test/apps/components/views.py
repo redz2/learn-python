@@ -35,7 +35,6 @@ from rest_framework.permissions import IsAdminUser,IsAuthenticatedOrReadOnly
 from .pagination import CustomPagination
 class PermissionViewSet(ModelViewSet):
     
-    # SAFE_METHODS = ('GET', 'HEAD', 'OPTIONS')
     # permission_classes = [IsAdminUser] # APIView提供，局部配置权限
     permission_classes = [VVIPPermission]
     

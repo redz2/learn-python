@@ -115,37 +115,3 @@ class StudentSerializer(serializers.ModelSerializer):
     # max_value
     # min_value
     
-    # 字段通用选项参数
-    # read_only 仅用作序列化输出
-    # write_only 仅用作反序列化输入
-    # required 反序列化时必须
-    # default 反序列化时默认值
-    # miss 序列化时使用的默认值
-    # allow_null 反序列化时是否可以为空
-    # validators 反序列化时使用的验证函数
-    # error_message 反序列化时验证错误报错
-
-
-
-# 关于数据验证的思考？
-# 前端做验证，请求之前验证
-# 后端做验证，写入数据库前做验证
-
-
-# test serializer
-class TestSerializer(serializers.Serializer):
-    x = serializers.IntegerField()
-    y = serializers.IntegerField()
-    z = serializers.IntegerField()
-
-class Person():
-    z = 2
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-
-if __name__ == "__main__":
-    person = Person(1,2)
-    ser = TestSerializer(instance=person, context={"message": "ok"})
-    print(ser.data)
-    print(ser.context)

@@ -69,6 +69,3 @@ class StudentsView(View):
         return JsonResponse(ser.data)
 
 
-
-
-    

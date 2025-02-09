@@ -1,26 +1,37 @@
 ## Session
-### 启用admin后台管理后多了啥？如何让浏览器能带session id？
-1. 生成了Users、Roles、Permissions这几张表（如何自定义User？）
-2. 自动生成用户管理的视图函数: login、logout
-3. 针对注册的app，自动生成增删改查的接口
+* session的几个关键点
+    1. 如何生成session？
+        * 如何校验用户名和密码？authenticate()
+            * 如何自定义校验过程？AUTHENICATION_BACKENDS
+        * 如何保存session，并让客户端携带sessionID？login()
+    2. 如何解析session？通过两个中间件实现
+        * SessionMiddleware
+            * 获取request.COOKIES的值，并保存到request.session中
+        * AuthenticationMiddleware
+            * 从request.session中获取sessionID，并从数据库中获取用户信息，保存到request.user中
+    3. 如何退出登录？logout()
 
-### django session 认证流程？需要知道是谁在访问
-1. session中间件: 从cookie中获取sessionID，保存到request.session
-2. authentication中间件: 通过sessionID获取User对象，保存到request.user
-3. django中如何设置未登录用户不能访问视图函数？判断request对象中是否有user属性
-    * request.user.is_authenticated
-    * @login_required() 检查用户是否登录
-4. drf中的SessionAuthentication认证模块，完全使用django中session中间件认证流程
-    * 判断是否登录（解析并获取User）
-    * 如果所有的视图函数都需要用户登录，可以在认证模块中抛出异常
 
-### 如果不用session，换成token呢？整个过程是一样的，不过需要我们自己实现（生成token，校验token）
 
-* django自带的auth模块: https://www.cnblogs.com/wcwnina/p/9246228.html
+* django中session如何解析为User对象？视图函数中如何获取当前登录用户？
+    1. session中间件: 从cookie中获取sessionID，保存到request.session
+    2. authentication中间件: 通过sessionID获取User对象，保存到request.user
+    3. django中如何设置未登录用户不能访问视图函数？判断request对象中是否有user属性
+        * request.user.is_authenticated
+        * @login_required() 检查用户是否登录
+    4. drf中的SessionAuthentication认证模块，完全使用django中session中间件认证流程
+        * 判断是否登录（解析并获取User）
+        * 如果所有的视图函数都需要用户登录，可以在认证模块中抛出异常
+
+* session对比token
+    1. 整个过程是一样的，不过需要我们自己实现（生成token，解析token，获取User对象）
+
+* django自带auth模块中使用session
+    * https://www.cnblogs.com/wcwnina/p/9246228.html
 ```python
 from django.contrib.auth import authenticate, login, logout
 
-# 用户登录 -> 验证账号密码是否正确 -> session id -> 浏览器
+# 用户登录 -> 验证账号密码是否正确 -> 生成session id -> 浏览器
 def login_view(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -63,13 +74,12 @@ def my_view(request):
     pass
 ```
 
+* 如何自定义认证类？调用authenticate()方法时，会依次执行所有认证类，直到有一个认证成功，返回User对象
 ```python
-# django维护一个认证类列表，调用django.contrib.auth.authenticate()，会进行认证
-# 当经过authentication中间件，会对用户密码进行校验，返回User
-
 # setttings中配置认证类
 AUTHENTICATION_BACKENDS = ['yourfilepath.CustomBackend']
-# 如何自定义认证类？login_view -> authenticate(user, password)
+
+# 如何自定义认证类？何时调用自定义认证类？login_view -> authenticate(user, password)
 from django.contrib.auth.backends import ModelBackend
 from django.db.models import Q
 # 继承ModelBackend类，重写authenticate()方法
@@ -104,4 +114,64 @@ class UserInfo(AbstractUser):　　　　
     
     def __str__(self):
         return self.username
+```
+
+* 启用admin后台管理
+    1. 生成了Users、Roles、Permissions这几张表（如何自定义User？）
+    2. 自动生成用户管理的视图函数: login、logout
+    3. 针对注册的app，自动生成增删改查的接口
+
+* 基于数据库来实现session的存储，需要配置session存储引擎
+```python
+# settings.py中添加配置
+INSTALLED_APPS = [
+    'django.contrib.admin', # 添加admin应用
+    'django.contrib.auth', # 添加auth应用, 用于用户认证, 必须添加, 依赖于sessions应用
+    'django.contrib.sessions', # 添加session应用
+]
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
+
+def login_view(request):
+    # 这里实现的其实就是django.contrib.auth.login()函数
+    request.session.set_expiry(3600) # 设置session过期时间为1小时
+    request.session['username'] = 'shaw'
+    request.session.save()
+    return redirect('home')
+
+def logout_view(request):
+    # logout()函数会清除session数据
+    request.session.flush()
+    return redirect('login')
+
+def home(request):
+    # 获取session
+    username = request.session.get('username', '')
+    # 显示用户名
+    return JsonResponse({'username': username})
+```
+
+* 基于redis来实现session的存储，需要配置session存储引擎
+```python
+SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.redis.RedisCache',
+        'LOCATION': 'redis://127.0.0.1:6379',
+        'OPTIONS': {
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+            'CONNECTION_POOL_KWARGS': {
+               'max_connections': 100,
+                'timeout': 20,
+            },
+            'PASSWORD': 'yourpassword',
+        }
+    }
+}
+
+# 注意：redis存储的session，需要设置过期时间，否则会占用内存
+SESSION_COOKIE_AGE = 3600
+
+# 视图函数中使用session是一样的
 ```

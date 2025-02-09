@@ -4,6 +4,13 @@
     * 能够将obj转换为字典，并返回给前端
         * 如何根据不同的请求方式返回不同字段？
           * 定义不同的序列化器
+* 前端数据验证 vs 后端数据验证
+    * 提交数据前做验证
+    * 保存到数据库前做验证
+* 几个问题？
+    1. 哪些字段需要序列化？
+    2. 哪些字段需要反序列化？
+    3. 每个字段如何校验？
 ```py
 # serializers.py
 # 序列化: 将obj转换为字典
@@ -58,29 +65,35 @@ class StudentSerializer(serializers.ModelSerializer):
     #     del attrs["password"] # 需要校验，但是不需要存入数据库，所以删除password字段
     #     return attrs # 必须返回数据，validated_date会作为参数传入create()和update()方法
 
-    # 默认实现了这两个方法
+    # ModelSerializer默认实现了这两个方法
+    # 不一定是更新数据库，也可以更新缓存，是独立于数据库的
     # 更新数据: 此时数据已经校验完成
-    # def update(self, instance, validated_data):
-    #     # 不一定是更新数据库，也可以更新缓存，是独立于数据库的
-    #     return super().update(instance, validated_data)
+    def update(self, instance, validated_data):
+        # return super().update(instance, validated_data)
+        # 如果只更新特定字段，如何处理？
+        student = models.Student.objects.filter(id=instance.id).update(**validated_data)
+        return instance
     
     # 添加数据
-    # def create(self, validated_data):
-    #     return super().create(validated_data)
+    def create(self, validated_data):
+        # return super().create(validated_data)
+        student = models.Student.objects.create(**validated_data)
+        return student
 
     class Meta:
         model = models.Student
         fields = '__all__'  # 序列化所有字段
         # fields = ['id', 'name', 'age', 'classmate', 'description']  # 序列化指定字段
-
-        exclude = ['password']  # 序列化时排除password字段
-        read_only_fields = ['id']  # 只读字段
+        # exclude: 排除字段
+        # read_only_fields: 只读字段
+        exclude = ['password']
+        read_only_fields = ['id']
         # extra_kwargs = {
         #     'name': {'max_length': 16, 'error_messages': {'max_length': '姓名长度不能超过16'}},
         # }  # 额外参数，用于字段校验
 
 # views.py
-class StudentViewSet(viewsets.ModelViewSet):
+class StudentViewSet(ModelViewSet):
     queryset = models.Student.objects.all() # 数据库查询集
     serializer_class = StudentSerializer # 序列化器
 

@@ -1,6 +1,5 @@
 ## cookie
-***
-![cookie原理](png/cookie.png)
+![cookie原理](../png/cookie.png)
 ***
 1. 如何生成cookie？cookie保存在客户端
 ```python
@@ -11,12 +10,20 @@ def login(request):
         # 模拟验证用户: 类似于自带的authenticate函数
         user = User.objects.filter(username=username, password=password).first()
         if user:
-            # 设置认证 Cookie
+            # 设置认证cookie
             response = HttpResponseRedirect('/home/')
-            # 浏览器下次请求时会设置 Cookie
-            # cookie 为什么容易伪造？因为都是写用户信息
-            # cookie 在服务器端无法控制，只能等待过期
-            response.set_cookie('user_id', user.id, max_age=3600)  # 1小时有效期
+            # 浏览器下次请求时会设置cookie
+            # cookie为什么容易伪造？因为包含用户信息
+            # cookie在服务器端无法控制，只能等待过期
+            response.set_cookie(
+                'user_id', 
+                user.id, 
+                max_age=3600,   # 1小时有效期，如果设置为None，则关闭浏览器后失效
+                path='/',       # 所有目录都会携带cookie
+                domain=None,    # 所有域名都可以访问
+                secure=False,   # 安全连接，https才携带cookie
+                httponly=False  # 无法通过js获取cookie
+            )  
             return response
         else:
             return HttpResponse('登录失败')
@@ -59,5 +66,4 @@ class YourAPIView(APIView):
         # 认证成功后，您可以在这里访问用户信息
         user = request.user  
         return Response({'message': f'Hello, {user.username}'})
-
 ```

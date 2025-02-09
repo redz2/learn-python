@@ -11,7 +11,7 @@ Django包含一个“信号调度器”，帮助已解藕的应用程序在框�
         一个模型的 delete() 方法或查询结果集的 delete() 方法被调用之前或之后发出
 3. 接收器
 
-```
+```python
 from django.core.signals import request_finished
 from django.dispatch import receiver
 
@@ -29,7 +29,7 @@ def my_handler(sender, **kwargs):
 何时使用信号？
 信号是隐式函数调用，这使得调试更加困难。如果你的自定义信号的发送器和接收器都在你的项目内，最好使用显式函数调用。
 
-```
+```python
 import django.dispatch
 pizza_done = django.dispatch.Signal()
 

@@ -54,7 +54,28 @@ class MyMiddleware(MiddlewareMixin):
     def process_template_response():
         """视图函数中返回的是TemplateResponse对象: 有一个render方法"""
         ...
+
+# settings.py: 注册中间件
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'MyMiddleware',
+]
 ```
+
 3. 中间件的应用场景
     * 用户登录: 通过process_request解析token或者cookie，将用户信息添加到request.User
     * 跨域: 浏览器限制: 同源策略，在响应头中添加字段，通过process_response添加响应头
+
+4. 中间件的执行过程
+    1. process_request: 如果返回None，继续执行下一个process_request
+    2. process_view: 如果返回None，继续执行下一个process_view，否则执行process_response(跳过view_func)
+    3. view_func: 视图函数
+    4. process_exception: 视图函数抛出异常时，会捕获异常，我们可以自定义异常页面
+    5. process_template_response: 如果返回TemplateResponse对象，调用render方法渲染模板
+    6. process_response: 返回response

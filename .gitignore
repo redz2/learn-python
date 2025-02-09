@@ -113,6 +113,5 @@ dmypy.json
 
 test/ansible/ansible-data/artifacts
 
-
 # other
 other/

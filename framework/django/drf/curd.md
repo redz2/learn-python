@@ -119,6 +119,8 @@ class StudentsInfoView():
 ```
 
 2. 使用drf
+    * 序列化器: ModelSerializer
+    * 视图集: ModelViewSet
 ```py
 # views.py中如何使用序列化器对数据进行校验?
 class StudentSerializer(serializers.ModelSerializer):
@@ -127,26 +129,30 @@ class StudentSerializer(serializers.ModelSerializer):
         model = models.Students
         fields = "__all__"
 
-class StudentsView(View):
-    def post(self, request, pk):
-        try:
-            student = models.Students.objects.get(pk=pk)
-            # 比较表单数据和数据库数据
-            serializer = StudentSerializer(student, data=request.data, partial=True) # 部分更新
-            if serializer.is_valid(raise_exception=True): # 判断数据是否合法
-                # 如果序列化器有instance参数，执行update操作
-                # 如果没有，执行create操作
-                # 可以传递额外参数，serializer.save(age=30)
-                serializer.save() # 验证通过，保存数据
-                return JsonResponse({
-                    "message": "更新成功"
-                }, status=200)
-            else:
-                return JsonResponse({
-                    "error": serializer.errors # 验证不通过，返回错误信息
-                }, status=400)
-        except models.Students.DoesNotExist:
-            return JsonResponse({                
-                "error": "学生不存在"
-            }, status=404)
+class StudentsModelViewSet(viewsets.ModelViewSet):
+    queryset = models.Students.objects.all()
+    serializer_class = StudentSerializer
+
+# class StudentsView(View):
+#     def post(self, request, pk):
+#         try:
+#             student = models.Students.objects.get(pk=pk)
+#             # 比较表单数据和数据库数据
+#             serializer = StudentSerializer(student, data=request.data, partial=True) # 部分更新
+#             if serializer.is_valid(raise_exception=True): # 判断数据是否合法
+#                 # 如果序列化器有instance参数，执行update操作
+#                 # 如果没有，执行create操作
+#                 # 可以传递额外参数，serializer.save(age=30)
+#                 serializer.save() # 验证通过，保存数据
+#                 return JsonResponse({
+#                     "message": "更新成功"
+#                 }, status=200)
+#             else:
+#                 return JsonResponse({
+#                     "error": serializer.errors # 验证不通过，返回错误信息
+#                 }, status=400)
+#         except models.Students.DoesNotExist:
+#             return JsonResponse({                
+#                 "error": "学生不存在"
+#             }, status=404)
 ```
