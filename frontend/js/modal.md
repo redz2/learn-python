@@ -7,4 +7,13 @@ for (let i = 0; i < btnCloseModal.length; i++) {
     overlay.classList.remove("hidden"); // 显示遮罩层
   });
 }
+
+// 如何监听键盘事件
+document.addEventListener("keydown", function (event) {
+  // 按下ESC键
+  if (event.keyCode === 27) {
+    modal.classList.add("hidden"); // 隐藏模态框
+    overlay.classList.add("hidden"); // 隐藏遮罩层
+  }
+});
 ```
