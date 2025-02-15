@@ -1,6 +1,7 @@
 # js
 
-0. how to code
+## javascript 基础
+
 1. 变量和值
 
 ```js
@@ -85,6 +86,14 @@ const sum = func(a, b){
 // arrow funciton
 sum = (a, b) => a + b
 addOne = a => a + 1
+
+function addNumbers(...nums){
+    let sum = 0
+    for(let i = 0; i < nums.length; i++){
+        sum += nums[i]
+    }
+    return sum
+}
 ```
 
 4. array
@@ -112,6 +121,7 @@ for(let i = 0; i < arr1.length; i++){
     console.log(arr1[i])
 }
 
+// ES6 for-of loop
 for(let item of arr1){
     console.log(item)
 }
@@ -119,13 +129,17 @@ for(let item of arr1){
 // 数组解构
 const [a, b, c] = arr1
 console.log(a, b, c)
+
+oldArr = [1, 2, 3]
+newArr = [...oldArr, 4, 5]
 ```
 
-5. Object）
+5. Object
    - js 的对象，看起来和 python 中的字典很像，实际上和 python 的对象一样
    - js 中有类似于 python 的 class 吗？用来创建一个对象
 
 ```js
+// 增强对象字面量语法
 const person = {
   firstName: "John",
   age: 30,
@@ -139,6 +153,28 @@ const person = {
 // 访问对象属性: dot notation or bracket notation
 console.log(person.firstName);
 console.log(person["first" + "Name"]); // 属性名称需要拼接时不能使用点号
+
+// 对象解构
+const { firstName, age } = person;
+console.log(firstName, age);
+
+// optional chaining
+const boy = {
+  name: "John",
+  age: 30,
+  address: {
+    street: "123 Main St",
+    city: "Anytown",
+    state: "CA",
+    zip: "12345",
+  },
+};
+console.log(boy.address?.street); // 访问对象属性，如果对象不存在，则返回 undefined
+
+// object loop
+Object.keys(person); // 返回一个数组，包含对象的所有键
+Object.values(person); // 返回一个数组，包含对象的所有值
+Object.entries(person); // 返回一个数组，数组的每一项是一个数组，包含键值对
 ```
 
 6. loop
@@ -166,11 +202,41 @@ do {
 } while (i < 5);
 ```
 
+7. sets and maps
+
+   - 集合: 无序的，不重复的值的集合
+   - 映射: 键值对的集合，键必须唯一，值可以重复
+
+```js
+const set1 = new Set([1, 2, 3, 4, 5]); // 和数组很像，但是元素不能重复
+// what is difference between Map and Object?
+// Map: key-value pairs, can have any type of value, keys can be any type of value
+// Object: key-value pairs, values can only be primitive types, keys must be strings or symbols
+const map1 = new Map([
+  ["name", "John"],
+  ["age", 30],
+  ["city", "Anytown"],
+]);
+```
+
 ## how to think like a developer
 
 - 不要着急
-- 如何解决问题
+
+- 如何解决问题？
+
   1. 确保你 100%理解问题: we need a function that reverses whatever we pass into it.
   2. 分解成小问题: 分解问题的同时，也会帮助你更好地理解问题
   3. 先尝试自己解决，实在不行先 google，stackoverflow，mdn，使用别人的方案
   4. 先写一些伪代码
+
+- 数据从哪里来？
+
+  1. from the program itself
+  2. from the UI: data input from the user
+  3. from external sources(APIs, databases, etc.)
+
+- 数据更适合哪种数据结构？
+
+  1. simple list or key/value pairs?
+  2. other data structures? 如何选择合适的数据结构来处理问题？

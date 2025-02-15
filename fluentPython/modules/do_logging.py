@@ -30,3 +30,9 @@ logger.info('Info message')
 logger.warning('Warning message')
 logger.error('Error message')
 logger.critical('Critical message')
+
+# 2024-09-02 14:00:35,626 - __main__ - DEBUG - Debug message
+# 2024-09-02 14:00:35,626 - __main__ - INFO - Info message
+# 2024-09-02 14:00:35,626 - __main__ - WARNING - Warning message
+# 2024-09-02 14:00:35,626 - __main__ - ERROR - Error message
+# 2024-09-02 14:00:35,626 - __main__ - CRITICAL - Critical message

@@ -1,28 +1,30 @@
 # dom
 
-- 如何操作 DOM 元素？如何更新页面显示？
+- 如何操作 DOM 元素？
 
 ```js
+// document.querySelector(".message").textContent = "Hello, World!";
 // 通过操作DOM元素来修改元素内容
-document.querySelector(".message").textContent = "Hello, World!";
-
 function updateMessage(message) {
   const messageElement = document.querySelector(".message");
   messageElement.textContent = message;
 }
-
 updateMessage("Goodbye, World!");
 ```
+
+- 如何使用 vue 更新页面显示？
 
 ```vue
 <script setup>
 import { ref } from "vue";
 // 让开发人员不需要关注如何更新页面？也不需要获取DOM元素，只需要关注数据和逻辑
 const message = ref("Hello, World!");
-// 此函数不遵循函数不可变性
+// 这个函数不是纯函数（有状态）
+// js 中，把页面当成一个对象，变量都是对象的属性，函数都是对象的方法
 function updateMessage(message) {
   message.value = message; // 直接使用全局数据
 }
+updateMessage("Goodbye, World!");
 </script>
 ```
 
@@ -80,4 +82,26 @@ button.addEventListener("click", () => {
 function displayMessage(message) {
   document.querySelector(".message").textContent = message;
 }
+```
+
+- modal
+
+```js
+// 通过类来修改网站样式
+const btnCloseModal = document.querySelector(".btn-close-modal");
+for (let i = 0; i < btnCloseModal.length; i++) {
+  btnCloseModal[i].addEventListener("click", function () {
+    modal.classList.remove("hidden"); // 显示模态框
+    overlay.classList.remove("hidden"); // 显示遮罩层
+  });
+}
+
+// 如何监听键盘事件
+document.addEventListener("keydown", function (event) {
+  // 按下ESC键
+  if (event.keyCode === 27 && !modal.classList.contains("hidden")) {
+    modal.classList.add("hidden"); // 隐藏模态框
+    overlay.classList.add("hidden"); // 隐藏遮罩层
+  }
+});
 ```

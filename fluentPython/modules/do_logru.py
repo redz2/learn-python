@@ -11,4 +11,11 @@ logger.warning('Warning message')
 logger.error('Error message')
 logger.critical('Critical message')
 
+# 2024-09-02T14:13:19.990335+0800 - DEBUG - Debug message
+# 2024-09-02T14:13:19.990536+0800 - INFO - Info message
+# 2024-09-02T14:13:19.990620+0800 - WARNING - Warning message
+# 2024-09-02T14:13:19.990683+0800 - ERROR - Error message
+# 2024-09-02T14:13:19.990745+0800 - CRITICAL - Critical message
+
+
                         
