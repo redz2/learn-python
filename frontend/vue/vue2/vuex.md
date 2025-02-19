@@ -45,7 +45,7 @@ const store = new Vuex.Store({
 export default store;
 ```
 
-2. 如何使用 vuex？
+2. 如何使用 vuex 中的数据？
    - 如何获取 vuex 中的 state？只有 mutations 才能修改 state
      - `this.$store.state.count`
    - 如何触发 mutations？
@@ -106,7 +106,7 @@ new Vue({
         repeatCount: count2, // count2在data中定义过了，所以要换个名字repeatCount
         count3: (state) => state.count3, // state 等价于 this.$store.state
         helloName: function (state) {
-          return this.hello + " " + state.name;
+          return this.hello + " " + state.name; // 如果需要用到this，不能使用箭头函数，会改变this的指向
         },
       }),
       ...mapGetters(["fullName"]),

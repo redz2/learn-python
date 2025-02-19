@@ -1,8 +1,9 @@
 # dom
 
-- 如何操作 DOM 元素？
+- 原生 js 如何操作 DOM 元素？
 
 ```js
+// 原生js
 // document.querySelector(".message").textContent = "Hello, World!";
 // 通过操作DOM元素来修改元素内容
 function updateMessage(message) {
@@ -12,7 +13,42 @@ function updateMessage(message) {
 updateMessage("Goodbye, World!");
 ```
 
+- jQuery 如何操作 DOM 元素？
+
+```js
+// jQuery
+// $("#message").text("Hello, World!");
+
+// 1. click事件
+$("#btn1").click(function () {
+  console.log("clicked");
+});
+
+// 2. on事件: 可以同时绑定多个事件
+$("#btn2").on("click mouseenter", function () {
+  console.log("clicked");
+});
+
+// 3. 事件委托: 父元素(ul)绑定事件，子元素(li)触发事件，事件冒泡到父元素
+$("ul").on("click", "li", function () {
+  console.log($(this).text());
+});
+
+// 4. 移除事件
+$("#btn1").off("click"); // 移除所有click事件
+$("#btn1").off(); // 移除所有事件
+
+// 5. 常用事件
+// 鼠标事件：click、dblclick、mousedown、mouseup、mousemove、mouseover、mouseout
+// 键盘事件：keydown、keyup、keypress
+// 表单事件：focus、blur、change、submit、reset
+// 动画事件：animationstart、animationend、animationiteration
+// 变换事件：transitionend
+// 其他事件：load、unload、error、resize、scroll
+```
+
 - 如何使用 vue 更新页面显示？
+  - vue 如何操作 DOM 元素？通过模板引用，使用 ref 属性
 
 ```vue
 <script setup>
@@ -84,7 +120,7 @@ function displayMessage(message) {
 }
 ```
 
-- modal
+- modal: 模态框的显示和隐藏
 
 ```js
 // 通过类来修改网站样式

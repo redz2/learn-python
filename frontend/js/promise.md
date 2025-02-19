@@ -1,6 +1,21 @@
 # 异步编程
 
-1.  promise 是一个对象，用来包裹一个异步操作
+0. 回调函数
+
+```javascript
+setTimeout(() => {
+  console.log("first");
+  setTimeout(() => {
+    // 可以使用first获取的数据进行处理
+    console.log("second");
+    setTimeout(() => {
+      console.log("third");
+    }, 1000);
+  }, 1000);
+}, 1000);
+```
+
+1.  promise 是一个对象，用来包裹一个异步操作（需要想办法获取异步函数的结果）
 
     - 异步操作可以是 setTimeout, setInterval, XMLHttpRequest, fetch 等.
     - promise 中的异步操作何时执行？定义 promise 对象时，立即执行！！！
@@ -27,6 +42,14 @@
       .catch((error) => {
         console.error(error);
       });
+
+    // then 方法会返回一个新的 promise 对象，可以实现链式调用
+    // 1. 将异步操作包裹成一个promise对象，并立即执行异步操作
+    // 2. 调用then方法，生成一个promise，等待第一步中的promise完成 -> 异步操作调用resolve方法 -> 执行处理函数 -> return
+    // 3. 调用第二个then方法，生成一个promise，等待第二步中的promise完成 -> 返回说明第二步的promise已经完成 -> 执行处理函数 -> return
+    // promise
+    //  .then((result) => { handle(result) }, (error) => { handle(error) })
+    //  .then((result) => { handle(result) }, (error) => { handle(error) })
 
     // 使用 promise 来包裹其他异步操作
     const promise_fetch = new Promise((resolve, reject) => {
@@ -85,3 +108,7 @@ async function fetchData() {
 // fetchData 函数将多个异步操作，包裹成一个 promise 对象.
 fetchData(); // 返回 promise 对象，开始执行函数
 ```
+
+3. axios: 基于 promise 的 HTTP 客户端，可以更方便地处理 HTTP 请求.
+
+4. fetch(和 axios 差不多，现代浏览器内置 API)

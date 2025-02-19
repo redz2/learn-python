@@ -1,23 +1,24 @@
 # setup
+
 1. setup() 钩子是在组件中使用组合式 API 的入口
+
 ```vue
 <script>
-import { ref } from 'vue'
+import { ref } from "vue";
 
 export default {
   setup() {
-    const count = ref(0)
+    const count = ref(0);
 
     // 返回值会暴露给模板和其他的选项式 API 钩子
     return {
-      count
-    }
+      count,
+    };
   },
-
   mounted() {
-    console.log(this.count) // 0
-  }
-}
+    console.log(this.count); // 0
+  },
+};
 </script>
 
 <template>
@@ -25,17 +26,18 @@ export default {
 </template>
 ```
 
-2. setup语法糖: 推荐使用
+2. setup 语法糖: 推荐使用
+
 ```vue
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const count = ref(0)
+const count = ref(0);
 
 // 声明周期钩子
-onMounted(()=>{
-    console.log(this.count) // 0
-})
+onMounted(() => {
+  console.log(this.count); // 0
+});
 </script>
 
 <template>

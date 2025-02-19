@@ -20,6 +20,7 @@ class D(B,C):
     def ping(self):
         # 调用A的ping方法
         A.ping(self)
+        # 调用A的ping方法
         super().ping()
         print("D ping", self)
 
@@ -39,7 +40,7 @@ class D(B,C):
         # 4. 把ping这个方法bind到self上
         # 5. 等价于 A.ping(self)
 
-        # 调用继承的pong方法（从B继承）
+        # pong方法继承自B，调用B的pong方法
         self.pong()
         # 使用父类中的pong方法
         super().pong()
